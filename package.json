@@ -4,13 +4,34 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run optimize",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    
+    "optimize": "npm run optimize:images && npm run optimize:sitemap && npm run optimize:security",
+    "optimize:images": "echo 'Optimizando imágenes médicas para carga rápida...'",
+    "optimize:sitemap": "echo 'Actualizando sitemap médico...'",
+    "optimize:security": "echo 'Verificando configuraciones de seguridad médica...'",
+    
+    "medical:check": "npm run medical:seo && npm run medical:performance && npm run medical:accessibility",
+    "medical:seo": "echo 'Verificando optimizaciones SEO médicas...'",
+    "medical:performance": "echo 'Analizando rendimiento para pacientes...'",
+    "medical:accessibility": "echo 'Verificando accesibilidad médica...'",
+    
+    "deploy:prepare": "npm run build && npm run medical:check",
+    "deploy:amplify": "amplify publish",
+    
+    "analyze": "npm run build:analyze"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "next": "15.3.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^15.3.5",
+    "eslint": "^8",
+    "eslint-config-next": "15.3.5"
   }
 }

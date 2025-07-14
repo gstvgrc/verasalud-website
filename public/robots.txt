@@ -1,0 +1,35 @@
+# Robots.txt optimizado para VeraSalud - Centro médico en Cali
+# Guía a los motores de búsqueda hacia contenido médico relevante
+
+# Permitir acceso completo a todos los motores de búsqueda legítimos
+User-agent: *
+Allow: /
+
+# Bloquear acceso a archivos técnicos que no son relevantes para pacientes
+Disallow: /_next/
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /admin/
+Disallow: /private/
+
+# Bloquear bots maliciosos conocidos que no agregan valor
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Indicar la ubicación del sitemap para indexación eficiente
+Sitemap: https://verasalud.com/sitemap.xml
+
+# Información adicional para motores de búsqueda médicos
+# Este sitio contiene información médica profesional sobre:
+# - Medicina interna especializada
+# - Ecografías de alta resolución
+# - Electrocardiogramas
+# - Videoconsultas médicas
+# Ubicación: Cali, Valle del Cauca, Colombia
