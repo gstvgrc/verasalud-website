@@ -15,7 +15,7 @@ export default function MobileMenu() {
       >
         ☰
       </button>
-      <nav className={`${styles.nav} ${isOpen ? styles.active : ''}`}>
+      <nav className={`${styles.mobileNav} ${isOpen ? styles.active : ''}`}>
         <a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a>
         <a href="#convenios" onClick={() => setIsOpen(false)}>Convenios</a>
         <a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a>
