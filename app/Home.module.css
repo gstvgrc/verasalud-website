@@ -32,7 +32,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 100px;
   width: auto;
 }
 
@@ -87,6 +87,11 @@
   font-size: 1.5rem;
   color: var(--primary-blue);
   cursor: pointer;
+}
+
+/* Navigation for mobile menu */
+.mobileNav {
+  display: none;
 }
 
 /* Hero Section */
@@ -427,8 +432,21 @@
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
-  
-  .nav.active {
+
+
+  .mobileNav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .mobileNav.active {
     display: flex;
   }
   
