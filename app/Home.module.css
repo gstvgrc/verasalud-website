@@ -1,0 +1,502 @@
+/* app/Home.module.css */
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo h1 {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.logo p {
+  color: var(--primary-pink);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--primary-pink);
+}
+
+.whatsappBtn {
+  background-color: #25D366;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.whatsappBtn:hover {
+  background-color: #20bd5a;
+}
+
+/* Mobile menu button */
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-cyan) 100%);
+  color: white;
+  padding: 4rem 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.heroContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-cyan);
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background-color: var(--primary-pink);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btnPrimary:hover {
+  background-color: #d42d7f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(238, 53, 148, 0.3);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btnSecondary:hover {
+  background-color: white;
+  color: var(--primary-blue);
+}
+
+.trustIndicators {
+  margin-top: 2rem;
+  color: var(--primary-cyan);
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 0;
+  background-color: var(--gray-light);
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 3rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  border-top: 4px solid var(--primary-cyan);
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.serviceCard h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.serviceCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.serviceCard li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.serviceCard li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-pink);
+  font-weight: bold;
+}
+
+/* Convenios Section */
+.convenios {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.convenios h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.conveniosContent {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.conveniosGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.convenioCard {
+  background: var(--gray-light);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--primary-cyan);
+}
+
+.convenioCard h3 {
+  color: var(--primary-pink);
+  margin-bottom: 0.5rem;
+}
+
+/* Team Section */
+.team {
+  padding: 2rem 0;
+  background-color: white;
+}
+
+.teamPhoto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 0;
+  background-color: var(--gray-light);
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 3rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contactInfo h3,
+.contactForm h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.contactItem {
+  margin-bottom: 1.5rem;
+}
+
+.contactItem h4 {
+  color: var(--primary-pink);
+  margin-bottom: 0.5rem;
+}
+
+.contactItem a {
+  color: var(--primary-cyan);
+  text-decoration: none;
+}
+
+.contactItem a:hover {
+  text-decoration: underline;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--primary-cyan);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer h3,
+.footer h4 {
+  color: var(--primary-cyan);
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  padding: 0.25rem 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLinks a {
+  background-color: var(--primary-pink);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.socialLinks a:hover {
+  background-color: var(--primary-cyan);
+  transform: translateY(-3px);
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #ccc;
+}
+
+/* Media Queries para Responsive */
+@media (max-width: 768px) {
+  /* Header móvil */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .nav.active {
+    display: flex;
+  }
+  
+  .mobileMenuBtn {
+    display: block;
+  }
+  
+  /* Hero móvil */
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+  
+  .heroContent h2 {
+    font-size: 1.2rem;
+  }
+  
+  .heroContent p {
+    font-size: 1rem;
+  }
+  
+  .heroButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Services móvil */
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Contact móvil */
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer móvil */
+  .footerContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .socialLinks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+  
+  .heroContent h1 {
+    font-size: 1.8rem;
+  }
+  
+  .services h2,
+  .contact h2,
+  .convenios h2 {
+    font-size: 2rem;
+  }
+  
+  .btnPrimary,
+  .btnSecondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

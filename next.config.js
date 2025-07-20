@@ -1,40 +1,136 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
-// Configuración optimizada para AWS Amplify - VeraSalud
 const nextConfig = {
-  // Configuración básica optimizada para despliegue
-  poweredByHeader: false,
-  compress: true,
-  trailingSlash: false,
+  // Habilitar modo estricto de React
+  reactStrictMode: true,
   
-  // Optimización de imágenes compatible con Amplify
+  // Configuración de imágenes
   images: {
-    formats: ['image/webp', 'image/avif'],
+    // Dominios permitidos para imágenes externas
+    domains: [
+      'verasalud.com',
+      'images.unsplash.com', // Si usas Unsplash
+      // Agrega otros dominios según necesites
+    ],
+    // Formatos de imagen modernos
+    formats: ['image/avif', 'image/webp'],
+    // Tamaños de dispositivo para optimización
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    domains: ['verasalud.com', 'localhost'],
+    // Minimizar imágenes
+    minimumCacheTTL: 60 * 60 * 24 * 365, // 1 año
   },
-
-  // Headers de seguridad para sitio médico
+  
+  // Compresión de archivos
+  compress: true,
+  
+  // Trailing slash para URLs consistentes
+  trailingSlash: true,
+  
+  // Configuración de headers de seguridad y SEO
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: '/:path*',
         headers: [
           {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on'
+          },
+          {
             key: 'X-Frame-Options',
-            value: 'DENY',
+            value: 'SAMEORIGIN'
           },
           {
             key: 'X-Content-Type-Options',
-            value: 'nosniff',
+            value: 'nosniff'
           },
           {
             key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin',
+            value: 'origin-when-cross-origin'
           },
-        ],
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
+          }
+        ]
+      },
+      // Cache para archivos estáticos
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      }
+    ]
+  },
+  
+  // Redirecciones 301 para SEO
+  async redirects() {
+    return [
+      // Ejemplo: redirigir URLs antiguas a nuevas
+      {
+        source: '/medicina-general',
+        destination: '/servicios/medicina-interna',
+        permanent: true,
+      },
+      // Redirigir index.html a raíz
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
+      // Agrega más redirecciones según necesites
+    ]
+  },
+  
+  // Rewrites para URLs limpias
+  async rewrites() {
+    return [
+      // Ejemplo: URLs amigables para filtros
+      {
+        source: '/servicios/:categoria',
+        destination: '/api/servicios?categoria=:categoria',
       },
     ]
+  },
+  
+  // Variables de entorno
+  env: {
+    NEXT_PUBLIC_SITE_URL: 'https://verasalud.com',
+    NEXT_PUBLIC_GA_ID: 'G-0DD5YNJGV5',
+  },
+  
+  // Optimizaciones de webpack
+  webpack: (config, { isServer }) => {
+    // Optimización para reducir el tamaño del bundle
+    if (!isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        cacheGroups: {
+          default: false,
+          vendors: false,
+          vendor: {
+            name: 'vendor',
+            chunks: 'all',
+            test: /node_modules/,
+            priority: 20
+          },
+          common: {
+            name: 'common',
+            minChunks: 2,
+            chunks: 'all',
+            priority: 10,
+            reuseExistingChunk: true,
+            enforce: true
+          }
+        }
+      }
+    }
+    return config
   },
 }
 

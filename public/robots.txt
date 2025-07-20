@@ -1,35 +1,54 @@
-# Robots.txt optimizado para VeraSalud - Centro médico en Cali
-# Guía a los motores de búsqueda hacia contenido médico relevante
+# robots.txt de VeraSalud Cali
+# https://verasalud.com
 
-# Permitir acceso completo a todos los motores de búsqueda legítimos
+# Permitir que todos los motores rastreen el sitio, excepto rutas sensibles
 User-agent: *
 Allow: /
-
-# Bloquear acceso a archivos técnicos que no son relevantes para pacientes
-Disallow: /_next/
 Disallow: /api/
-Disallow: /.next/
-Disallow: /node_modules/
+Disallow: /_next/
 Disallow: /admin/
 Disallow: /private/
+Disallow: /drafts/
 
-# Bloquear bots maliciosos conocidos que no agregan valor
+# Ubicación del sitemap para Google Search Console y Bing Webmaster
+Sitemap: https://verasalud.com/sitemap.xml
+
+# Retraso para bots menos eficientes, ayuda a reducir carga del servidor
+Crawl-delay: 1
+
+# Especificaciones para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Especificaciones para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo (Slurp)
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Bloqueo de bots abusivos o de scraping
 User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
 Disallow: /
 
 User-agent: SemrushBot
 Disallow: /
 
-# Indicar la ubicación del sitemap para indexación eficiente
-Sitemap: https://verasalud.com/sitemap.xml
+User-agent: DotBot
+Disallow: /
 
-# Información adicional para motores de búsqueda médicos
-# Este sitio contiene información médica profesional sobre:
-# - Medicina interna especializada
-# - Ecografías de alta resolución
-# - Electrocardiogramas
-# - Videoconsultas médicas
-# Ubicación: Cali, Valle del Cauca, Colombia
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
