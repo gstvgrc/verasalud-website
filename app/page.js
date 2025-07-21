@@ -205,8 +205,14 @@ export default function Home() {
           <div className={styles.servicesGrid}>
             
             <div className={styles.serviceCard}>
-              <h3>Medicina Interna Especializada</h3>
-              <p>Consulta de medicina interna con médicos especialistas titulados de la Universidad del Valle. Diagnóstico integral, tratamientos personalizados y seguimiento médico continuo en Cali.</p>
+              <h3>
+                <Link href="/medicina-interna" prefetch={false}>
+                  Medicina Interna Especializada
+                </Link>
+              </h3>
+              <p>
+                Consulta de medicina interna con médicos especialistas titulados de la Universidad del Valle. Diagnóstico integral, tratamientos personalizados y seguimiento médico continuo en Cali.
+              </p>
               <ul>
                 <li>Diagnóstico integral completo</li>
                 <li>Tratamientos personalizados</li>
