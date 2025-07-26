@@ -1,4 +1,3 @@
-// app/layout.js
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
@@ -8,8 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   metadataBase: new URL('https://verasalud.com'),
   title: {
-    default: 'VeraSalud Cali - Medicina Interna y Ecografías Sin Demoras',
-    template: '%s | VeraSalud Cali'
+    default: 'VeraSalud - Medicina Interna y Ecografías en Cali',
+    template: '%s | VeraSalud'
   },
   description: 'Centro médico en Cali especializado en medicina interna, ecografías de alta resolución, electrocardiogramas y consultas virtuales. Médicos Universidad del Valle.',
   keywords: [
@@ -107,40 +106,26 @@ export default function RootLayout({ children }) {
     ],
     medicalSpecialty: [
       'InternalMedicine',
-      'Radiology',
-      'Cardiology'
+      'DiagnosticImaging'
     ],
-    availableService: [
-      {
-        '@type': 'MedicalProcedure',
-        name: 'Consulta de Medicina Interna',
-        description: 'Diagnóstico integral y tratamientos personalizados'
-      },
-      {
-        '@type': 'MedicalProcedure',
-        name: 'Ecografías de Alta Resolución',
-        description: 'Ecografías convencionales y Doppler con tecnología avanzada'
-      },
-      {
-        '@type': 'MedicalProcedure',
-        name: 'Electrocardiogramas',
-        description: 'Detección temprana de arritmias y afecciones cardiacas'
-      },
-      {
-        '@type': 'MedicalProcedure',
-        name: 'Consultas Virtuales',
-        description: 'Atención médica especializada desde casa'
-      }
+    sameAs: [
+      'https://wa.me/573150633005',
+      'https://www.instagram.com/vera_salud_cali',
+      'https://www.facebook.com/profile.php?id=61578207426838'
     ],
     priceRange: '$$'
   }
 
   return (
     <html lang="es-CO">
-      <meta name="language" content="Spanish" />
-<meta name="locale" content="es_CO" />
-
       <head>
+        <meta name="language" content="Spanish" />
+        <meta name="locale" content="es_CO" />
+        <meta name="geo.region" content="CO-VAC" />
+        <meta name="geo.placename" content="Cali, Valle del Cauca" />
+        <meta name="geo.position" content="3.4516;-76.5320" />
+        <meta name="ICBM" content="3.4516, -76.5320" />
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
