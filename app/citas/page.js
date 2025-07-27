@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Agendar Cita | VeraSalud Cali",
-  description: "Agende su cita médica en línea en VeraSalud. Atención sin filas, ecografías y medicina interna en Cali. ¡Reserve hoy mismo!",
+  title: "Agende su Cita Médica | VeraSalud Cali",
+  description: "Programe fácilmente su consulta, ecografía o electrocardiograma en VeraSalud. Atención rápida, sin filas ni demoras, en Cali.",
 };
 
 export default function CitasPage() {
@@ -13,16 +13,21 @@ export default function CitasPage() {
         <link rel="canonical" href="https://verasalud.com/citas" />
       </Head>
       <main>
-        <h1>Agende su Cita</h1>
-        <p>En VeraSalud facilitamos su acceso a la atención médica sin demoras. Puede programar su cita de manera sencilla y rápida.</p>
-        <h2>Opciones de agenda:</h2>
+        <h1>Agende su Cita Médica</h1>
+        <p>En VeraSalud facilitamos su acceso a la salud. Reserve ahora su cita médica con nuestro equipo especializado.</p>
+        <h2>Servicios disponibles:</h2>
         <ul>
-          <li>Consulta en consultorio de medicina interna</li>
-          <li>Electrocardiograma y valoración prequirúrgica</li>
-          <li>Ecografías abdominales, hepáticas, de mama, y más</li>
+          <li>Consulta de medicina interna</li>
+          <li>Ecografías diagnósticas</li>
+          <li>Electrocardiograma</li>
+          <li>Teleconsulta</li>
         </ul>
-        <p>Contáctenos por WhatsApp o a través del formulario para confirmar su disponibilidad.</p>
-        <p>Atención con calidad, calidez y experiencia clínica. ¡Su salud es nuestra prioridad!</p>
+        <h2>Formas de agendar:</h2>
+        <p><strong>Teléfono:</strong> +57 311 123 4567</p>
+        <p><strong>WhatsApp:</strong> +57 311 123 4567</p>
+        <p><strong>Correo:</strong> citas@verasalud.com</p>
+        <p><strong>Formulario web:</strong> Disponible pronto</p>
+        <p>No espere más. ¡Hoy es su día para cuidar su salud!</p>
       </main>
     </>
   );
