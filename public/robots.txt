@@ -1,54 +1,15 @@
 # robots.txt de VeraSalud Cali
-# https://verasalud.com
-
-# Permitir que todos los motores rastreen el sitio, excepto rutas sensibles
 User-agent: *
-Allow: /
+Allow: /medicina-interna
+Allow: /servicios/
+Allow: /servicios/ecografias/
+Allow: /servicios/electrocardiograma
+Allow: /servicios/telemedicina
+Allow: /videoconsulta
+Allow: /sobre-nosotros
+Allow: /contacto
+Allow: /citas
+Allow: /blog
 Disallow: /api/
 Disallow: /_next/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /drafts/
-
-# Ubicación del sitemap para Google Search Console y Bing Webmaster
 Sitemap: https://verasalud.com/sitemap.xml
-
-# Retraso para bots menos eficientes, ayuda a reducir carga del servidor
-Crawl-delay: 1
-
-# Especificaciones para Google
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-# Especificaciones para Bing
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-# Yahoo (Slurp)
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
-
-# Bloqueo de bots abusivos o de scraping
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: Yandex
-Disallow: /
-
-User-agent: Baiduspider
-Disallow: /

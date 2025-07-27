@@ -24,8 +24,14 @@ const nextConfig = {
   // Compresión de archivos
   compress: true,
   
-  // Trailing slash para URLs consistentes
-  trailingSlash: true,
+  // Trailing slash desactivado para coincidir con URL canónicas
+  trailingSlash: false,
+
+  // Configuración de internacionalización
+  i18n: {
+    locales: ['es-CO'],
+    defaultLocale: 'es-CO',
+  },
   
   // Configuración de headers de seguridad y SEO
   async headers() {
@@ -74,7 +80,17 @@ const nextConfig = {
       // Ejemplo: redirigir URLs antiguas a nuevas
       {
         source: '/medicina-general',
-        destination: '/servicios/medicina-interna',
+        destination: '/medicina-interna',
+        permanent: true,
+      },
+      {
+        source: '/ecografias',
+        destination: '/servicios/ecografias',
+        permanent: true,
+      },
+      {
+        source: '/electrocardiogramas',
+        destination: '/servicios/electrocardiograma',
         permanent: true,
       },
       // Redirigir index.html a raíz
