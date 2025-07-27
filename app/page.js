@@ -222,7 +222,11 @@ export default function Home() {
             </div>
 
             <div className={styles.serviceCard}>
-              <h3>Electrocardiograma Especializado</h3>
+              <h3>
+                <Link href="/servicios/electrocardiograma" prefetch={false}>
+                  Electrocardiograma Especializado
+                </Link>
+              </h3>
               <p>Electrocardiogramas con especialistas en cardiología. Detección temprana de arritmias y afecciones cardiacas. Equipos modernos y diagnóstico preciso en Cali.</p>
               <ul>
                 <li>Detección temprana precisa</li>
@@ -233,7 +237,11 @@ export default function Home() {
             </div>
 
             <div className={styles.serviceCard}>
-              <h3>Ecografías de Alta Resolución</h3>
+              <h3>
+                <Link href="/servicios/ecografias" prefetch={false}>
+                  Ecografías de Alta Resolución
+                </Link>
+              </h3>
               <p>Ecografías convencionales y Doppler con tecnología de alta resolución. Detecta afecciones antes de síntomas. Resultados inmediatos y estudios precisos en Cali.</p>
               <ul>
                 <li>Tecnología de alta resolución</li>
