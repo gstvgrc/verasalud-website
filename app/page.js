@@ -284,12 +284,13 @@ export default function Home() {
       {/* Team Photo Section - Preparado para imagen */}
       <section className={styles.team}>
         <div className={styles.container}>
-          <Image 
-            src="/equipo-medico.jpg" 
-            alt="Equipo médico de VeraSalud" 
-            width={1200} 
+          <Image
+            src="/equipo-medico.jpg"
+            alt="Equipo médico de VeraSalud"
+            width={1200}
             height={600}
             className={styles.teamPhoto}
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
         </div>
       </section>
