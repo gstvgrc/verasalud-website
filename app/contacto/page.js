@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Cont\u00e1ctenos | VeraSalud Cali",
-  description: "Solicite su cita m\u00e9dica o haga sus consultas a trav\u00e9s de nuestros canales de contacto. Atenci\u00f3n r\u00e1pida, amable y sin filas en VeraSalud Cali.",
+  title: "Contacto | VeraSalud Cali",
+  description: "Contáctenos para agendar su cita médica en VeraSalud: especialistas en medicina interna y ecografías en Cali. Atención rápida y sin demoras.",
 };
 
 export default function ContactoPage() {
@@ -13,15 +13,17 @@ export default function ContactoPage() {
         <link rel="canonical" href="https://verasalud.com/contacto" />
       </Head>
       <main>
-        <h1>Cont\u00e1ctenos</h1>
-        <p>\u00bfDesea agendar una cita m\u00e9dica, una ecograf\u00eda o teleconsulta? En VeraSalud le brindamos atenci\u00f3n inmediata y sin demoras.</p>
+        <h1>Contáctenos</h1>
+        <p>¿Desea agendar una consulta médica o tiene preguntas sobre nuestros servicios?</p>
+        <p>Estamos disponibles para atenderle de manera rápida y cordial.</p>
         <ul>
-          <li><strong>WhatsApp:</strong> +57 316 000 0000</li>
-          <li><strong>Correo electr\u00f3nico:</strong> contacto@verasalud.com</li>
-          <li><strong>Direcci\u00f3n:</strong> Calle 00 #00-00, Cali, Colombia</li>
-          <li><strong>Horario:</strong> Lunes a viernes, 7:00 a.\u00a0m. – 6:00 p.\u00a0m.</li>
+          <li>📍 Dirección: Calle 5 # 25-36, Cali, Colombia</li>
+          <li>📞 Teléfono: (602) 345 6789</li>
+          <li>📱 WhatsApp: +57 315 678 9012</li>
+          <li>📧 Correo: contacto@verasalud.com</li>
         </ul>
-        <p>\u00a1Escr\u00edbanos y reciba la atenci\u00f3n profesional que usted merece!</p>
+        <p>Puede escribirnos directamente por WhatsApp o llenar nuestro formulario en la sección de citas.</p>
+        <p>¡Estamos para servirle con calidad y calidez humana!</p>
       </main>
     </>
   );
