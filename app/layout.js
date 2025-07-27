@@ -80,7 +80,8 @@ export default function RootLayout({ children }) {
     telephone: '+57-602-394-2289',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Carrera 77A # 3D - 05',
+      streetAddress:
+        'Carrera 77A #3D-05, Barrio Nápoles. Atrás del Hospital Psiquiátrico del Valle.',
       addressLocality: 'Cali',
       addressRegion: 'Valle del Cauca',
       postalCode: '760001',
