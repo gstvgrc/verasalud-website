@@ -119,7 +119,7 @@ export default function EcografiaOsteomuscularPage() {
             <strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong>
           </p>
         </div>
-        <Image src="/ecografia-osteomuscular.jpg" alt="Ecografía de músculos y articulaciones" width={800} height={500} />
+        <Image src="/ecografia-osteomuscular.jpg" alt="Ecografía de músculos y articulaciones" width={800} height={500} loading="lazy" />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

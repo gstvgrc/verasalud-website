@@ -47,7 +47,7 @@ export default function EcografiaDopplerPage() {
           <p>Ayuda a planear tratamientos vasculares y a prevenir complicaciones.</p>
           <p><strong>Agenda tu cita hoy mismo.</strong></p>
         </div>
-        <Image src="/ecografia-doppler.jpg" alt="Aplicación de ecografía Doppler" width={800} height={500} />
+        <Image src="/ecografia-doppler.jpg" alt="Aplicación de ecografía Doppler" width={800} height={500} loading="lazy" />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

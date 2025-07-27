@@ -119,6 +119,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es-CO">
       <head>
+        <meta charSet="utf-8" />
         <meta name="language" content="Spanish" />
         <meta name="locale" content="es_CO" />
         <meta name="geo.region" content="CO-VAC" />
