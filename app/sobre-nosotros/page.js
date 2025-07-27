@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Sobre Nosotros | VeraSalud Cali",
-  description: "Conozca al equipo médico de VeraSalud. Médicos especialistas con más de 20 años de experiencia en Medicina Interna, Ecografía y atención clínica de alta calidad en Cali.",
+  description: "Conozca el equipo médico de VeraSalud: especialistas en medicina interna, ecografías y diagnóstico clínico con más de 20 años de experiencia.",
 };
 
 export default function SobreNosotrosPage() {
@@ -14,9 +14,10 @@ export default function SobreNosotrosPage() {
       </Head>
       <main>
         <h1>Sobre Nosotros</h1>
-        <p>En VeraSalud, brindamos atención médica integral con calidad humana. Nuestro equipo está conformado por especialistas en Medicina Interna, Ecografía Diagnóstica y Medicina Preventiva, todos formados en la Universidad del Valle con más de 20 años de experiencia clínica.</p>
-        <p>Ofrecemos un enfoque cálido, profesional y sin demoras. Creemos en una medicina centrada en la persona, combinando tecnología diagnóstica de alta precisión con el trato humano que cada paciente merece.</p>
-        <p>Confíe en nosotros para cuidar su salud con responsabilidad, empatía y excelencia médica.</p>
+        <p>En VeraSalud trabajamos con excelencia médica, calidez humana y tecnología diagnóstica de alta precisión.</p>
+        <p>Somos un equipo de médicos especialistas liderado por el Dr. Juan García, internista graduado de la Universidad del Valle, con más de 20 años de experiencia en el manejo de enfermedades crónicas.</p>
+        <p>Ofrecemos servicios como medicina interna, ecografías diagnósticas, electrocardiogramas, monitoreo metabólico y atención sin filas ni demoras.</p>
+        <p>Nuestra misión es brindarle una atención profesional, clara y oportuna para mejorar su calidad de vida.</p>
       </main>
     </>
   );
