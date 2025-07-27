@@ -1,38 +1,6 @@
 export const metadata = {
-  title: "Agendar Cita | VeraSalud Cali",
-  description:
-    "Agenda tu cita médica en VeraSalud Cali para consultas de medicina interna, electrocardiograma o ecografías. Atención sin filas ni demoras. Contáctanos por WhatsApp o teléfono.",
-  keywords: [
-    "agendar cita médica",
-    "medicina interna Cali",
-    "ecografías Cali",
-    "electrocardiograma Cali",
-    "cita médica WhatsApp"
-  ],
-  alternates: { canonical: "https://verasalud.com/citas" },
-  openGraph: {
-    title: "Agendar Cita | VeraSalud Cali",
-    description:
-      "Agenda tu cita médica en VeraSalud Cali para consultas de medicina interna, electrocardiograma o ecografías.",
-    url: "https://verasalud.com/citas",
-    siteName: "VeraSalud",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "VeraSalud Cali cita médica",
-      },
-    ],
-    locale: "es_CO",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Agendar Cita | VeraSalud Cali",
-    description:
-      "Agenda tu cita médica en VeraSalud Cali para consultas de medicina interna, electrocardiograma o ecografías.",
-  },
+  title: "Agenda tu Cita Médica | VeraSalud Cali",
+  description: "Solicita tu cita médica, ecografía o electrocardiograma con VeraSalud en Cali. Atención sin demoras y con profesionales certificados.",
 };
 
 export default function CitasPage() {
@@ -40,44 +8,27 @@ export default function CitasPage() {
     <main>
       <section>
         <h1>Agenda tu Cita</h1>
-        <p>
-          En VeraSalud te lo ponemos fácil. Puedes agendar tu cita médica con tan
-          solo un mensaje o una llamada. Sin filas, sin trámites complejos, y con
-          atención humana.
-        </p>
 
-        <h2>Servicios disponibles para agendar</h2>
+        <p>En VeraSalud cuidamos tu tiempo. Puedes agendar tus citas médicas de manera rápida, segura y sin filas. Nuestro equipo está listo para atenderte con calidez y profesionalismo.</p>
+
+        <h2>Servicios disponibles:</h2>
         <ul>
-          <li>Consulta en Medicina Interna</li>
-          <li>Electrocardiograma (ECG)</li>
-          <li>Ecografías: abdominal, doppler, tiroides, renal, obstétrica y más</li>
+          <li>Consulta en medicina interna</li>
+          <li>Electrocardiograma</li>
+          <li>Ecografías: abdominal, hepática, pélvica, doppler, musculoesquelética, mamaria y obstétrica</li>
+          <li>Videoconsulta desde cualquier lugar</li>
         </ul>
 
         <h2>¿Cómo agendar?</h2>
-        <p>
-          Escríbenos directamente a nuestro{' '}
-          <a href="https://wa.me/573150633005" target="_blank" rel="noopener noreferrer">
-            WhatsApp 315 063 3005
-          </a>{' '}
-          o llama al <a href="tel:+576023942289">(602) 394 2289</a>.
-        </p>
-        <p>
-          Nuestra auxiliar de recepción te brindará las opciones de horarios
-          disponibles según tu preferencia.
-        </p>
+        <ul>
+          <li>Teléfono: (602) 394 2289</li>
+          <li>WhatsApp: 315 063 3005</li>
+          <li>Email: info@verasalud.com</li>
+        </ul>
 
-        <h2>Horarios de atención</h2>
-        <p>
-          Lunes a viernes: 8:00 a.m. a 5:00 p.m.
-          <br />
-          Sábados: 8:00 a.m. a 12:00 m.
-        </p>
+        <p>Te esperamos en: Carrera 77A #3D-05, Barrio Nápoles, Cali – detrás del Hospital Psiquiátrico del Valle.</p>
 
-        <p>
-          También puedes escribirnos al correo{' '}
-          <a href="mailto:info@verasalud.com">info@verasalud.com</a> si deseas
-          mayor información.
-        </p>
+        <p><strong>¡Tu salud no puede esperar!</strong></p>
       </section>
     </main>
   );
