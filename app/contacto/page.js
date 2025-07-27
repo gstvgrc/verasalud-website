@@ -1,6 +1,28 @@
 export const metadata = {
-  title: "Contáctanos | VeraSalud Cali",
-  description: "Agenda tu cita médica en VeraSalud. Atención especializada en medicina interna, ecografías y electrocardiogramas en Cali, sin demoras. Llama o escríbenos.",
+  title: "Contacto | VeraSalud Cali",
+  description: "Contáctanos para agendar tu consulta médica, ecografía o electrocardiograma en VeraSalud Cali. Atención sin demoras y con calidez humana.",
+  alternates: { canonical: "https://verasalud.com/contacto" },
+  openGraph: {
+    title: "Contacto | VeraSalud Cali",
+    description: "Contáctanos para agendar tu consulta médica, ecografía o electrocardiograma en VeraSalud Cali. Atención sin demoras y con calidez humana.",
+    url: "https://verasalud.com/contacto",
+    siteName: "VeraSalud",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "VeraSalud - Contacto",
+      },
+    ],
+    locale: "es_CO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contacto | VeraSalud Cali",
+    description: "Contáctanos para agendar tu consulta médica, ecografía o electrocardiograma en VeraSalud Cali. Atención sin demoras y con calidez humana.",
+  },
 };
 
 export default function ContactoPage() {
@@ -8,40 +30,27 @@ export default function ContactoPage() {
     <main>
       <section>
         <h1>Contáctanos</h1>
-        <p>En VeraSalud estamos listos para atenderte con calidad, amabilidad y sin filas. Puedes comunicarte con nosotros para agendar tu cita, resolver dudas o pedir información sobre nuestros servicios de medicina interna, ecografías y electrocardiogramas.</p>
+
+        <p>En VeraSalud estamos listos para atenderte con profesionalismo, calidez y sin esperas. Puedes comunicarte con nosotros por los siguientes medios:</p>
 
         <h2>Datos de contacto</h2>
         <ul>
-          <li>Teléfono fijo: (602) 394 2289</li>
-          <li>WhatsApp: 315 063 3005</li>
-          <li>Correo electrónico: info@verasalud.com</li>
-          <li>Dirección: Carrera 77A 3D-05, Barrio Nápoles, Cali, Colombia. Atrás del Hospital Psiquiátrico del Valle.</li>
+          <li>📞 Teléfono: (602) 394 2289</li>
+          <li>💬 WhatsApp: 315 063 3005</li>
+          <li>✉️ Correo: info@verasalud.com</li>
+          <li>📍 Dirección: Carrera 77A #3D-05, Barrio Nápoles. Cali, Colombia. <br /> Estamos justo detrás del Hospital Psiquiátrico del Valle.</li>
         </ul>
 
-        <h2>Horario de atención</h2>
-        <p>Lunes a viernes: 8:00 a.m. – 5:00 p.m.<br />Sábados: 8:00 a.m. – 12:00 m.</p>
+        <h2>Horarios de atención</h2>
+        <p>Lunes a viernes: 8:00 a.m. a 5:00 p.m.<br />
+        Sábados: 8:00 a.m. a 12:00 m.</p>
 
-        <h2>Formulario de contacto</h2>
-        <form>
-          <label htmlFor="nombre">Nombre:</label><br />
-          <input type="text" id="nombre" name="nombre" required /><br /><br />
+        <h2>¿Cómo llegar?</h2>
+        <p>Estamos ubicados en el barrio Nápoles, a solo una cuadra del Hospital Psiquiátrico del Valle. Puedes llegar fácilmente en vehículo particular o en transporte público.</p>
 
-          <label htmlFor="correo">Correo electrónico:</label><br />
-          <input type="email" id="correo" name="correo" required /><br /><br />
-
-          <label htmlFor="mensaje">Mensaje:</label><br />
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br /><br />
-
-          <button type="submit">Enviar mensaje</button>
-        </form>
-
-        <p>Uno de nuestros asesores se pondrá en contacto contigo lo antes posible.</p>
+        <h2>Agenda tu cita</h2>
+        <p>Contáctanos por WhatsApp o llámanos para agendar tu consulta con medicina interna, ecografía o electrocardiograma.</p>
       </section>
-
-      <footer>
-        <p>Tel: (602) 394 2289 | WhatsApp: 315 063 3005 | Email: info@verasalud.com</p>
-        <p>Ubicación: Carrera 77A 3D-05, Barrio Nápoles, Cali, Colombia</p>
-      </footer>
     </main>
   );
 }
