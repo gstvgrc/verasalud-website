@@ -9,7 +9,7 @@ import Link from 'next/link'
 // Metadata extraída del Head anterior
 export const metadata = {
   title: 'VeraSalud Cali - Medicina Interna y Ecografías Alta Resolución | Especialistas Universidad del Valle',
-  description: 'VeraSalud: Medicina Interna y Ecografías de Alta Resolución sin demoras en Cali. Médicos especialistas Universidad del Valle. Carrera 77A #3D-05, Barrio Nápoles (atrás del Hospital Psiquiátrico del Valle). Tel: (602) 394 2289. Agenda tu cita hoy.',
+  description: 'VeraSalud: Medicina Interna y Ecografías de Alta Resolución sin demoras en Cali. Médicos especialistas Universidad del Valle. Carrera 77A #3D-05, Barrio Nápoles (cerca al Hospital Psiquiátrico del Valle). Tel: (602) 394 2289. Agenda tu cita hoy.',
   keywords: 'medicina interna cali, ecografías alta resolución cali, médicos especialistas universidad del valle, electrocardiograma cali, medicina interna nápoles cali, ecografías doppler cali, sin demoras, tecnología avanzada',
   authors: [{ name: 'VeraSalud' }],
   creator: 'VeraSalud',
@@ -51,7 +51,7 @@ const jsonLdMedicalOrg = {
   "email": "info@verasalud.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrera 77A #3D-05, Barrio Nápoles. Atrás del Hospital Psiquiátrico del Valle.",
+    "streetAddress": "Carrera 77A #3D-05, Barrio Nápoles. cerca al Hospital Psiquiátrico del Valle.",
     "addressLocality": "Cali",
     "addressRegion": "Valle del Cauca",
     "postalCode": "760001",
@@ -120,7 +120,7 @@ const jsonLdLocalBusiness = {
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrera 77A #3D-05, Barrio Nápoles. Atrás del Hospital Psiquiátrico del Valle.",
+    "streetAddress": "Carrera 77A #3D-05, Barrio Nápoles. cerca al Hospital Psiquiátrico del Valle.",
     "addressLocality": "Cali",
     "addressRegion": "Valle del Cauca",
     "postalCode": "760001",
@@ -237,10 +237,10 @@ export default function Home() {
                   Electrocardiograma Especializado
                 </Link>
               </h3>
-              <p>Electrocardiogramas con especialistas en cardiología. Detección temprana de arritmias y afecciones cardiacas. Equipos modernos y diagnóstico preciso en Cali.</p>
+              <p>Electrocardiogramas con especialistas en temas de cardiología. Detección temprana de arritmias y afecciones cardiacas. Equipos modernos y diagnóstico preciso en Cali.</p>
               <ul>
                 <li>Detección temprana precisa</li>
-                <li>Especialistas en cardiología</li>
+                <li>Especialistas en temas de cardiología</li>
                 <li>Equipos de última tecnología</li>
                 <li>Diagnóstico inmediato</li>
               </ul>
@@ -351,7 +351,7 @@ export default function Home() {
               <div className={styles.contactItem}>
                 <h4>Dirección en Cali</h4>
                 <p>
-                  Carrera 77A #3D-05<br />Barrio Nápoles. Atrás del Hospital
+                  Carrera 77A #3D-05<br />Barrio Nápoles. cerca al Hospital
                   Psiquiátrico del Valle.<br />Cali, Colombia
                 </p>
               </div>
@@ -410,7 +410,7 @@ export default function Home() {
             <div>
               <h4>Contacto en Cali</h4>
               <p>
-                Carrera 77A #3D-05<br />Barrio Nápoles. Atrás del Hospital
+                Carrera 77A #3D-05<br />Barrio Nápoles. cerca al Hospital
                 Psiquiátrico del Valle.<br />Cali, Colombia<br />Tel: (602) 394
                 2289<br />WhatsApp: 315 063 3005
               </p>

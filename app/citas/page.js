@@ -26,7 +26,7 @@ export default function CitasPage() {
           <li>Email: info@verasalud.com</li>
         </ul>
 
-        <p>Te esperamos en: Carrera 77A #3D-05, Barrio Nápoles, Cali – detrás del Hospital Psiquiátrico del Valle.</p>
+        <p>Te esperamos en: Carrera 77A #3D-05, Barrio Nápoles, Cali – cerca al Hospital Psiquiátrico del Valle.</p>
 
         <p><strong>¡Tu salud no puede esperar!</strong></p>
       </section>

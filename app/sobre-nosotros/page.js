@@ -38,7 +38,7 @@ export default function SobreNosotrosPage() {
         <p>Brindar atención médica de alta calidad, sin filas ni demoras, con una experiencia cercana y profesional para cada paciente.</p>
 
         <h2>Ubicación</h2>
-        <p>Carrera 77A #3D-05, Barrio Nápoles, Cali – detrás del Hospital Psiquiátrico del Valle.</p>
+        <p>Carrera 77A #3D-05, Barrio Nápoles, Cali – cerca al Hospital Psiquiátrico del Valle.</p>
 
         <h2>Contáctanos</h2>
         <ul>
