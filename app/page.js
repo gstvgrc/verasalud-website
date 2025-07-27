@@ -159,7 +159,13 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <div className={styles.logo}>
-            <Image src="/logo-verasalud.png" alt="VeraSalud Logo" width={100} height={100} />
+            <Image
+              src="/logo-verasalud.png"
+              alt="VeraSalud Logo"
+              width={150}
+              height={150}
+              className={styles.logoHeader}
+            />
             <div>
               <h1>VeraSalud</h1>
               <p>Medicina Interna & Ecografías</p>

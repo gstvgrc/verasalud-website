@@ -32,8 +32,20 @@
 }
 
 .logo img {
-  height: 100px;
   width: auto;
+}
+
+/* Tamaño del logo en cabecera */
+.logoHeader {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .logoHeader {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .logo h1 {
