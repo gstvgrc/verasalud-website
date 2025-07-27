@@ -188,6 +188,8 @@ export default function Home() {
         </div>
       </header>
 
+      <main>
+
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
@@ -330,6 +332,9 @@ export default function Home() {
       </section>
 
       {/* Footer con Redes Sociales */}
+</main>
+
+
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.footerContent}>
