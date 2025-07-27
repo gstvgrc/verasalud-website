@@ -165,9 +165,11 @@ export default function Home() {
               width={150}
               height={150}
               className={styles.logoHeader}
+              priority
+              sizes="(max-width: 768px) 100px, 150px"
             />
             <div>
-              <h1>VeraSalud</h1>
+              <span className={styles.logoTitle}>VeraSalud</span>
               <p>Medicina Interna & Ecografías</p>
             </div>
           </div>

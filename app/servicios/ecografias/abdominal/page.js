@@ -105,7 +105,14 @@ export default function EcografiaAbdominalPage() {
             <strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong>
           </p>
         </div>
-        <Image src="/ecografia-abdominal.jpg" alt="Equipo realizando ecografía abdominal" width={800} height={500} loading="lazy" />
+        <Image
+          src="/ecografia-abdominal.jpg"
+          alt="Equipo realizando ecografía abdominal"
+          width={800}
+          height={500}
+          sizes="(max-width: 768px) 100vw, 800px"
+          priority
+        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

@@ -57,7 +57,8 @@ export default function EcografiasPage() {
           alt="Equipo m\u00e9dico realizando ecograf\u00eda"
           width={800}
           height={500}
-          loading="lazy"
+          sizes="(max-width: 768px) 100vw, 800px"
+          priority
         />
       </section>
 
