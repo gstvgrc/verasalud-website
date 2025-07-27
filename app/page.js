@@ -9,7 +9,7 @@ import Link from 'next/link'
 // Metadata extraída del Head anterior
 export const metadata = {
   title: 'VeraSalud Cali - Medicina Interna y Ecografías Alta Resolución | Especialistas Universidad del Valle',
-  description: 'VeraSalud: Medicina Interna y Ecografías de Alta Resolución sin demoras en Cali. Médicos especialistas Universidad del Valle. Barrio Nápoles. Tel: (602) 394-2289. Agenda tu cita hoy.',
+  description: 'VeraSalud: Medicina Interna y Ecografías de Alta Resolución sin demoras en Cali. Médicos especialistas Universidad del Valle. Carrera 77A #3D-05, Barrio Nápoles (atrás del Hospital Psiquiátrico del Valle). Tel: (602) 394 2289. Agenda tu cita hoy.',
   keywords: 'medicina interna cali, ecografías alta resolución cali, médicos especialistas universidad del valle, electrocardiograma cali, medicina interna nápoles cali, ecografías doppler cali, sin demoras, tecnología avanzada',
   authors: [{ name: 'VeraSalud' }],
   creator: 'VeraSalud',
@@ -51,7 +51,7 @@ const jsonLdMedicalOrg = {
   "email": "info@verasalud.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrera 77A # 3D - 05",
+    "streetAddress": "Carrera 77A #3D-05, Barrio Nápoles. Atrás del Hospital Psiquiátrico del Valle.",
     "addressLocality": "Cali",
     "addressRegion": "Valle del Cauca",
     "postalCode": "760001",
@@ -120,7 +120,7 @@ const jsonLdLocalBusiness = {
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrera 77A # 3D - 05",
+    "streetAddress": "Carrera 77A #3D-05, Barrio Nápoles. Atrás del Hospital Psiquiátrico del Valle.",
     "addressLocality": "Cali",
     "addressRegion": "Valle del Cauca",
     "postalCode": "760001",
@@ -348,7 +348,10 @@ export default function Home() {
               <h3>Información de Contacto</h3>
               <div className={styles.contactItem}>
                 <h4>Dirección en Cali</h4>
-                <p>Carrera 77A # 3D - 05<br />Barrio Nápoles, Cali, Valle del Cauca</p>
+                <p>
+                  Carrera 77A #3D-05<br />Barrio Nápoles. Atrás del Hospital
+                  Psiquiátrico del Valle.<br />Cali, Colombia
+                </p>
               </div>
               <div className={styles.contactItem}>
                 <h4>Teléfono</h4>
@@ -404,7 +407,11 @@ export default function Home() {
             </div>
             <div>
               <h4>Contacto en Cali</h4>
-              <p>Carrera 77A # 3D - 05<br />Barrio Nápoles, Cali<br />Tel: (602) 394 2289<br />WhatsApp: 315 063 3005</p>
+              <p>
+                Carrera 77A #3D-05<br />Barrio Nápoles. Atrás del Hospital
+                Psiquiátrico del Valle.<br />Cali, Colombia<br />Tel: (602) 394
+                2289<br />WhatsApp: 315 063 3005
+              </p>
             </div>
           </div>
           <div className={styles.footerBottom}>
