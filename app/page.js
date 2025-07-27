@@ -113,7 +113,7 @@ const jsonLdLocalBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "VeraSalud",
-  "image": "https://verasalud.com/logo.png",
+  "image": "https://verasalud.com/logo-verasalud.png",
   "description": "Medicina Interna y Ecografías de Alta Resolución sin filas ni demoras. Médicos especialistas de la Universidad del Valle en Cali, Colombia.",
   "url": "https://verasalud.com",
   "telephone": "+57-602-394-2289",
