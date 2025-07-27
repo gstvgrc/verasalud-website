@@ -248,6 +248,12 @@
   position: relative;
 }
 
+.serviceCard p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
 .serviceCard li::before {
   content: "✓";
   position: absolute;
@@ -354,6 +360,11 @@
   text-decoration: underline;
 }
 
+.contactItem p {
+  color: #64748b;
+  margin: 0;
+}
+
 .contactForm form {
   display: flex;
   flex-direction: column;
@@ -405,6 +416,12 @@
   padding: 0.25rem 0;
 }
 
+.footer p,
+.footer li {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
 .socialLinks {
   display: flex;
   gap: 1rem;
@@ -434,6 +451,11 @@
   padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.2);
   color: #ccc;
+}
+
+.footerBottom p {
+  color: #9ca3af;
+  margin: 0;
 }
 
 /* Media Queries para Responsive */
