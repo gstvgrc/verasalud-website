@@ -36,7 +36,7 @@ export default function EcografiaAbdominalPage() {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className={styles.hero}>
         <div className={styles.heroContent}>
@@ -115,6 +115,6 @@ export default function EcografiaAbdominalPage() {
           </p>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function MedicinaInternaPage() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Consulta de Medicina Interna</h1>
@@ -40,6 +40,6 @@ export default function MedicinaInternaPage() {
           </p>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

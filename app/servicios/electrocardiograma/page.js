@@ -41,7 +41,7 @@ export default function ElectrocardiogramaPage() {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className={styles.hero}>
         <div className={styles.heroContent}>
@@ -109,6 +109,6 @@ export default function ElectrocardiogramaPage() {
           </p>
         </div>
       </section>
-    </div>
+    </main>
   )
 }
