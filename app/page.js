@@ -257,6 +257,46 @@ export default function Home() {
                 <li>Ecografías Doppler especializadas</li>
                 <li>Sin listas de espera</li>
               </ul>
+              <div className={styles.ecografiaLinks}>
+                <h4>Tipos de Ecografías</h4>
+                <ul>
+                  <li>
+                    <Link href="/servicios/ecografias/abdominal" prefetch={false}>
+                      Abdominal
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/servicios/ecografias/doppler" prefetch={false}>
+                      Doppler
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/servicios/ecografias/hepatica" prefetch={false}>
+                      Hepática
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/servicios/ecografias/mama" prefetch={false}>
+                      Mamaria
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/servicios/ecografias/osteomuscular" prefetch={false}>
+                      Osteomuscular
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/servicios/ecografias/pelvica" prefetch={false}>
+                      Pélvica
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/servicios/ecografias/obstetrica" prefetch={false}>
+                      Obstétrica
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
 
           </div>
