@@ -76,6 +76,7 @@ export default function RootLayout({ children }) {
     name: 'VeraSalud',
     description: 'Centro médico especializado en medicina interna y ecografías de alta resolución',
     url: 'https://verasalud.com',
+    logo: "/logo-verasalud.png",
     telephone: '+57-602-394-2289',
     address: {
       '@type': 'PostalAddress',
