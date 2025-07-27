@@ -97,6 +97,7 @@
   background: none;
   border: none;
   font-size: 1.5rem;
+  padding: 0.5rem;
   color: var(--primary-blue);
   cursor: pointer;
 }
@@ -104,6 +105,11 @@
 /* Navigation for mobile menu */
 .mobileNav {
   display: none;
+}
+
+.mobileNav a {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* Hero Section */
