@@ -1,12 +1,19 @@
 export const metadata = {
-  title: "Agenda tu cita | VeraSalud Cali",
+  title: "Agendar Cita | VeraSalud Cali",
   description:
-    "Solicita tu cita médica fácilmente en VeraSalud. Medicina interna, ecografías y electrocardiogramas en Cali sin demoras. Contáctanos por WhatsApp o llena el formulario.",
+    "Agenda tu cita médica en VeraSalud Cali para consultas de medicina interna, electrocardiograma o ecografías. Atención sin filas ni demoras. Contáctanos por WhatsApp o teléfono.",
+  keywords: [
+    "agendar cita médica",
+    "medicina interna Cali",
+    "ecografías Cali",
+    "electrocardiograma Cali",
+    "cita médica WhatsApp"
+  ],
   alternates: { canonical: "https://verasalud.com/citas" },
   openGraph: {
-    title: "Agenda tu cita | VeraSalud Cali",
+    title: "Agendar Cita | VeraSalud Cali",
     description:
-      "Solicita tu cita médica fácilmente en VeraSalud. Medicina interna, ecografías y electrocardiogramas en Cali sin demoras.",
+      "Agenda tu cita médica en VeraSalud Cali para consultas de medicina interna, electrocardiograma o ecografías.",
     url: "https://verasalud.com/citas",
     siteName: "VeraSalud",
     images: [
@@ -22,9 +29,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agenda tu cita | VeraSalud Cali",
+    title: "Agendar Cita | VeraSalud Cali",
     description:
-      "Solicita tu cita médica fácilmente en VeraSalud. Medicina interna, ecografías y electrocardiogramas sin filas en Cali.",
+      "Agenda tu cita médica en VeraSalud Cali para consultas de medicina interna, electrocardiograma o ecografías.",
   },
 };
 
@@ -32,75 +39,44 @@ export default function CitasPage() {
   return (
     <main>
       <section>
-        <h1>Agenda tu cita</h1>
+        <h1>Agenda tu Cita</h1>
         <p>
-          En VeraSalud queremos que tu experiencia médica sea rápida, cómoda y sin
-          barreras. Agenda tu cita con nuestros especialistas en medicina interna,
-          ecografías y electrocardiogramas de forma sencilla:
+          En VeraSalud te lo ponemos fácil. Puedes agendar tu cita médica con tan
+          solo un mensaje o una llamada. Sin filas, sin trámites complejos, y con
+          atención humana.
         </p>
 
-        <h2>Opciones para agendar</h2>
+        <h2>Servicios disponibles para agendar</h2>
         <ul>
-          <li>📞 Llama al <a href="tel:+576023942289">(602) 394 2289</a></li>
-          <li>
-            💬 Escribe al
-            <a href="https://wa.me/573150633005" target="_blank" rel="noopener noreferrer">WhatsApp 315 063 3005</a>
-          </li>
-          <li>
-            ✉️ Envía un correo a
-            <a href="mailto:info@verasalud.com">info@verasalud.com</a>
-          </li>
-          <li>📝 Llena el formulario a continuación</li>
+          <li>Consulta en Medicina Interna</li>
+          <li>Electrocardiograma (ECG)</li>
+          <li>Ecografías: abdominal, doppler, tiroides, renal, obstétrica y más</li>
         </ul>
 
-        <h2>Formulario de solicitud</h2>
-        <form>
-          <label htmlFor="nombre">Nombre completo:</label>
-          <br />
-          <input type="text" id="nombre" name="nombre" required />
-          <br />
-          <br />
-
-          <label htmlFor="telefono">Teléfono de contacto:</label>
-          <br />
-          <input type="tel" id="telefono" name="telefono" required />
-          <br />
-          <br />
-
-          <label htmlFor="servicio">Servicio que deseas:</label>
-          <br />
-          <select id="servicio" name="servicio">
-            <option value="medicina">Consulta de medicina interna</option>
-            <option value="ecografia">Ecografía</option>
-            <option value="electro">Electrocardiograma</option>
-            <option value="otro">Otro</option>
-          </select>
-          <br />
-          <br />
-
-          <label htmlFor="mensaje">Mensaje adicional:</label>
-          <br />
-          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-          <br />
-          <br />
-
-          <button type="submit">Solicitar cita</button>
-        </form>
-
-        <p>Uno de nuestros asesores se pondrá en contacto contigo para confirmar la fecha y hora.</p>
-
-        <h2>Ubicación y horario</h2>
+        <h2>¿Cómo agendar?</h2>
         <p>
-          Dirección: Carrera 77A 3D-05, Barrio Nápoles, Cali, Colombia
-          <br />
-          Atrás del Hospital Psiquiátrico del Valle
+          Escríbenos directamente a nuestro{' '}
+          <a href="https://wa.me/573150633005" target="_blank" rel="noopener noreferrer">
+            WhatsApp 315 063 3005
+          </a>{' '}
+          o llama al <a href="tel:+576023942289">(602) 394 2289</a>.
         </p>
         <p>
-          Horario de atención:
+          Nuestra auxiliar de recepción te brindará las opciones de horarios
+          disponibles según tu preferencia.
+        </p>
+
+        <h2>Horarios de atención</h2>
+        <p>
+          Lunes a viernes: 8:00 a.m. a 5:00 p.m.
           <br />
-          Lunes a viernes: 8:00 a.m. – 5:00 p.m.
-          <br />
-          Sábados: 8:00 a.m. – 12:00 m.
+          Sábados: 8:00 a.m. a 12:00 m.
+        </p>
+
+        <p>
+          También puedes escribirnos al correo{' '}
+          <a href="mailto:info@verasalud.com">info@verasalud.com</a> si deseas
+          mayor información.
         </p>
       </section>
     </main>
