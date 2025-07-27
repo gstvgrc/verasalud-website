@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
     address: {
       '@type': 'PostalAddress',
       streetAddress:
-        'Carrera 77A #3D-05, Barrio Nápoles. Atrás del Hospital Psiquiátrico del Valle.',
+        'Carrera 77A #3D-05, Barrio Nápoles. cerca al Hospital Psiquiátrico del Valle.',
       addressLocality: 'Cali',
       addressRegion: 'Valle del Cauca',
       postalCode: '760001',

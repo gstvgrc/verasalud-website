@@ -38,7 +38,7 @@ export default function ContactoPage() {
           <li>📞 Teléfono: (602) 394 2289</li>
           <li>💬 WhatsApp: 315 063 3005</li>
           <li>✉️ Correo: info@verasalud.com</li>
-          <li>📍 Dirección: Carrera 77A #3D-05, Barrio Nápoles. Cali, Colombia. <br /> Estamos justo detrás del Hospital Psiquiátrico del Valle.</li>
+          <li>📍 Dirección: Carrera 77A #3D-05, Barrio Nápoles. Cali, Colombia. <br /> Estamos justo cerca al Hospital Psiquiátrico del Valle.</li>
         </ul>
 
         <h2>Horarios de atención</h2>
@@ -46,7 +46,7 @@ export default function ContactoPage() {
         Sábados: 8:00 a.m. a 12:00 m.</p>
 
         <h2>¿Cómo llegar?</h2>
-        <p>Estamos ubicados en el barrio Nápoles, a solo una cuadra del Hospital Psiquiátrico del Valle. Puedes llegar fácilmente en vehículo particular o en transporte público.</p>
+        <p>Estamos ubicados en el barrio Nápoles, cerca al Hospital Psiquiátrico del Valle. Puedes llegar fácilmente en vehículo particular o en transporte público.</p>
 
         <h2>Agenda tu cita</h2>
         <p>Contáctanos por WhatsApp o llámanos para agendar tu consulta con medicina interna, ecografía o electrocardiograma.</p>
