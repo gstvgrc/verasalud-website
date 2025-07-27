@@ -262,6 +262,34 @@
   font-weight: bold;
 }
 
+/* Lista de enlaces de ecografías */
+.ecografiaLinks {
+  margin-top: 1rem;
+}
+
+.ecografiaLinks ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.ecografiaLinks li {
+  padding: 0.25rem 0;
+  position: static;
+}
+
+.ecografiaLinks li::before {
+  content: none;
+}
+
+.ecografiaLinks a {
+  color: var(--primary-cyan);
+  text-decoration: none;
+}
+
+.ecografiaLinks a:hover {
+  text-decoration: underline;
+}
+
 /* Convenios Section */
 .convenios {
   padding: 4rem 0;
