@@ -45,12 +45,59 @@ export default function ElectrocardiogramaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1>Electrocardiograma</h1>
-          <p>El electrocardiograma (ECG) es un examen indoloro que mide la actividad eléctrica del corazón.</p>
-          <p>Sirve para diagnosticar arritmias, evaluar el ritmo cardiaco y controlar tratamientos.</p>
-          <p>Durante la prueba se colocan pequeños electrodos sobre tu pecho y extremidades. El procedimiento es rápido y seguro.</p>
-          <p>Entre sus beneficios están la detección temprana de problemas cardiacos y la orientación de terapias adecuadas.</p>
-          <p><strong>Agenda tu cita hoy mismo.</strong></p>
+          <h1>Electrocardiograma en Cali</h1>
+          <p>
+            El <strong>electrocardiograma (ECG)</strong> es un examen de
+            diagnóstico no invasivo que registra la actividad eléctrica del
+            corazón en tiempo real. En VeraSalud Cali, este estudio permite al
+            <strong>médico internista</strong> evaluar el ritmo y la función
+            cardiaca de forma rápida y precisa. Es una prueba indolora que ayuda
+            a detectar anomalías como arritmias, isquemia o signos de infarto de
+            manera temprana.
+          </p>
+          <p>
+            <strong>Beneficios clínicos:</strong> Realizarse un
+            electrocardiograma a tiempo facilita la <em>detección temprana</em> de
+            problemas cardiacos, permitiendo iniciar tratamientos oportunos y
+            prevenir complicaciones graves. Un ECG oportuno puede orientar
+            terapias adecuadas y brindar tranquilidad al paciente al descartar
+            alteraciones cuando los resultados son normales. Es una herramienta
+            esencial de diagnóstico cardiaco en chequeos de rutina y
+            emergencias.
+          </p>
+          <p>
+            <strong>Indicaciones frecuentes:</strong>
+          </p>
+          <ul>
+            <li>Dolor torácico, presión en el pecho o palpitaciones frecuentes.</li>
+            <li>
+              Hipertensión arterial, colesterol alto u otros factores de riesgo
+              cardiovascular.
+            </li>
+            <li>Mareos, desmayos (síncope) o falta de aire de causa no explicada.</li>
+            <li>Control de marcapasos o seguimiento de arritmias diagnosticadas.</li>
+            <li>Evaluación preoperatoria o chequeo cardiaco anual preventivo.</li>
+          </ul>
+          <p>
+            <strong>¿Cómo se realiza?</strong> Durante el electrocardiograma te
+            recostarás en una camilla mientras se colocan pequeños electrodos
+            adhesivos en el pecho, brazos y piernas. Estos electrodos están
+            conectados al equipo ECG que registra la actividad eléctrica del
+            corazón. El procedimiento es muy rápido (por lo general dura menos de
+            10 minutos), no produce molestia alguna y es completamente seguro, ya
+            que no emite radiación.
+          </p>
+          <p>
+            <strong>Recomendaciones previas:</strong> Por lo general no se requiere
+            una preparación especial. Se sugiere llevar ropa cómoda que permita
+            descubrir el pecho y evitar cremas corporales en esa área el día del
+            examen, para lograr una mejor adhesión de los electrodos. También es
+            aconsejable estar relajado y evitar ejercicio intenso o cafeína justo
+            antes de la prueba, de modo que el ritmo cardiaco esté en reposo.
+          </p>
+          <p>
+            <strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong>
+          </p>
         </div>
         <Image src="/electrocardiograma.jpg" alt="Paciente realizándose un electrocardiograma" width={800} height={500} />
       </section>
