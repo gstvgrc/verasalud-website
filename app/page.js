@@ -290,6 +290,7 @@ export default function Home() {
             width={1200}
             height={600}
             className={styles.teamPhoto}
+            loading="lazy"
             sizes="(max-width: 768px) 100vw, 1200px"
           />
         </div>

@@ -110,7 +110,7 @@ export default function EcografiaMamaPage() {
             <strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong>
           </p>
         </div>
-        <Image src="/ecografia-mama.jpg" alt="Realización de ecografía mamaria" width={800} height={500} />
+        <Image src="/ecografia-mama.jpg" alt="Realización de ecografía mamaria" width={800} height={500} loading="lazy" />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>
