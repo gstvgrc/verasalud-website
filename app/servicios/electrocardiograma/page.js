@@ -56,6 +56,31 @@ export default function ElectrocardiogramaPage() {
             detectar arritmias, bloqueos y otros trastornos del ritmo cardíaco en
             pocos minutos.
           </p>
+          <figure style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <Image
+              src="/electrocardiograma-verasalud-cali.webp"
+              alt="Paciente realizándose electrocardiograma en VeraSalud Cali con lectura por médico internista"
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 800px"
+              placeholder="blur"
+              blurDataURL="/electrocardiograma-verasalud-cali.webp"
+              priority
+              style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+            />
+            <figcaption style={{ textAlign: 'center', fontSize: '0.9rem', color: '#555', marginTop: '0.5rem' }}>
+              Electrocardiograma digital con interpretación médica inmediata – VeraSalud, Cali
+            </figcaption>
+          </figure>
+          <h2>Electrocardiograma con resultados inmediatos y sin demoras</h2>
+          <p>
+            En VeraSalud realizamos electrocardiogramas digitales que permiten detectar alteraciones del
+            ritmo cardíaco, hipertrofias, bloqueos y signos de enfermedad coronaria. La interpretación la
+            realiza directamente un médico internista con experiencia clínica.
+          </p>
+          <p>
+            <strong>Solicita tu cita y obtén resultados confiables en minutos.</strong>
+          </p>
           <p>
             Nuestros equipos cuentan con tecnología moderna y la interpretación
             es realizada por especialistas en temas de cardiología.
