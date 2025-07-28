@@ -93,14 +93,6 @@ export default function ElectrocardiogramaPage() {
             <strong>Agende su cita con resultados confiables y sin demoras.</strong>
           </p>
         </div>
-        <Image
-          src="/electrocardiograma.jpg"
-          alt="Paciente realizándose un electrocardiograma"
-          width={800}
-          height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>
