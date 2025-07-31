@@ -1,4 +1,8 @@
 :root {
+  color-scheme: only light;
+  background-color: #ffffff;
+  color: #1a1a1a;
+
   --background: #ffffff;
   --foreground: #171717;
 
@@ -12,17 +16,6 @@
   --gray-dark: #343a40;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-
-    /* Opcional: colores adaptados a modo oscuro */
-    --primary-blue: #1a2b56;
-    --primary-pink: #d42d7f;
-    --primary-cyan: #32aabb;
-  }
-}
 
 html,
 body {
@@ -49,8 +42,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.dark-fix {
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
 }
+

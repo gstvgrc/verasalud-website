@@ -36,7 +36,7 @@ export default function EcografiaHepaticaPage() {
   }
 
   return (
-    <main className={styles.container}>
+    <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className={styles.hero}>
         <div className={styles.heroContent}>
