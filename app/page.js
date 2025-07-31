@@ -144,7 +144,7 @@ const jsonLdLocalBusiness = {
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} dark-fix`}>
       {/* Datos estructurados */}
       <script
         type="application/ld+json"

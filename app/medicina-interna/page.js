@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function MedicinaInternaPage() {
   return (
-    <main className={styles.container}>
+    <main className={`${styles.container} dark-fix`}>
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Consulta de Medicina Interna</h1>
