@@ -113,6 +113,7 @@ const jsonLdLocalBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "VeraSalud",
+  // TODO: Reemplazar por versión .webp optimizada del logo
   "image": "https://verasalud.com/logo-verasalud.png",
   "description": "Medicina Interna y Ecografías de Alta Resolución sin filas ni demoras. Médicos especialistas de la Universidad del Valle en Cali, Colombia.",
   "url": "https://verasalud.com",
@@ -159,6 +160,7 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <div className={styles.logo}>
+            {/* TODO: Optimizar el logo a formato .webp */}
             <Image
               src="/logo-verasalud.png"
               alt="VeraSalud Logo"
@@ -205,6 +207,16 @@ export default function Home() {
           <div className={styles.trustIndicators}>
             <p>✓ Médicos Universidad del Valle  ✓ Sin Demoras  ✓ Alta Tecnología</p>
           </div>
+          {/* TODO: Optimizar esta imagen a formato .webp */}
+          <Image
+            src="/equipo-medico.jpg"
+            alt="Equipo médico de VeraSalud"
+            width={1200}
+            height={600}
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className={styles.teamPhoto}
+          />
         </div>
       </section>
 
@@ -322,21 +334,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Team Photo Section - Preparado para imagen */}
-      <section className={styles.team}>
-        <div className={styles.container}>
-          <Image
-            src="/equipo-medico.jpg"
-            alt="Equipo médico de VeraSalud"
-            width={1200}
-            height={600}
-            className={styles.teamPhoto}
-            loading="lazy"
-            sizes="(max-width: 768px) 100vw, 1200px"
-          />
         </div>
       </section>
 

@@ -76,6 +76,7 @@ export default function RootLayout({ children }) {
     name: 'VeraSalud',
     description: 'Centro médico especializado en medicina interna y ecografías de alta resolución',
     url: 'https://verasalud.com',
+    // TODO: Optimizar el logo a formato .webp
     logo: "/logo-verasalud.png",
     telephone: '+57-602-394-2289',
     address: {
@@ -129,6 +130,7 @@ export default function RootLayout({ children }) {
         <meta name="geo.position" content="3.4516;-76.5320" />
         <meta name="ICBM" content="3.4516, -76.5320" />
 
+        {/* TODO: Usar un favicon optimizado en formato .webp */}
         <link rel="icon" href="/logo-verasalud.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#21396f" />
