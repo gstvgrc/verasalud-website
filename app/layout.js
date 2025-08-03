@@ -70,55 +70,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalClinic',
-    name: 'VeraSalud',
-    description: 'Centro médico especializado en medicina interna y ecografías de alta resolución',
-    url: 'https://verasalud.com',
-    // TODO: Optimizar el logo a formato .webp
-    logo: "/logo-verasalud.png",
-    telephone: '+57-602-394-2289',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress:
-        'Carrera 77A #3D-05, Barrio Nápoles. cerca al Hospital Psiquiátrico del Valle.',
-      addressLocality: 'Cali',
-      addressRegion: 'Valle del Cauca',
-      postalCode: '760001',
-      addressCountry: 'CO'
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 3.4516,
-      longitude: -76.5320
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '18:00'
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '08:00',
-        closes: '12:00'
-      }
-    ],
-    medicalSpecialty: [
-      'InternalMedicine',
-      'DiagnosticImaging'
-    ],
-    sameAs: [
-      'https://wa.me/573150633005',
-      'https://www.instagram.com/vera_salud_cali',
-      'https://www.facebook.com/profile.php?id=61578207426838'
-    ],
-    priceRange: '$$'
-  }
-
   return (
     <html lang="es-CO">
       <head>
@@ -134,14 +85,137 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo-verasalud.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#21396f" />
-        
+
         {/* Datos estructurados */}
-        <Script
-          id="json-ld"
+        <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: `{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "VeraSalud",
+  "image": "https://verasalud.com/logo-verasalud.png",
+  "url": "https://verasalud.com",
+  "description": "Atención médica especializada en Medicina Interna, Electrocardiograma y Ecografías de alta resolución en Cali.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carrera 77A 3D-05, Barrio Nápoles",
+    "addressLocality": "Cali",
+    "addressRegion": "Valle del Cauca",
+    "postalCode": "760001",
+    "addressCountry": "CO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "3.3907",
+    "longitude": "-76.5396"
+  },
+  "telephone": "+57-602-3942289",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "telephone": "+57-315-0633005",
+    "url": "https://wa.me/573150633005",
+    "availableLanguage": ["Spanish"],
+    "areaServed": "CO"
+  }],
+  "medicalSpecialty": ["InternalMedicine", "Cardiology", "MedicalImaging"],
+  "availableService": [
+    {
+      "@type": "MedicalProcedure",
+      "name": "Consulta de Medicina Interna",
+      "description": "Valoración médica integral para adultos, diagnóstico y control de enfermedades crónicas.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Electrocardiograma",
+      "description": "Registro de la actividad eléctrica del corazón para detección de arritmias y problemas cardíacos.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Abdominal",
+      "description": "Estudio de hígado, vesícula, riñones y órganos digestivos.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Hepática",
+      "description": "Evaluación detallada del hígado, conductos biliares y sistema porta.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Pélvica Ginecológica",
+      "description": "Visualización de útero, ovarios y endometrio para salud femenina.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Obstétrica de Tercer Nivel",
+      "description": "Seguimiento fetal detallado durante el embarazo con Doppler y biometría avanzada.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía de Tiroides",
+      "description": "Estudio morfológico de la glándula tiroides para nódulos o alteraciones.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía de Mama",
+      "description": "Detección de lesiones mamarias, quistes o nódulos.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Renal y Vías Urinarias",
+      "description": "Valoración de riñones, vejiga y posible litiasis urinaria.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía de Próstata",
+      "description": "Detección de crecimiento prostático o lesiones compatibles con HBP.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía de Tejidos Blandos",
+      "description": "Evaluación de masas, lipomas o lesiones subcutáneas.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Testicular",
+      "description": "Diagnóstico de varicocele, torsión o inflamación testicular.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Doppler Arterial",
+      "description": "Estudio de circulación arterial para evaluar estenosis o flujo reducido.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Doppler Venoso",
+      "description": "Evaluación de insuficiencia venosa y trombosis.",
+      "areaServed": "Cali, Colombia"
+    },
+    {
+      "@type": "MedicalImagingProcedure",
+      "name": "Ecografía Osteomuscular o Articular",
+      "description": "Visualización de tendones, articulaciones y lesiones musculares.",
+      "areaServed": "Cali, Colombia"
+    }
+  ]
+}`,
+          }}
         />
-        
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0DD5YNJGV5"
