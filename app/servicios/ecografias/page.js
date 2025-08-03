@@ -84,12 +84,13 @@ export default function EcografiasPage() {
           </p>
           <p><strong>Agenda tu cita hoy mismo.</strong></p>
         </div>
+        {/* TODO: Optimizar esta imagen a formato .webp */}
         <Image
           src="/equipo-medico.jpg"
           alt="Equipo médico realizando ecografía"
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
         />
       </section>

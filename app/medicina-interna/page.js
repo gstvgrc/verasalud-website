@@ -21,12 +21,13 @@ export default function MedicinaInternaPage() {
       </section>
 
       <figure style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+        {/* TODO: Optimizar esta imagen a formato .webp */}
         <Image
           src="/doctor-gustavo-garcia-verasalud.jpg"
           alt="Dr. Gustavo García, médico internista en Cali – especialista en diagnóstico y salud integral en VeraSalud"
           width={1200}
           height={800}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           placeholder="blur"
           blurDataURL="/doctor-gustavo-garcia-verasalud.jpg"
           priority
