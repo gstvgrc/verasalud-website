@@ -17,7 +17,7 @@ export const metadata = {
       { url: '/og-image.jpg', width: 1200, height: 630, alt: 'Ecografías en VeraSalud Cali' }
     ],
     locale: 'es_CO',
-    type: 'article'
+    type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
@@ -32,7 +32,39 @@ export default function EcografiasPage() {
     '@type': 'CollectionPage',
     name: 'Ecografías en VeraSalud',
     description: 'Listado de servicios de ecografías convencionales y Doppler en Cali',
-    url: 'https://verasalud.com/servicios/ecografias'
+    url: 'https://verasalud.com/servicios/ecografias',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Ecografía Abdominal',
+        url: 'https://verasalud.com/servicios/ecografias/abdominal'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Ecografía Hepática',
+        url: 'https://verasalud.com/servicios/ecografias/hepatica'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Ecografía Pélvica Ginecológica',
+        url: 'https://verasalud.com/servicios/ecografias/pelvica'
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        name: 'Ecografía Obstétrica de Tercer Nivel',
+        url: 'https://verasalud.com/servicios/ecografias/obstetrica/tercer-nivel'
+      },
+      {
+        '@type': 'ListItem',
+        position: 5,
+        name: 'Ecografía de Tiroides',
+        url: 'https://verasalud.com/servicios/ecografias/tiroides'
+      }
+    ]
   }
 
   return (
@@ -62,56 +94,86 @@ export default function EcografiasPage() {
         />
       </section>
 
-      <section className={styles.ecografiaLinks}>
-        <h2>
-          <Link href="/servicios/ecografias/abdominal">Ecografía Abdominal</Link>
-        </h2>
-        <p>
-          Evalúa hígado, vesícula y riñones para detectar cálculos
-          o masas y guiar tratamientos tempranos.
-        </p>
-        <h2>
-          <Link href="/servicios/ecografias/hepatica">Ecografía Hepática</Link>
-        </h2>
-        <p>
-          Permite valorar el hígado y las vías biliares, fundamental en la
-          detección de hepatitis y hígado graso.
-        </p>
-        <h2>
-          <Link href="/servicios/ecografias/pelvica">Ecografía Pélvica</Link>
-        </h2>
-        <p>
-          Estudia útero y ovarios para controlar quistes, miomas y causas de
-          dolor pélvico.
-        </p>
-        <h2>
-          <Link href="/servicios/ecografias/obstetrica">Ecografía Obstétrica</Link>
-        </h2>
-        <p>
-          Monitorea el desarrollo del bebé y la salud materna a lo largo del
-          embarazo.
-        </p>
-        <h2>
-          <Link href="/servicios/ecografias/mamaria">Ecografía Mamaria</Link>
-        </h2>
-        <p>
-          Detecta lesiones en el tejido mamario y complementa la mamografía en
-          el diagnóstico de patologías de la mama.
-        </p>
-        <h2>
-          <Link href="/servicios/ecografias/osteomuscular">Ecografía Osteomuscular</Link>
-        </h2>
-        <p>
-          Analiza músculos y tendones para evaluar lesiones deportivas o
-          dolor crónico de las articulaciones.
-        </p>
-        <h2>
-          <Link href="/servicios/ecografias/doppler">Ecografía Doppler</Link>
-        </h2>
-        <p>
-          Mide el flujo sanguíneo en venas y arterias, esencial para
-          diagnosticar problemas circulatorios.
-        </p>
+      <section className={styles.ecografiaGrid}>
+        <article className={styles.ecografiaCard}>
+          <Link href="/servicios/ecografias/abdominal">
+            <Image
+              src="/ecografia-abdominal-verasalud-cali.webp"
+              alt="Ecografía abdominal en Cali - VeraSalud"
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ width: '100%', height: 'auto' }}
+              priority
+            />
+            <h2>Ecografía Abdominal</h2>
+            <p>Evaluación hepática, vesicular y renal para diagnóstico oportuno.</p>
+          </Link>
+        </article>
+
+        <article className={styles.ecografiaCard}>
+          <Link href="/servicios/ecografias/hepatica">
+            <Image
+              src="/ecografia-hepatica-verasalud-cali.webp"
+              alt="Ecografía hepática en Cali - VeraSalud"
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
+            />
+            <h2>Ecografía Hepática</h2>
+            <p>Detección de hígado graso, hepatitis y enfermedades biliares.</p>
+          </Link>
+        </article>
+
+        <article className={styles.ecografiaCard}>
+          <Link href="/servicios/ecografias/pelvica">
+            <Image
+              src="/ecografia-pelvica-ginecologica-verasalud-cali.webp"
+              alt="Ecografía pélvica ginecológica en Cali - VeraSalud"
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
+            />
+            <h2>Ecografía Pélvica Ginecológica</h2>
+            <p>Estudio de útero y ovarios para controlar quistes, miomas o dolor pélvico.</p>
+          </Link>
+        </article>
+
+        <article className={styles.ecografiaCard}>
+          <Link href="/servicios/ecografias/obstetrica/tercer-nivel">
+            <Image
+              src="/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp"
+              alt="Ecografía obstétrica tercer nivel en Cali - VeraSalud"
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
+            />
+            <h2>Ecografía Obstétrica de Tercer Nivel</h2>
+            <p>Monitoreo fetal avanzado durante el embarazo.</p>
+          </Link>
+        </article>
+
+        <article className={styles.ecografiaCard}>
+          <Link href="/servicios/ecografias/tiroides">
+            <Image
+              src="/ecografia-tiroides-verasalud-cali.webp"
+              alt="Ecografía de tiroides en Cali - VeraSalud"
+              width={500}
+              height={300}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
+            />
+            <h2>Ecografía de Tiroides</h2>
+            <p>Valoración de nódulos, bocio y función tiroidea con alta resolución.</p>
+          </Link>
+        </article>
       </section>
 
       <section className={styles.contact}>
