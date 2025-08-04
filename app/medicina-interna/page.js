@@ -5,7 +5,8 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Consulta de Medicina Interna en Cali | VeraSalud',
-  description: 'Conoce más sobre nuestro servicio de medicina interna realizado por especialistas de la Universidad del Valle en VeraSalud.',
+  description:
+    'Consulta de medicina interna especializada en Cali: diagnóstico integral, trato humano y sin demoras. Agenda tu cita hoy mismo.',
   alternates: { canonical: 'https://verasalud.com/medicina-interna' },
 }
 

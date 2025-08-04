@@ -6,7 +6,7 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Electrocardiograma en Cali – VeraSalud',
   description:
-    'Realiza tu electrocardiograma en VeraSalud con atención sin demoras, equipos digitales y lectura por especialistas. Agenda tu cita en Cali.',
+    'Electrocardiograma rápido, seguro y sin filas en Cali. Detectamos arritmias y riesgos cardiacos a tiempo. Agenda tu cita hoy mismo.',
   alternates: { canonical: 'https://verasalud.com/servicios/electrocardiograma' },
   openGraph: {
     title: 'Electrocardiograma en Cali – VeraSalud',
