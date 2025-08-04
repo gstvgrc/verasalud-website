@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Contacto | VeraSalud Cali",
-  description: "Contáctanos para agendar tu consulta médica, ecografía o electrocardiograma en VeraSalud Cali. Atención sin demoras y con calidez humana.",
+  description:
+    "Ubícanos en el Barrio Nápoles, Cali. Agenda tu consulta de medicina interna o ecografía sin filas. Escríbenos o llámanos directamente.",
   alternates: { canonical: "https://verasalud.com/contacto" },
   openGraph: {
     title: "Contacto | VeraSalud Cali",

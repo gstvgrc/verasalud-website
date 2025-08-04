@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Quiénes Somos | VeraSalud Cali",
-  description: "Conoce al equipo médico de VeraSalud: expertos en medicina interna, ecografías y electrocardiograma en Cali, con más de 20 años de experiencia.",
+  description:
+    "Somos un equipo médico con más de 20 años de experiencia en medicina interna, ecografías y electrocardiograma en Cali. Atención cálida y oportuna.",
   alternates: { canonical: "https://verasalud.com/sobre-nosotros" },
   openGraph: {
     title: "Quiénes Somos | VeraSalud Cali",

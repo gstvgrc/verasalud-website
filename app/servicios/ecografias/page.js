@@ -6,7 +6,7 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Ecografías en Cali | Ultrasonido y Doppler | VeraSalud',
   description:
-    'Ecografías abdominal, hepática, pélvica, obstétrica, mamaria, osteomuscular y Doppler en Cali con resultados rápidos.',
+    'Ecografías de alta resolución en Cali con radiólogos expertos. Sin filas, resultados precisos y atención profesional. Agenda tu estudio.',
   keywords: ['ecografias cali', 'ecografia doppler', 'ecografia abdominal', 'ultrasonido en cali'],
   alternates: { canonical: 'https://verasalud.com/servicios/ecografias' },
   openGraph: {
