@@ -451,6 +451,16 @@
   border-color: var(--primary-cyan);
 }
 
+.successMessage {
+  margin-top: 1rem;
+  color: var(--primary-cyan);
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  color: #dc2626;
+}
+
 /* Footer */
 .footer {
   background-color: var(--primary-blue);
