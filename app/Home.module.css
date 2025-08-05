@@ -451,6 +451,16 @@
   border-color: var(--primary-cyan);
 }
 
+.contactForm .successMessage {
+  color: var(--primary-blue);
+  margin-top: 1rem;
+}
+
+.contactForm .errorMessage {
+  color: var(--primary-pink);
+  margin-top: 1rem;
+}
+
 /* Footer */
 .footer {
   background-color: var(--primary-blue);
