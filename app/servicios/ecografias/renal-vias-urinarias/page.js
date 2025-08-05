@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Renal y Vías Urinarias en Cali</h1>
           <p>La ecografía renal y de vías urinarias es una prueba no invasiva que obtiene imágenes de los riñones, uréteres y vejiga. Detecta cálculos, quistes, tumores y obstrucciones en el sistema urinario sin radiación.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Ecografía renal en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

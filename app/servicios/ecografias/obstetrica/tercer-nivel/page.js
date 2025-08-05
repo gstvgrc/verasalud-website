@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Obstétrica de Tercer Nivel en Cali</h1>
           <p>La ecografía de tercer nivel se realiza en el tercer trimestre y combina imágenes 2D, 3D y Doppler para evaluar el crecimiento fetal, la madurez placentaria y el flujo en las arterias uterinas y umbilicales.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Ecografía obstétrica tercer nivel en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

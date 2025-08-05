@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Mamaria en Cali</h1>
           <p>La ecografía mamaria utiliza ondas de sonido para producir imágenes del tejido mamario. Es especialmente útil para examinar bultos detectados en la mamografía o el examen físico y para evaluar mamas densas.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Realizando ecografía mamaria en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

@@ -142,7 +142,7 @@ export default function EcografiasPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografías en Cali</h1>
           <p>
@@ -158,7 +158,9 @@ export default function EcografiasPage() {
           alt="Equipo médico realizando ecografía"
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

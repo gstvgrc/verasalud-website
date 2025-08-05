@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía de Tejidos Blandos en Cali</h1>
           <p>La ecografía de tejidos blandos utiliza ondas de sonido para visualizar músculos, tendones y ligamentos. Permite detectar hematomas, quistes, abscesos, calcificaciones, tumores y lesiones inflamatorias.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Ecografía de tejidos blandos en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Obstétrica en Cali</h1>
           <p>La ecografía obstétrica es una prueba rutinaria durante el embarazo que usa ondas de sonido para crear imágenes del feto y el útero. Permite estimar la edad gestacional, valorar la anatomía fetal y vigilar el bienestar del bebé.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Ecografía obstétrica en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

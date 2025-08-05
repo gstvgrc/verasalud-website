@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Doppler Venoso en Cali</h1>
           <p>El Doppler venoso examina el flujo de las venas profundas y superficiales para diagnosticar trombosis y varices. Permite evaluar el retorno venoso y la función de las válvulas.</p>
@@ -62,7 +62,9 @@ export default function Page() {
           alt='Doppler venoso en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>
