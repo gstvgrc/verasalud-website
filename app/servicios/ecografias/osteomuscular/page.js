@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Osteomuscular en Cali</h1>
           <p>La ecografía osteomuscular permite visualizar en tiempo real músculos, tendones, ligamentos y articulaciones. Ofrece un estudio dinámico de los tejidos blandos para diagnosticar lesiones deportivas y trastornos articulares.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Ecografía osteomuscular en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Articular en Cali</h1>
           <p>La ecografía articular se centra en la valoración de articulaciones como hombro, codo, rodilla o tobillo. Permite visualizar el cartílago, el líquido sinovial y detectar derrames, sinovitis o lesiones meniscales.</p>
@@ -63,7 +63,9 @@ export default function Page() {
           alt='Ecografía articular en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

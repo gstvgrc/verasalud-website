@@ -43,7 +43,7 @@ export default function EcografiaAbdominalPage() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Abdominal en Cali</h1>
           <p>
@@ -105,7 +105,9 @@ export default function EcografiaAbdominalPage() {
           alt="Equipo realizando ecografía abdominal en Cali"
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>

@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className={`${styles.container} dark-fix`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className={styles.hero}>
+      <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Hepática en Cali</h1>
           <p>La ecografía hepática es un ultrasonido especializado del hígado y las estructuras hepato‑biliares. Utiliza ondas de sonido para evaluar el tamaño, forma y textura del hígado, así como la vesícula y los conductos biliares, sin radiación.</p>
@@ -64,7 +64,9 @@ export default function Page() {
           alt='Equipo realizando ecografía hepática en VeraSalud'
           width={800}
           height={500}
-          sizes="(max-width: 768px) 100vw, 800px"
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="rounded-xl"
           priority
         />
       </section>
