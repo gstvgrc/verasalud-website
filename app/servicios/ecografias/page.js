@@ -144,17 +144,16 @@ export default function EcografiasPage() {
       />
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
-          <h1>Ecografías en Cali</h1>
-          {/* Use a real image and make it responsive */}
+        <h1>Ecografías en Cali</h1>
+        <div className="relative w-full h-64 sm:h-80 md:h-[500px] rounded-md overflow-hidden">
           <Image
             src="/equipo-medico.jpg"
             alt="Equipo médico de VeraSalud"
-            width={1536}
-            height={1024}
+            fill
+            className="object-cover"
             priority
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="w-full h-auto mb-4 rounded-md"
           />
+        </div>
           <p>
             En VeraSalud realizamos ecografías de alta resolución y estudios
             Doppler que brindan diagnósticos confiables en poco tiempo.
