@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía de Próstata en Cali</h1>
           <Image
-            src="/ecografia-prostata-verasalud.webp"
-            alt="Ecografía de próstata en Cali Verasalud"
+            src="/ecografia-prostata-verasalud-cali.webp"
+            alt="Ecografía prostática en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía prostática evalúa tamaño y forma de la próstata por vía suprapúbica o transrectal. Útil en síntomas urinarios o chequeo masculino.
           </p>

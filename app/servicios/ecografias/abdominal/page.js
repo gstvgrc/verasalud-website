@@ -54,6 +54,7 @@ export default function EcografiaAbdominalPage() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía abdominal permite observar hígado, vesícula, páncreas y riñones. Detecta cálculos, masas o inflamación sin usar radiación.
           </p>

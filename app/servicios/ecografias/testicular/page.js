@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Testicular en Cali</h1>
           <Image
-            src="/ecografia-testicular-verasalud.webp"
+            src="/ecografia-testicular-verasalud-cali.webp"
             alt="Ecografía testicular en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía testicular analiza testículos, epidídimo y vasos. Detecta torsión, quistes, tumores o varicocele.
           </p>

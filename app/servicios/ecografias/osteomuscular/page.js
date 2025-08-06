@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Osteomuscular en Cali</h1>
           <Image
-            src="/ecografia-osteomuscular-verasalud.webp"
+            src="/ecografia-osteomuscular-articular-verasalud-cali.webp"
             alt="Ecografía osteomuscular en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía osteomuscular analiza músculos, tendones y articulaciones. Detecta desgarros, inflamaciones y derrames articulares.
           </p>

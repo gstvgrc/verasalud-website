@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Pélvica en Cali</h1>
           <Image
-            src="/ecografia-pelvica-verasalud.webp"
+            src="/ecografia-pelvica-ginecologica-verasalud-cali.webp"
             alt="Ecografía pélvica en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía pélvica estudia útero, ovarios y vejiga en mujeres. Detecta miomas, quistes, endometriosis o alteraciones urinarias.
           </p>
