@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía testicular produce imágenes de los testículos, epidídimos y escroto. Es la principal herramienta para evaluar dolor testicular, traumatismos, masas y varicoceles.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Distingue entre quistes, tumores y procesos inflamatorios.</li>
-                <li>Detecta torsión testicular, epididimitis y varicoceles.</li>
-                <li>Ayuda en el estudio de infertilidad y localiza testículos no descendidos.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Dolor o hinchazón testicular repentino.</li>
-                <li>Presencia de bultos o nódulos en el escroto.</li>
-                <li>Traumatismos testiculares o torsión sospechada.</li>
-                <li>Evaluación de infertilidad y varicocele.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> El paciente se acuesta y se aplica gel sobre el escroto. Se emplea un transductor de alta frecuencia para visualizar las estructuras y usar Doppler para evaluar el flujo sanguíneo.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía testicular analiza testículos, epidídimo y vasos. Detecta torsión, quistes, tumores o varicocele.
+          </p>
+          <p>
+            Indicada ante dolor, inflamación o masas en el escroto.
+          </p>
+          <p>
+            Agenda tu estudio testicular con personal especializado.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

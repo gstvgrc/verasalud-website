@@ -53,34 +53,15 @@ export default function EcografiaTiroidesPage() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>
-            La <strong>ecografía tiroidea</strong> es un examen de <em>diagnóstico por imágenes</em> que utiliza ondas de ultrasonido
-            para obtener vistas detalladas de la glándula tiroides. Permite evaluar el tamaño, forma y estructura de la tiroides, así
-            como detectar la presencia de nódulos, quistes u otras anomalías. Es un procedimiento indoloro y seguro que no utiliza
-            radiación ionizante.
-          </p>
-          <p>
-            <strong>Beneficios clínicos:</strong> La ecografía de tiroides ayuda a <em>detectar tempranamente</em> nódulos y alteraciones
-            estructurales, a guiar biopsias por aspiración con aguja fina y a monitorizar cambios en el tamaño de la glándula a lo largo
-            del tiempo. Además, es útil para identificar agrandamiento de las glándulas paratiroides y evaluar masas cervicales.
-          </p>
-          <p>
-            <strong>Indicaciones frecuentes:</strong>
-          </p>
-          <ul>
-            <li>Nódulos palpables o crecimiento visible en la parte anterior del cuello.</li>
-            <li>Resultados anormales en pruebas de función tiroidea o historia familiar de enfermedad tiroidea.</li>
-            <li>Seguimiento de nódulos tiroideos previamente detectados o control tras tratamiento.</li>
-            <li>Preparación para procedimientos como biopsias guiadas por imagen.</li>
-          </ul>
-          <p>
-            <strong>¿Cómo se realiza?</strong> Te recostarás cómodamente mientras el especialista aplica un gel conductor sobre tu cuello.
-            Luego desplazará suavemente un transductor sobre la zona para obtener imágenes en tiempo real de la tiroides. El estudio
-            suele durar entre 15 y 20 minutos y podrás retomar tus actividades de inmediato.
-          </p>
-          <p>
-            <strong>Agenda tu cita hoy mismo en VeraSalud y cuida tu salud tiroidea.</strong>
-          </p>
+            <p>
+              La ecografía de tiroides observa nódulos, quistes o inflamación en la glándula. No emite radiación y es clave en el seguimiento clínico.
+            </p>
+            <p>
+              Recomendada si tienes hipotiroidismo, bocio o alteraciones en el cuello.
+            </p>
+            <p>
+              Agenda tu ecografía tiroidea hoy.
+            </p>
         </div>
       </section>
       <section className={styles.contact}>

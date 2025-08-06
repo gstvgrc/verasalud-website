@@ -49,21 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>El Doppler arterial evalúa el flujo sanguíneo en las arterias de las extremidades y el cuello. Detecta estenosis, oclusiones y aneurismas mediante el análisis de la velocidad y dirección del flujo.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Diagnostica enfermedad arterial periférica y carotídea.</li>
-                <li>Evalúa la gravedad de estenosis antes de intervenciones quirúrgicas.</li>
-                <li>Controla la permeabilidad de injertos y stents arteriales.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Dolor en las piernas al caminar (claudicación) o frialdad en las extremidades.</li>
-                <li>Control de pacientes con factores de riesgo cardiovascular (hipertensión, diabetes, tabaquismo).</li>
-                <li>Seguimiento tras cirugía vascular o angioplastia.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> Se coloca el transductor sobre la piel con gel y se utilizan modos Doppler color y pulsado para medir el flujo. El examen es rápido, no requiere preparación especial y no genera molestias.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            El Doppler arterial permite visualizar el flujo sanguíneo en arterias de piernas, brazos o cuello. Útil para detectar obstrucciones o estenosis.
+          </p>
+          <p>
+            Se recomienda en casos de dolor al caminar, hipertensión o enfermedades vasculares.
+          </p>
+          <p>
+            Solicita tu evaluación arterial con nosotros.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>
