@@ -46,6 +46,14 @@ export default function EcografiaAbdominalPage() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Abdominal en Cali</h1>
+          <Image
+            src="/ecografia-abdominal-verasalud-cali.webp"
+            alt="Ecografía abdominal en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>
             La <strong>ecografía abdominal</strong> es un estudio de
             <em>diagnóstico por imágenes</em> no invasivo que permite visualizar en
@@ -100,16 +108,6 @@ export default function EcografiaAbdominalPage() {
             <strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong>
           </p>
         </div>
-        <Image
-          src="/ecografia-abdominal-verasalud-cali.webp"
-          alt="Equipo realizando ecografía abdominal en Cali"
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

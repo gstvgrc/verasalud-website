@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía de Tejidos Blandos en Cali</h1>
+          <Image
+            src="/ecografia-tejidos-blandos-verasalud.webp"
+            alt="Ecografía de tejidos blandos en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía de tejidos blandos utiliza ondas de sonido para visualizar músculos, tendones y ligamentos. Permite detectar hematomas, quistes, abscesos, calcificaciones, tumores y lesiones inflamatorias.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> El especialista aplica gel sobre la zona afectada y desplaza el transductor para obtener imágenes en tiempo real. Se pueden realizar movimientos para evaluar la función y se usa Doppler para ver vasos sanguíneos.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-tejidos-blandos-verasalud-cali.webp'
-          alt='Ecografía de tejidos blandos en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

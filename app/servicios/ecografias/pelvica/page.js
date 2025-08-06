@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Pélvica en Cali</h1>
+          <Image
+            src="/ecografia-pelvica-verasalud.webp"
+            alt="Ecografía pélvica en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía pélvica produce imágenes del útero, cuello uterino, ovarios, trompas de Falopio y vejiga. Es una herramienta clave para evaluar el sistema reproductor femenino y el tracto urinario sin radiación.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -59,16 +67,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> Dependiendo del caso, puede ser transabdominal (con la vejiga llena) o transvaginal, utilizando un transductor cubierto. Ambas técnicas permiten visualizar con claridad los órganos pélvicos.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-pelvica-ginecologica-verasalud-cali.webp'
-          alt='Ecografía pélvica ginecológica en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

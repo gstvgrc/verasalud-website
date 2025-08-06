@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Obstétrica en Cali</h1>
+          <Image
+            src="/ecografia-obstetrica-verasalud.webp"
+            alt="Ecografía obstétrica en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía obstétrica es una prueba rutinaria durante el embarazo que usa ondas de sonido para crear imágenes del feto y el útero. Permite estimar la edad gestacional, valorar la anatomía fetal y vigilar el bienestar del bebé.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> Dependiendo de la etapa del embarazo, se realiza transabdominalmente con la vejiga moderadamente llena. El transductor se desliza sobre el abdomen para obtener imágenes detalladas del feto, placenta y líquido amniótico.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp'
-          alt='Ecografía obstétrica en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

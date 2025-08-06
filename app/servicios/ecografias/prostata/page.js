@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía de Próstata en Cali</h1>
+          <Image
+            src="/ecografia-prostata-verasalud.webp"
+            alt="Ecografía de próstata en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía de próstata transabdominal permite visualizar la glándula prostática a través del abdomen inferior. Es un método cómodo para medir su tamaño y detectar hiperplasia o lesiones mayores.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> El paciente acude con la vejiga moderadamente llena. Se coloca el transductor sobre el abdomen bajo y se toman mediciones del tamaño prostático; el examen es rápido y no invasivo.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-prostata-verasalud-cali.webp'
-          alt='Ecografía de próstata en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

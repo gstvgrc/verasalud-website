@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Doppler en Cali</h1>
+          <Image
+            src="/ecografia-doppler-verasalud.webp"
+            alt="Ecografía Doppler en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía Doppler utiliza el efecto Doppler para medir la velocidad y dirección del flujo sanguíneo. Es esencial para evaluar arterias y venas en busca de estrechamientos, oclusiones o trombosis.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> Se coloca el transductor sobre la piel con gel conductor y se emplea Doppler color o pulsado para observar el flujo. Es un examen no invasivo que dura unos minutos y no requiere preparación especial.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-doppler-arterial-verasalud-cali.webp'
-          alt='Ecografía Doppler de miembros en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

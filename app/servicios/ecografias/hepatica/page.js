@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Hepática en Cali</h1>
+          <Image
+            src="/ecografia-hepatica-verasalud.webp"
+            alt="Ecografía hepática en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía hepática es un ultrasonido especializado del hígado y las estructuras hepato‑biliares. Utiliza ondas de sonido para evaluar el tamaño, forma y textura del hígado, así como la vesícula y los conductos biliares, sin radiación.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -59,16 +67,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> El paciente se acuesta y se aplica un gel conductor sobre la parte superior del abdomen. El médico desliza suavemente un transductor sobre el hígado y la vesícula para obtener imágenes detalladas; es un procedimiento breve, indoloro y seguro.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-hepatica-verasalud-cali.webp'
-          alt='Equipo realizando ecografía hepática en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Osteomuscular en Cali</h1>
+          <Image
+            src="/ecografia-osteomuscular-verasalud.webp"
+            alt="Ecografía osteomuscular en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía osteomuscular permite visualizar en tiempo real músculos, tendones, ligamentos y articulaciones. Ofrece un estudio dinámico de los tejidos blandos para diagnosticar lesiones deportivas y trastornos articulares.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> Se aplica gel sobre la zona de interés y se mueve el transductor siguiendo el tendón o articulación afectada. El paciente puede realizar movimientos para evaluar la función y detectar atrapamientos o rupturas.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-osteomuscular-articular-verasalud-cali.webp'
-          alt='Ecografía osteomuscular en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

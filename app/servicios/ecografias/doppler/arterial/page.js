@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Doppler Arterial en Cali</h1>
+          <Image
+            src="/ecografia-doppler-arterial-verasalud.webp"
+            alt="Ecografía Doppler arterial en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>El Doppler arterial evalúa el flujo sanguíneo en las arterias de las extremidades y el cuello. Detecta estenosis, oclusiones y aneurismas mediante el análisis de la velocidad y dirección del flujo.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -57,16 +65,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> Se coloca el transductor sobre la piel con gel y se utilizan modos Doppler color y pulsado para medir el flujo. El examen es rápido, no requiere preparación especial y no genera molestias.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-doppler-arterial-verasalud-cali.webp'
-          alt='Doppler arterial en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

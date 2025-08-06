@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Renal y Vías Urinarias en Cali</h1>
+          <Image
+            src="/ecografia-renal-verasalud.webp"
+            alt="Ecografía renal y vías urinarias en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía renal y de vías urinarias es una prueba no invasiva que obtiene imágenes de los riñones, uréteres y vejiga. Detecta cálculos, quistes, tumores y obstrucciones en el sistema urinario sin radiación.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> Se aplica gel sobre el abdomen y flancos mientras el paciente está acostado. El transductor se mueve para explorar cada riñón y la vejiga; en ocasiones se solicita al paciente beber agua para evaluar la vejiga llena.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-renal-vias-urinarias-verasalud-cali.webp'
-          alt='Ecografía renal en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

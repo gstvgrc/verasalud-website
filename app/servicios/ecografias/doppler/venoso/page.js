@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Doppler Venoso en Cali</h1>
+          <Image
+            src="/ecografia-doppler-venoso-verasalud.webp"
+            alt="Ecografía Doppler venoso en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>El Doppler venoso examina el flujo de las venas profundas y superficiales para diagnosticar trombosis y varices. Permite evaluar el retorno venoso y la función de las válvulas.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -57,16 +65,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> El transductor se coloca sobre la pierna o el brazo con ligera presión, comprimiendo las venas para evaluar su colapsabilidad. El flujo se analiza mediante Doppler color y espectral.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-doppler-venoso-verasalud-cali.webp'
-          alt='Doppler venoso en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

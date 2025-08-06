@@ -45,6 +45,14 @@ export default function EcografiaTiroidesPage() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía de Tiroides en Cali</h1>
+          <Image
+            src="/ecografia-tiroides-verasalud.webp"
+            alt="Ecografía de tiroides en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>
             La <strong>ecografía tiroidea</strong> es un examen de <em>diagnóstico por imágenes</em> que utiliza ondas de ultrasonido
             para obtener vistas detalladas de la glándula tiroides. Permite evaluar el tamaño, forma y estructura de la tiroides, así
@@ -74,16 +82,6 @@ export default function EcografiaTiroidesPage() {
             <strong>Agenda tu cita hoy mismo en VeraSalud y cuida tu salud tiroidea.</strong>
           </p>
         </div>
-        <Image
-          src="/ecografia-tiroides-verasalud-cali.webp"
-          alt="Equipo realizando ecografía de tiroides"
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>
