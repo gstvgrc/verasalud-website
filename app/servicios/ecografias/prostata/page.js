@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía de próstata transabdominal permite visualizar la glándula prostática a través del abdomen inferior. Es un método cómodo para medir su tamaño y detectar hiperplasia o lesiones mayores.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Evalúa el volumen prostático y el grado de crecimiento benigno.</li>
-                <li>Ayuda en el seguimiento de síntomas urinarios y en el control tras cirugía prostática.</li>
-                <li>Puede detectar lesiones de mayor tamaño que requieran estudios adicionales.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Síntomas de obstrucción urinaria o flujo débil.</li>
-                <li>Control de hiperplasia prostática benigna.</li>
-                <li>Monitoreo tras cirugía prostática o radioterapia.</li>
-                <li>Seguimiento del antígeno prostático específico (PSA) elevado.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> El paciente acude con la vejiga moderadamente llena. Se coloca el transductor sobre el abdomen bajo y se toman mediciones del tamaño prostático; el examen es rápido y no invasivo.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía prostática evalúa tamaño y forma de la próstata por vía suprapúbica o transrectal. Útil en síntomas urinarios o chequeo masculino.
+          </p>
+          <p>
+            Solicítala si tienes dificultad para orinar o antecedentes familiares.
+          </p>
+          <p>
+            Agenda tu examen de próstata con confianza.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

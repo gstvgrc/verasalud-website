@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía Doppler utiliza el efecto Doppler para medir la velocidad y dirección del flujo sanguíneo. Es esencial para evaluar arterias y venas en busca de estrechamientos, oclusiones o trombosis.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Detecta la presencia de trombos o coágulos en venas profundas.</li>
-                <li>Evalúa estenosis o bloqueos en arterias de cuello y extremidades.</li>
-                <li>Ayuda a planificar cirugías vasculares y monitorizar injertos o stents.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Dolor o hinchazón en las extremidades sugerente de trombosis venosa.</li>
-                <li>Evaluación de enfermedad arterial periférica o varices.</li>
-                <li>Seguimiento postoperatorio de procedimientos vasculares.</li>
-                <li>Control de fístulas arteriovenosas en diálisis.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> Se coloca el transductor sobre la piel con gel conductor y se emplea Doppler color o pulsado para observar el flujo. Es un examen no invasivo que dura unos minutos y no requiere preparación especial.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía Doppler evalúa el flujo de sangre en arterias y venas. Es clave para diagnosticar obstrucciones, trombos o insuficiencias.
+          </p>
+          <p>
+            Ideal para personas con enfermedades vasculares o antecedentes de trombosis.
+          </p>
+          <p>
+            Agenda tu estudio vascular hoy.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

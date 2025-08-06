@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía renal y de vías urinarias es una prueba no invasiva que obtiene imágenes de los riñones, uréteres y vejiga. Detecta cálculos, quistes, tumores y obstrucciones en el sistema urinario sin radiación.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Identifica cálculos renales y ureterales de manera temprana.</li>
-                <li>Detecta quistes, masas o tumores en riñones y vejiga.</li>
-                <li>Evalúa obstrucciones del tracto urinario y la causa de infecciones repetitivas.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Dolor lumbar o cólico renal sospechoso de litiasis.</li>
-                <li>Infecciones urinarias recurrentes o hematuria (sangre en la orina).</li>
-                <li>Control de quistes renales o tumores conocidos.</li>
-                <li>Evaluación de hidronefrosis durante el embarazo o en recién nacidos.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> Se aplica gel sobre el abdomen y flancos mientras el paciente está acostado. El transductor se mueve para explorar cada riñón y la vejiga; en ocasiones se solicita al paciente beber agua para evaluar la vejiga llena.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía renal examina riñones, uréteres y vejiga. Detecta cálculos, infecciones o alteraciones estructurales.
+          </p>
+          <p>
+            Recomendada ante infecciones urinarias recurrentes o cólicos renales.
+          </p>
+          <p>
+            Realiza tu estudio renal sin dolor ni radiación.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

@@ -49,21 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>El Doppler venoso examina el flujo de las venas profundas y superficiales para diagnosticar trombosis y varices. Permite evaluar el retorno venoso y la función de las válvulas.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Detecta trombosis venosa profunda y tromboflebitis.</li>
-                <li>Evalúa la insuficiencia venosa y las válvulas incompetentes.</li>
-                <li>Guía el tratamiento de varices y el uso de anticoagulantes.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Piernas hinchadas, enrojecidas o dolorosas.</li>
-                <li>Presencia de varices o sensación de pesadez en las piernas.</li>
-                <li>Seguimiento de trombosis previa o de terapia anticoagulante.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> El transductor se coloca sobre la pierna o el brazo con ligera presión, comprimiendo las venas para evaluar su colapsabilidad. El flujo se analiza mediante Doppler color y espectral.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            El Doppler venoso detecta trombosis, insuficiencia venosa y varices al observar las venas en tiempo real.
+          </p>
+          <p>
+            Recomendado ante dolor, hinchazón o antecedentes de trombosis.
+          </p>
+          <p>
+            Haz tu estudio venoso con atención profesional.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

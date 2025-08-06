@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía obstétrica es una prueba rutinaria durante el embarazo que usa ondas de sonido para crear imágenes del feto y el útero. Permite estimar la edad gestacional, valorar la anatomía fetal y vigilar el bienestar del bebé.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Confirma y data el embarazo, y determina el número de fetos.</li>
-                <li>Evalúa el crecimiento fetal, la posición de la placenta y la cantidad de líquido amniótico.</li>
-                <li>Detecta anomalías estructurales o malformaciones congénitas.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Control prenatal rutinario en cada trimestre.</li>
-                <li>Sospecha de crecimiento intrauterino restringido o macrosomía.</li>
-                <li>Sangrado o dolor abdominal durante el embarazo.</li>
-                <li>Monitorización en embarazos de alto riesgo (hipertensión, diabetes, gemelos).</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> Dependiendo de la etapa del embarazo, se realiza transabdominalmente con la vejiga moderadamente llena. El transductor se desliza sobre el abdomen para obtener imágenes detalladas del feto, placenta y líquido amniótico.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía obstétrica evalúa el desarrollo fetal, edad gestacional y bienestar del bebé. Es segura y esencial durante el embarazo.
+          </p>
+          <p>
+            Se recomienda en todos los trimestres, con seguimiento especializado.
+          </p>
+          <p>
+            Programa tu ecografía prenatal con nosotros.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

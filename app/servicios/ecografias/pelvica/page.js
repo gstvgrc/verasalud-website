@@ -49,23 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía pélvica produce imágenes del útero, cuello uterino, ovarios, trompas de Falopio y vejiga. Es una herramienta clave para evaluar el sistema reproductor femenino y el tracto urinario sin radiación.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Ayuda a diagnosticar causas de dolor pélvico, sangrado anormal o infertilidad.</li>
-                <li>Detecta quistes ováricos, fibromas, malformaciones uterinas y embarazo ectópico.</li>
-                <li>Monitorea el desarrollo y bienestar fetal durante el embarazo.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Evaluación de sangrado uterino anormal o dolor pélvico persistente.</li>
-                <li>Seguimiento de embarazo y control del crecimiento fetal.</li>
-                <li>Estudio de infertilidad y evaluación de malformaciones uterinas.</li>
-                <li>Búsqueda de quistes, fibromas o masas pélvicas.</li>
-                <li>Control postoperatorio de cirugías ginecológicas.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> Dependiendo del caso, puede ser transabdominal (con la vejiga llena) o transvaginal, utilizando un transductor cubierto. Ambas técnicas permiten visualizar con claridad los órganos pélvicos.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía pélvica estudia útero, ovarios y vejiga en mujeres. Detecta miomas, quistes, endometriosis o alteraciones urinarias.
+          </p>
+          <p>
+            Indicada ante dolor pélvico, sangrado irregular o infertilidad.
+          </p>
+          <p>
+            Consulta con nuestro equipo y agenda tu ecografía.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía osteomuscular permite visualizar en tiempo real músculos, tendones, ligamentos y articulaciones. Ofrece un estudio dinámico de los tejidos blandos para diagnosticar lesiones deportivas y trastornos articulares.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Diagnostica desgarros de tendones, rupturas musculares y lesiones ligamentarias.</li>
-                <li>Evalúa bursitis, tenosinovitis y síndrome del túnel carpiano.</li>
-                <li>Permite guía precisa para infiltraciones o aspiraciones.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Dolor o inflamación en hombro, codo, muñeca, cadera, rodilla o tobillo.</li>
-                <li>Sospecha de roturas musculares o tendinosas por actividad física.</li>
-                <li>Evaluación de masas de tejidos blandos o quistes sinoviales.</li>
-                <li>Seguimiento de lesiones deportivas en rehabilitación.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> Se aplica gel sobre la zona de interés y se mueve el transductor siguiendo el tendón o articulación afectada. El paciente puede realizar movimientos para evaluar la función y detectar atrapamientos o rupturas.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía osteomuscular analiza músculos, tendones y articulaciones. Detecta desgarros, inflamaciones y derrames articulares.
+          </p>
+          <p>
+            Ideal para lesiones deportivas o dolor musculoesquelético.
+          </p>
+          <p>
+            Agenda tu ecografía musculoesquelética sin radiación.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía de tejidos blandos utiliza ondas de sonido para visualizar músculos, tendones y ligamentos. Permite detectar hematomas, quistes, abscesos, calcificaciones, tumores y lesiones inflamatorias.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Detecta lesiones musculares, tendinosas y ligamentosas con gran detalle.</li>
-                <li>Identifica quistes, abscesos y masas de tejidos blandos.</li>
-                <li>Evalúa inflamación y permite guía para aspiraciones o biopsias.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Dolor o inflamación en músculos, tendones o ligamentos.</li>
-                <li>Sospecha de roturas, esguinces o desgarros.</li>
-                <li>Palpación de masas subcutáneas o bultos indeterminados.</li>
-                <li>Seguimiento de lesiones deportivas y procesos inflamatorios.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> El especialista aplica gel sobre la zona afectada y desplaza el transductor para obtener imágenes en tiempo real. Se pueden realizar movimientos para evaluar la función y se usa Doppler para ver vasos sanguíneos.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía de tejidos blandos permite valorar bultos, abscesos, ganglios o lesiones bajo la piel.
+          </p>
+          <p>
+            Útil ante inflamación localizada o masas sospechosas.
+          </p>
+          <p>
+            Solicita tu valoración diagnóstica segura y precisa.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

@@ -49,22 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía mamaria utiliza ondas de sonido para producir imágenes del tejido mamario. Es especialmente útil para examinar bultos detectados en la mamografía o el examen físico y para evaluar mamas densas.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Distingue entre quistes llenos de líquido y masas sólidas.</li>
-                <li>Complementa la mamografía y reduce biopsias innecesarias.</li>
-                <li>Permite guiar procedimientos como biopsias o drenajes.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Bultos o anomalías detectados en el examen físico o la mamografía.</li>
-                <li>Evaluación de dolor o secreción mamaria.</li>
-                <li>Control de implantes mamarios o cambios postquirúrgicos.</li>
-                <li>Seguimiento de masas benignas conocidas.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> La paciente se recuesta y se aplica gel sobre la mama. El médico mueve el transductor sobre la piel para visualizar estructuras internas y puede emplear Doppler para evaluar el flujo sanguíneo.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía mamaria permite visualizar tejido mamario en mujeres jóvenes, embarazadas o como complemento de la mamografía.
+          </p>
+          <p>
+            Sirve para detectar masas, quistes o lesiones sospechosas.
+          </p>
+          <p>
+            Solicita tu chequeo de mama con tecnología segura y sin dolor.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>

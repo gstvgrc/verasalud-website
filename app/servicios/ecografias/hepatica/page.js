@@ -49,23 +49,15 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
-          <p>La ecografía hepática es un ultrasonido especializado del hígado y las estructuras hepato‑biliares. Utiliza ondas de sonido para evaluar el tamaño, forma y textura del hígado, así como la vesícula y los conductos biliares, sin radiación.</p>
-          <p><strong>Beneficios clínicos:</strong></p>
-          <ul>
-                <li>Permite detectar a tiempo hígado graso, hepatitis crónica, cirrosis, quistes y tumores.</li>
-                <li>Identifica lesiones sospechosas de cáncer hepático en etapas iniciales.</li>
-                <li>Monitorea la eficacia de tratamientos en enfermedades hepáticas conocidas.</li>
-          </ul>
-          <p><strong>Indicaciones frecuentes:</strong></p>
-          <ul>
-                <li>Pruebas de sangre con enzimas hepáticas elevadas o bilirrubina alta.</li>
-                <li>Antecedente de hepatitis B o C u otras enfermedades hepáticas crónicas.</li>
-                <li>Sospecha de hígado graso por obesidad, diabetes o consumo de alcohol.</li>
-                <li>Dolor persistente en el cuadrante superior derecho del abdomen.</li>
-                <li>Seguimiento de quistes, nódulos o tumores hepáticos detectados previamente.</li>
-          </ul>
-          <p><strong>¿Cómo se realiza?</strong> El paciente se acuesta y se aplica un gel conductor sobre la parte superior del abdomen. El médico desliza suavemente un transductor sobre el hígado y la vesícula para obtener imágenes detalladas; es un procedimiento breve, indoloro y seguro.</p>
-          <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
+          <p>
+            La ecografía hepática examina el hígado y estructuras vecinas como vesícula y vías biliares. Detecta quistes, masas, grasa hepática y más.
+          </p>
+          <p>
+            Útil ante elevación de enzimas hepáticas o dolor en el hipocondrio derecho.
+          </p>
+          <p>
+            Agenda tu valoración hepática hoy mismo.
+          </p>
         </div>
       </section>
       <section className={styles.contact}>
