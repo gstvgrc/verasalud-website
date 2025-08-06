@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Testicular en Cali</h1>
+          <Image
+            src="/ecografia-testicular-verasalud.webp"
+            alt="Ecografía testicular en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía testicular produce imágenes de los testículos, epidídimos y escroto. Es la principal herramienta para evaluar dolor testicular, traumatismos, masas y varicoceles.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> El paciente se acuesta y se aplica gel sobre el escroto. Se emplea un transductor de alta frecuencia para visualizar las estructuras y usar Doppler para evaluar el flujo sanguíneo.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-testicular-verasalud-cali.webp'
-          alt='Ecografía testicular en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>

@@ -145,6 +145,14 @@ export default function EcografiasPage() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografías en Cali</h1>
+          <Image
+            src="/ecografias-cali-verasalud.webp"
+            alt="Ecografías en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>
             En VeraSalud realizamos ecografías de alta resolución y estudios
             Doppler que brindan diagnósticos confiables en poco tiempo.
@@ -153,16 +161,6 @@ export default function EcografiasPage() {
           </p>
           <p><strong>Agenda tu cita hoy mismo.</strong></p>
         </div>
-        <Image
-          src="/equipo-medico.jpg"
-          alt="Equipo médico realizando ecografía"
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.ecografiaGrid}>
         {ecografias.map(({ href, src, alt, title, desc }, idx) => (

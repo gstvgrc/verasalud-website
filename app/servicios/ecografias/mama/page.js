@@ -41,6 +41,14 @@ export default function Page() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía Mamaria en Cali</h1>
+          <Image
+            src="/ecografia-mama-verasalud.webp"
+            alt="Ecografía de mama en Cali Verasalud"
+            width={800}
+            height={500}
+            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+            priority
+          />
           <p>La ecografía mamaria utiliza ondas de sonido para producir imágenes del tejido mamario. Es especialmente útil para examinar bultos detectados en la mamografía o el examen físico y para evaluar mamas densas.</p>
           <p><strong>Beneficios clínicos:</strong></p>
           <ul>
@@ -58,16 +66,6 @@ export default function Page() {
           <p><strong>¿Cómo se realiza?</strong> La paciente se recuesta y se aplica gel sobre la mama. El médico mueve el transductor sobre la piel para visualizar estructuras internas y puede emplear Doppler para evaluar el flujo sanguíneo.</p>
           <p><strong>Agenda tu cita hoy mismo en Cali con nuestro equipo médico.</strong></p>
         </div>
-        <Image
-          src='/ecografia-mamaria-verasalud-cali.webp'
-          alt='Realizando ecografía mamaria en VeraSalud'
-          width={800}
-          height={500}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-          className="rounded-xl"
-          priority
-        />
       </section>
       <section className={styles.contact}>
         <div className={styles.container}>
