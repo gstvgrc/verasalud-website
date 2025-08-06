@@ -145,13 +145,14 @@ export default function EcografiasPage() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografías en Cali</h1>
-          {/* Fix broken image on ultrasound services page */}
+          {/* Use a real image and make it responsive */}
           <Image
-            src="/ecografia-ultrasonido-general-verasalud-cali.webp"
-            alt="Ecografías en Cali Verasalud"
+            src="/equipo-medico.jpg"
+            alt="Equipo médico de VeraSalud"
             width={1536}
             height={1024}
             priority
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-auto mb-4 rounded-md"
           />
           <p>
