@@ -12,13 +12,14 @@ export default function ContactForm() {
     const name = formData.get('name')
     const email = formData.get('email')
     const phone = formData.get('phone')
+    const service = formData.get('service')
     const message = formData.get('message')
 
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, message })
+        body: JSON.stringify({ name, email, phone, service, message })
       })
 
       if (res.ok) {
