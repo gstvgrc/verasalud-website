@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Hepática en Cali</h1>
           <Image
-            src="/ecografia-hepatica-verasalud.webp"
+            src="/ecografia-hepatica-verasalud-cali.webp"
             alt="Ecografía hepática en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía hepática examina el hígado y estructuras vecinas como vesícula y vías biliares. Detecta quistes, masas, grasa hepática y más.
           </p>

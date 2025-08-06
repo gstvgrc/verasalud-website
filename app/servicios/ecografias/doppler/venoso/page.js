@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Doppler Venoso en Cali</h1>
           <Image
-            src="/ecografia-doppler-venoso-verasalud.webp"
+            src="/ecografia-doppler-venoso-verasalud-cali.webp"
             alt="Ecografía Doppler venoso en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             El Doppler venoso detecta trombosis, insuficiencia venosa y varices al observar las venas en tiempo real.
           </p>

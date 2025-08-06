@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Obstétrica en Cali</h1>
           <Image
-            src="/ecografia-obstetrica-verasalud.webp"
+            src="/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp"
             alt="Ecografía obstétrica en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía obstétrica evalúa el desarrollo fetal, edad gestacional y bienestar del bebé. Es segura y esencial durante el embarazo.
           </p>

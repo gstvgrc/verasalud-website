@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía de Tejidos Blandos en Cali</h1>
           <Image
-            src="/ecografia-tejidos-blandos-verasalud.webp"
+            src="/ecografia-tejidos-blandos-verasalud-cali.webp"
             alt="Ecografía de tejidos blandos en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía de tejidos blandos permite valorar bultos, abscesos, ganglios o lesiones bajo la piel.
           </p>

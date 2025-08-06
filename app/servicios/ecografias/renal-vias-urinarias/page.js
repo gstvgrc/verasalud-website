@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Renal y Vías Urinarias en Cali</h1>
           <Image
-            src="/ecografia-renal-verasalud.webp"
+            src="/ecografia-renal-vias-urinarias-verasalud-cali.webp"
             alt="Ecografía renal y vías urinarias en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía renal examina riñones, uréteres y vejiga. Detecta cálculos, infecciones o alteraciones estructurales.
           </p>

@@ -42,13 +42,14 @@ export default function Page() {
         <div className={styles.heroContent}>
           <h1>Ecografía Mamaria en Cali</h1>
           <Image
-            src="/ecografia-mama-verasalud.webp"
-            alt="Ecografía de mama en Cali Verasalud"
+            src="/ecografia-mamaria-verasalud-cali.webp"
+            alt="Ecografía mamaria en Cali Verasalud"
             width={800}
             height={500}
             style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
             priority
           />
+
           <p>
             La ecografía mamaria permite visualizar tejido mamario en mujeres jóvenes, embarazadas o como complemento de la mamografía.
           </p>

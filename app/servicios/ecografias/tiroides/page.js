@@ -45,14 +45,15 @@ export default function EcografiaTiroidesPage() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
           <h1>Ecografía de Tiroides en Cali</h1>
-          <Image
-            src="/ecografia-tiroides-verasalud.webp"
-            alt="Ecografía de tiroides en Cali Verasalud"
-            width={800}
-            height={500}
-            style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
-            priority
-          />
+            <Image
+              src="/ecografia-tiroides-verasalud-cali.webp"
+              alt="Ecografía de tiroides en Cali Verasalud"
+              width={800}
+              height={500}
+              style={{ width: '100%', height: 'auto', marginTop: '1rem' }}
+              priority
+            />
+
             <p>
               La ecografía de tiroides observa nódulos, quistes o inflamación en la glándula. No emite radiación y es clave en el seguimiento clínico.
             </p>
@@ -62,8 +63,8 @@ export default function EcografiaTiroidesPage() {
             <p>
               Agenda tu ecografía tiroidea hoy.
             </p>
-        </div>
-      </section>
+          </div>
+        </section>
       <section className={styles.contact}>
         <div className={styles.container}>
           <ContactForm />
