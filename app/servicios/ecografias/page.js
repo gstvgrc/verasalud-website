@@ -142,27 +142,25 @@ export default function EcografiasPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section className={`${styles.hero} px-4`}>
-        <div className={styles.heroContent}>
-        <h1>Ecografías en Cali</h1>
-        <div className="w-full">
-          <Image
-            src="/equipo-medico.jpg"
-            alt="Equipo médico de VeraSalud"
-            width={1920}
-            height={1080}
-            priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-            className="w-full h-auto rounded-md"
-          />
-        </div>
+      <section className={styles.heroImage}>
+        <Image
+          src="/equipo-medico.jpg"
+          alt="Equipo médico de VeraSalud"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 100vw"
+          style={{ objectFit: 'cover' }}
+        />
+        <div className={styles.heroText}>
+          <h1>Ecografías en Cali</h1>
           <p>
-            En VeraSalud realizamos ecografías de alta resolución y estudios
-            Doppler que brindan diagnósticos confiables en poco tiempo.
-            Nuestros especialistas ofrecen atención personalizada para cuidar
-            tu salud.
+            Ecografías de alta resolución y estudios Doppler para diagnósticos
+            confiables. Nuestros especialistas ofrecen atención personalizada
+            para cuidar tu salud.
           </p>
-          <p><strong>Agenda tu cita hoy mismo.</strong></p>
+          <p>
+            <strong>Agenda tu cita hoy mismo.</strong>
+          </p>
         </div>
       </section>
       <section className={styles.ecografiaGrid}>
