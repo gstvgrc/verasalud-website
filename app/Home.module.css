@@ -198,6 +198,34 @@
   color: var(--primary-cyan);
 }
 
+.heroImage {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+
+.heroText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
 /* Services Section */
 .services {
   padding: 4rem 0;
