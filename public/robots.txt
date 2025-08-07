@@ -4,11 +4,5 @@ User-agent: *
 Allow: /
 
 Disallow: /api/
-# Evitar que Google rastree carpetas obsoletas o spam
-Disallow: /assets/
-Disallow: /liveup/
-Disallow: /parking.php
-Disallow: /search/
-Disallow: /caf/
 
 Sitemap: https://verasalud.com/sitemap.xml
