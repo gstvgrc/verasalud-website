@@ -145,13 +145,15 @@ export default function EcografiasPage() {
       <section className={`${styles.hero} px-4`}>
         <div className={styles.heroContent}>
         <h1>Ecografías en Cali</h1>
-        <div className="relative w-full h-64 sm:h-80 md:h-[500px] rounded-md overflow-hidden">
+        <div className="w-full">
           <Image
             src="/equipo-medico.jpg"
             alt="Equipo médico de VeraSalud"
-            fill
-            className="object-cover"
+            width={1920}
+            height={1080}
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            className="w-full h-auto rounded-md"
           />
         </div>
           <p>
