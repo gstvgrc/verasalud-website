@@ -93,6 +93,38 @@ const nextConfig = {
         destination: '/servicios/electrocardiograma',
         permanent: true,
       },
+      // Redirección nueva: electrocardiograma singular
+      {
+        source: '/electrocardiograma',
+        destination: '/servicios/electrocardiograma',
+        permanent: true,
+      },
+      // Rutas obsoletas redirigidas a la página de inicio
+      {
+        source: '/assets/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/liveup/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/parking.php',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/search/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/caf/:path*',
+        destination: '/',
+        permanent: true,
+      },
       // Redirigir index.html a raíz
       {
         source: '/index.html',
