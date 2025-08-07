@@ -1,15 +1,8 @@
-# robots.txt de VeraSalud Cali
+# robots.txt de VeraSalud - versión optimizada
+
 User-agent: *
-Allow: /medicina-interna
-Allow: /servicios/
-Allow: /servicios/ecografias/
-Allow: /servicios/electrocardiograma
-Allow: /servicios/telemedicina
-Allow: /videoconsulta
-Allow: /sobre-nosotros
-Allow: /contacto
-Allow: /citas
-Allow: /blog
+Allow: /
+
 Disallow: /api/
-Disallow: /_next/
+
 Sitemap: https://verasalud.com/sitemap.xml
