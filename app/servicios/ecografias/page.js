@@ -144,7 +144,7 @@ export default function EcografiasPage() {
       />
       <section className={styles.heroImage}>
         <Image
-          src="/equipo-medico.jpg"
+          src="/equipo-medico.webp"
           alt="Equipo médico de VeraSalud"
           fill
           priority
