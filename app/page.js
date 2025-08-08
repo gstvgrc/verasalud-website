@@ -207,9 +207,9 @@ export default function Home() {
           <div className={styles.trustIndicators}>
             <p>✓ Médicos Universidad del Valle  ✓ Sin Demoras  ✓ Alta Tecnología</p>
           </div>
-          {/* TODO: Optimizar esta imagen a formato .webp */}
+          {/* Imagen optimizada en formato .webp */}
           <Image
-            src="/equipo-medico.jpg"
+            src="/equipo-medico.webp"
             alt="Equipo médico de VeraSalud"
             width={1200}
             height={600}
