@@ -2,10 +2,23 @@ export async function GET() {
   const baseUrl = 'https://verasalud.com';
 
   const staticPaths = [
-    '', // Página de inicio
+    '',
     'servicios',
-    'servicios/ecografias',
     'servicios/consulta-medica',
+    'servicios/ecografias',
+    'servicios/ecografias/abdominal',
+    'servicios/ecografias/hepatica',
+    'servicios/ecografias/pelvica',
+    'servicios/ecografias/obstetrica',
+    'servicios/ecografias/tiroides',
+    'servicios/ecografias/mama',
+    'servicios/ecografias/renal-vias-urinarias',
+    'servicios/ecografias/prostata',
+    'servicios/ecografias/tejidos-blandos',
+    'servicios/ecografias/testicular',
+    'servicios/ecografias/osteomuscular',
+    'servicios/ecografias/doppler/arterial',
+    'servicios/ecografias/doppler/venoso',
     'servicios/electrocardiograma',
     'servicios/telemedicina',
     'videoconsulta',
