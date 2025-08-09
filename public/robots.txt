@@ -1,9 +1,0 @@
-# robots.txt de VeraSalud (actualizado)
-
-User-agent: *
-Allow: /
-Disallow: /api/
-
-# Indicamos a los rastreadores dónde encontrar el sitemap dinámico
-Sitemap: https://verasalud.com/sitemap.xml
-
