@@ -1,4 +1,4 @@
-# robots.txt de VeraSalud - versión optimizada
+# robots.txt de VeraSalud
 
 User-agent: *
 Allow: /
@@ -6,3 +6,4 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://verasalud.com/sitemap.xml
+
