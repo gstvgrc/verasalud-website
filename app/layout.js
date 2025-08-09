@@ -86,6 +86,10 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#21396f" />
 
+        {/* Preconexión con dominios indispensables para evitar cadenas de solicitudes críticas */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
         {/* Datos estructurados */}
         <script
           type="application/ld+json"
