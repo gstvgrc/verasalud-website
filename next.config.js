@@ -117,13 +117,7 @@ const nextConfig = {
   
   // Rewrites para URLs limpias
   async rewrites() {
-    return [
-      // Ejemplo: URLs amigables para filtros
-      {
-        source: '/servicios/:categoria',
-        destination: '/api/servicios?categoria=:categoria',
-      },
-    ]
+    return [];
   },
   
   // Variables de entorno
