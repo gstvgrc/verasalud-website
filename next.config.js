@@ -29,11 +29,9 @@ const nextConfig = {
 
   // Habilita compilación moderna y evita transpilar para navegadores legacy
   swcMinify: true,
-  // Define opciones experimentales para desactivar la compatibilidad con navegadores obsoletos.
+  // Desactiva transpiling para navegadores obsoletos y usa la lista de navegadores definida en .browserslistrc
   experimental: {
-    // Impide que Next.js incluya polyfills y transformaciones para navegadores antiguos (por ejemplo IE 11)
     legacyBrowsers: false,
-    // Indica a SWC que utilice la configuración de browserslist
     browsersListForSwc: true
   },
 
