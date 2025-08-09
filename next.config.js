@@ -51,13 +51,17 @@ const nextConfig = {
       "frame-ancestors 'none'",
       "img-src 'self' data: https:",
       "font-src 'self' data:",
+      // Permite estilos en línea necesarios para componentes de Next.js
       "style-src 'self' 'unsafe-inline'",
+      // Limita conexiones externas a Google Analytics/Tag Manager; ajusta dominios según tus proveedores
       "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net",
+      // Permite scripts propios y los de Google Analytics/Tag Manager
       "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline'",
       "form-action 'self'",
       "upgrade-insecure-requests",
+      // Activa Trusted Types para mitigar XSS basado en DOM
       "require-trusted-types-for 'script'",
-      "trusted-types verasalud default gtm"
+      "trusted-types verasalud default"
     ].join('; ');
 
     return [
@@ -75,7 +79,7 @@ const nextConfig = {
 
           // Aislamiento de origen
           { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
-          { key: 'Cross-Origin-Embedder-Policy', value: 'credentialless' },
+          { key: 'Cross-Origin-Embedder-Policy', value: 'require-corp' },
           { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' },
 
           // Otras cabeceras recomendadas
