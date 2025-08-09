@@ -1,6 +1,7 @@
 'use client'
 import Script from 'next/script'
 
+// Componente que carga Google Analytics de forma asíncrona
 export default function GA() {
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID
   if (!GA_ID) return null

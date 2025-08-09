@@ -219,6 +219,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {children}
+        {/* Carga asíncrona de Google Analytics a través del componente GA */}
         <GA />
       </body>
     </html>
