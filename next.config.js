@@ -27,6 +27,13 @@ const nextConfig = {
   // Trailing slash desactivado para coincidir con URL canónicas
   trailingSlash: false,
 
+  // Habilita compilación moderna y evita transpilar para navegadores legacy
+  swcMinify: true,
+  experimental: {
+    legacyBrowsers: false,
+    browsersListForSwc: true
+  },
+
   // Configuración de internacionalización
   i18n: {
     locales: ['es-CO'],
@@ -152,6 +159,9 @@ const nextConfig = {
         }
       }
     }
+    // Optimiza la eliminación de código JavaScript no utilizado
+    config.optimization = config.optimization || {}
+    config.optimization.usedExports = true
     return config
   },
 }
