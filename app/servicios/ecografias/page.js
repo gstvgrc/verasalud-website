@@ -148,6 +148,7 @@ export default function EcografiasPage() {
           alt="Equipo médico de VeraSalud"
           fill
           priority
+          fetchPriority="high"
           sizes="(max-width: 768px) 100vw, 100vw"
           style={{ objectFit: 'cover' }}
         />
