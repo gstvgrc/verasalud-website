@@ -1,16 +1,20 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import GA from './components/GA'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
+import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL('https://verasalud.com'),
   title: {
     default: 'VeraSalud - Medicina Interna y Ecografías en Cali',
-    template: '%s | VeraSalud'
+    template: '%s | VeraSalud',
   },
-  description: 'Centro médico en Cali especializado en medicina interna, ecografías de alta resolución, electrocardiogramas y consultas virtuales. Médicos Universidad del Valle.',
+  description:
+    'Centro médico en Cali especializado en medicina interna, ecografías de alta resolución, electrocardiogramas y consultas virtuales. Médicos Universidad del Valle.',
   keywords: [
     'medicina interna cali',
     'ecografías cali',
@@ -18,7 +22,7 @@ export const metadata = {
     'consulta médica virtual cali',
     'médicos universidad del valle',
     'centro médico cali',
-    'verasalud'
+    'verasalud',
   ],
   authors: [{ name: 'VeraSalud' }],
   creator: 'VeraSalud',
@@ -30,7 +34,8 @@ export const metadata = {
   },
   openGraph: {
     title: 'VeraSalud Cali - Medicina Interna y Ecografías Sin Demoras',
-    description: 'Centro médico especializado con médicos de la Universidad del Valle. Sin filas ni demoras.',
+    description:
+      'Centro médico especializado con médicos de la Universidad del Valle. Sin filas ni demoras.',
     url: 'https://verasalud.com',
     siteName: 'VeraSalud',
     images: [
@@ -39,7 +44,7 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: 'VeraSalud - Centro Médico en Cali',
-      }
+      },
     ],
     locale: 'es_CO',
     type: 'website',
@@ -47,7 +52,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'VeraSalud Cali - Medicina Interna y Ecografías',
-    description: 'Centro médico especializado con médicos de la Universidad del Valle',
+    description:
+      'Centro médico especializado con médicos de la Universidad del Valle',
     images: ['https://verasalud.com/twitter-image.jpg'],
   },
   robots: {
@@ -69,7 +75,11 @@ export const metadata = {
   // },
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="es-CO">
       <head>
@@ -219,13 +229,15 @@ export default function RootLayout({ children }) {
 }`,
           }}
         />
-
       </head>
-      <body className={inter.className}>
+      <body className={montserrat.className}>
+        <Navbar />
         {children}
+        <Footer />
         {/* Carga asíncrona de Google Analytics a través del componente GA */}
         <GA />
       </body>
     </html>
   )
 }
+
