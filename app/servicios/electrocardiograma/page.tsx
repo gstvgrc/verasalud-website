@@ -63,7 +63,7 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default function ElectrocardiogramaPage(): JSX.Element {
+export default function ElectrocardiogramaPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalTest',
