@@ -3,26 +3,19 @@ import ContactForm from '../../components/ContactForm'
 import styles from '../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografías en Cali | Ultrasonido y Doppler | VeraSalud',
-  description:
-    'Ecografías de alta resolución en Cali con radiólogos expertos. Sin filas, resultados precisos y atención profesional. Agenda tu estudio.',
-  keywords: ['ecografias cali', 'ecografia doppler', 'ecografia abdominal', 'ultrasonido en cali'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias' },
-  openGraph: {
-    title: 'Ecografías en Cali | VeraSalud',
-    description: 'Ultrasonido convencional y Doppler en Cali para diagnósticos precisos.',
-    url: 'https://verasalud.com/servicios/ecografias',
-    images: [
-      { url: '/og-image.jpg', width: 1200, height: 630, alt: 'Ecografías en VeraSalud Cali' }
-    ],
-    locale: 'es_CO',
-    type: 'website'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografías de Alta Resolución en Cali',
-    description: 'Solicita tu ecografía con especialistas en VeraSalud.'
+export async function generateMetadata() {
+  return {
+    title: 'Ecografías de Alta Resolución en Cali | VeraSalud',
+    description:
+      'Ecografías convencionales y Doppler con tecnología avanzada y radiólogos expertos en VeraSalud Cali.',
+    keywords: ['ecografías Cali', 'ecografía doppler', 'ultrasonido Cali'],
+    openGraph: {
+      title: 'Ecografías en Cali | VeraSalud',
+      description:
+        'Ecografías de alta resolución realizadas por profesionales con experiencia clínica.',
+      url: '/servicios/ecografias',
+    },
+    alternates: { canonical: '/servicios/ecografias' },
   }
 }
 

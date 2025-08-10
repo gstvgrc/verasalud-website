@@ -3,25 +3,22 @@ import ContactForm from '../../../components/ContactForm'
 import styles from '../../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografía Mamaria en Cali | VeraSalud',
-  description: 'Diagnóstico por ultrasonido de la mama para distinguir entre quistes y tumores y complementar la mamografía.',
-  keywords: ['ecografia mamaria cali', 'ultrasonido mama', 'ecografia de seno cali'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias/mama' },
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'Ecografía Mamaria en Cali | VeraSalud',
-    description: 'Diagnóstico por ultrasonido de la mama para distinguir entre quistes y tumores y complementar la mamografía.',
-    url: 'https://verasalud.com/servicios/ecografias/mama',
-    images: [
-      { url: '/ecografia-mamaria-verasalud-cali.webp', width: 1200, height: 630, alt: 'Realizando ecografía mamaria en VeraSalud' }
-    ],
-    locale: 'es_CO',
-    type: 'article'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografía Mamaria en Cali | VeraSalud',
-    description: 'Diagnóstico por ultrasonido de la mama para distinguir entre quistes y tumores y complementar la mamografía.'
+    description:
+      'Ecografía de mama de alta resolución para evaluación y control en VeraSalud Cali.',
+    openGraph: {
+      title: 'Ecografía Mamaria en Cali | VeraSalud',
+      description:
+        'Ecografía mamaria con equipos de alta resolución en VeraSalud Cali.',
+      url: '/servicios/ecografias/mama',
+      images: [
+        { url: '/ecografia-mamaria-verasalud-cali.webp', width: 1200, height: 630 },
+      ],
+    },
+    alternates: { canonical: '/servicios/ecografias/mama' },
+    keywords: ['ecografía mamaria Cali', 'ultrasonido de mama', 'control de mama'],
   }
 }
 

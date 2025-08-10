@@ -1,69 +1,27 @@
 import Image from 'next/image'
-import ContactForm from '../../components/ContactForm'
-import styles from '../../Home.module.css'
+import ContactForm from '@/components/ContactForm'
+import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { buildMetadata, getServiceSEO, buildBreadcrumbJSONLD, SITE } from '@/lib/seo'
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Electrocardiograma en Cali | Rápido y Confiable | VeraSalud'
-  const description =
-    'Realiza tu electrocardiograma en VeraSalud Cali. Detección de arritmias y riesgos cardíacos sin filas, con equipos digitales y lectura por especialistas. Agenda tu cita.'
-  const pageUrl = '/servicios/electrocardiograma'
-  const baseUrl = 'https://verasalud.com'
-  const imageUrl = `${baseUrl}/electrocardiograma-verasalud-cali.webp`
-
+  const s = await getServiceSEO('electrocardiograma')
+  if (s) return buildMetadata(s)
   return {
-    title,
-    description,
-    alternates: { canonical: pageUrl },
-    openGraph: {
-      title,
-      description:
-        'En VeraSalud realizamos tu electrocardiograma con atención sin demoras, equipos digitales y lectura inmediata por especialistas.',
-      url: pageUrl,
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 800,
-          alt: 'Paciente realizándose un electrocardiograma en VeraSalud Cali.',
-        },
-      ],
-      locale: 'es_CO',
-      type: 'website',
-      siteName: 'VeraSalud',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [imageUrl],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-    keywords: [
-      'electrocardiograma Cali',
-      'ECG Cali',
-      'arritmias',
-      'bloqueos de rama',
-      'chequeo cardiaco',
-      'resultados inmediatos',
-      'verasalud',
-    ],
-    authors: [{ name: 'VeraSalud' }],
+    title: 'Electrocardiograma en Cali | VeraSalud',
+    description:
+      'Electrocardiograma digital con lectura por especialistas. Atención sin demoras en VeraSalud Cali.',
+    alternates: { canonical: `${SITE.baseUrl}/servicios/electrocardiograma` },
   }
 }
 
 export default function ElectrocardiogramaPage() {
+  const breadcrumb = buildBreadcrumbJSONLD([
+    { name: 'Inicio', item: SITE.baseUrl },
+    { name: 'Servicios', item: `${SITE.baseUrl}/servicios` },
+    { name: 'Electrocardiograma' },
+  ])
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalTest',
@@ -94,6 +52,10 @@ export default function ElectrocardiogramaPage() {
 
   return (
     <main className={`${styles.container} dark-fix`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

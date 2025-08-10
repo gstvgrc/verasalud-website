@@ -1,14 +1,15 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
 import GA from './components/GA'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import type { Metadata } from 'next'
+import { SITE } from '@/lib/seo'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://verasalud.com'),
+  metadataBase: new URL(SITE.baseUrl),
   title: {
     default: 'VeraSalud - Medicina Interna y Ecografías en Cali',
     template: '%s | VeraSalud',
@@ -73,6 +74,16 @@ export const metadata: Metadata = {
   // verification: {
   //   google: 'tu-codigo-de-verificacion', // Agregar cuando tengas Google Search Console
   // },
+}
+
+// Viewport dinámico (puede extenderse según preferencias)
+export function generateViewport(): Viewport {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    themeColor: '#21396f',
+    colorScheme: 'light',
+  }
 }
 
 export default function RootLayout({
