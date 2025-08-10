@@ -11,12 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Instalar Node.js
-        uses: actions/setup-node@v3
+      - name: Usar Node.js 20
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Mostrar versiones
+        run: |
+          node -v
+          npm -v
 
       - name: Instalar dependencias
         run: npm ci
@@ -24,5 +30,16 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # Opcional pero útil si usas TS o verificador propio:
+      - name: Type-check (TS)
+        if: ${{ hashFiles('tsconfig.json') != '' }}
+        run: npm run type-check --if-present
+
       - name: Build del sitio
-        run: npm run build
+        env:
+          # Evita telemetría y asegura defaults en build.
+          NEXT_TELEMETRY_DISABLED: '1'
+          # EJEMPLO: define variables públicas si faltan (sustituye por tus reales o usa Secrets)
+          # NEXT_PUBLIC_SITE_URL: 'https://verasalud.com'
+        run: |
+          node --max-old-space-size=4096 ./node_modules/.bin/next build || (echo "Build failed" && exit 1)
