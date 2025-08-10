@@ -1,74 +1,262 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import styles from '../Home.module.css'
+import { useState } from 'react';
+
+interface FormData {
+  nombre: string;
+  telefono: string;
+  email: string;
+  mensaje: string;
+}
 
 export default function ContactForm() {
-  const [status, setStatus] = useState(null)
+  const [formData, setFormData] = useState<FormData>({
+    nombre: '',
+    telefono: '',
+    email: '',
+    mensaje: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    const formData = new FormData(e.target)
-    const name = formData.get('name')
-    const email = formData.get('email')
-    const phone = formData.get('phone')
-    const service = formData.get('service')
-    const message = formData.get('message')
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitMessage('');
 
     try {
-      const res = await fetch('/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, service, message })
-      })
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      if (res.ok) {
-        setStatus('success')
-        e.target.reset()
+      if (response.ok) {
+        setSubmitMessage('Mensaje enviado correctamente. Te contactaremos pronto.');
+        setFormData({ nombre: '', telefono: '', email: '', mensaje: '' });
       } else {
-        setStatus('error')
+        setSubmitMessage('Error al enviar el mensaje. Intenta nuevamente.');
       }
     } catch (error) {
-      setStatus('error')
+      setSubmitMessage('Error de conexión. Intenta nuevamente.');
+    } finally {
+      setIsSubmitting(false);
     }
-  }
+  };
 
   return (
-    <div className={styles.contactForm}>
-      <h3>Agenda tu Cita Médica</h3>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Nombre completo</label>
-        <input id="name" name="name" type="text" placeholder="Nombre completo" required />
+    <section className="contact-form">
+      <h2>Agenda tu Consulta</h2>
+      <p>Déjanos tus datos y te contactaremos para agendar tu cita médica.</p>
+      
+      <form onSubmit={handleSubmit} className="form">
+        <div className="form-group">
+          <label htmlFor="nombre">Nombre completo *</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            value={formData.nombre}
+            onChange={handleChange}
+            required
+            placeholder="Tu nombre completo"
+          />
+        </div>
 
-        <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Email" required />
+        <div className="form-group">
+          <label htmlFor="telefono">Teléfono *</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            value={formData.telefono}
+            onChange={handleChange}
+            required
+            placeholder="3XX XXX XXXX"
+          />
+        </div>
 
-        <label htmlFor="phone">Teléfono</label>
-        <input id="phone" name="phone" type="tel" placeholder="Teléfono" required />
+        <div className="form-group">
+          <label htmlFor="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="tu@email.com"
+          />
+        </div>
 
-        <label htmlFor="service">Servicio</label>
-        <select id="service" name="service" required>
-          <option value="">Selecciona el servicio</option>
-          <option value="medicina-interna">Medicina Interna</option>
-          <option value="electrocardiograma">Electrocardiograma</option>
-          <option value="ecografias">Ecografías</option>
-        </select>
+        <div className="form-group">
+          <label htmlFor="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            value={formData.mensaje}
+            onChange={handleChange}
+            rows={4}
+            placeholder="Cuéntanos sobre tu consulta o síntomas (opcional)"
+          />
+        </div>
 
-        <label htmlFor="message">Describe tu consulta médica</label>
-        <textarea id="message" name="message" placeholder="Describe tu consulta médica" rows="4" required></textarea>
+        <button 
+          type="submit" 
+          disabled={isSubmitting}
+          className="submit-button"
+        >
+          {isSubmitting ? 'Enviando...' : 'Solicitar Consulta'}
+        </button>
 
-        <button type="submit" className={styles.btnPrimary}>Solicitar Cita</button>
+        {submitMessage && (
+          <div className={`message ${submitMessage.includes('Error') ? 'error' : 'success'}`}>
+            {submitMessage}
+          </div>
+        )}
       </form>
-      {status === 'success' && (
-        <p role="status" aria-live="polite" className={styles.successMessage}>
-          Mensaje enviado. Nos contactaremos contigo pronto.
+
+      <div className="contact-info">
+        <h3>Contacto directo</h3>
+        <p>
+          <strong>WhatsApp:</strong>{' '}
+          <a 
+            href="https://wa.me/573150633005" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="whatsapp-link"
+          >
+            +57 315 063 3005
+          </a>
         </p>
-      )}
-      {status === 'error' && (
-        <p role="status" aria-live="polite" className={styles.errorMessage}>
-          Ocurrió un error. Intenta nuevamente más tarde.
+        <p>
+          <strong>Teléfono:</strong> +57 (602) 394 2289
         </p>
-      )}
-    </div>
-  )
+      </div>
+
+      <style jsx>{`
+        .contact-form {
+          max-width: 600px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background: #f8f9fa;
+          border-radius: 12px;
+        }
+        
+        .contact-form h2 {
+          color: #21396f;
+          margin-bottom: 0.5rem;
+        }
+        
+        .form {
+          margin-top: 1.5rem;
+        }
+        
+        .form-group {
+          margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          color: #333;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 12px;
+          border: 2px solid #e1e5e9;
+          border-radius: 6px;
+          font-size: 16px;
+          transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+          outline: none;
+          border-color: #21396f;
+        }
+        
+        .submit-button {
+          width: 100%;
+          padding: 14px;
+          background: #21396f;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        
+        .submit-button:hover:not(:disabled) {
+          background: #1a2d5a;
+        }
+        
+        .submit-button:disabled {
+          background: #ccc;
+          cursor: not-allowed;
+        }
+        
+        .message {
+          margin-top: 1rem;
+          padding: 12px;
+          border-radius: 6px;
+          text-align: center;
+        }
+        
+        .message.success {
+          background: #d4edda;
+          color: #155724;
+          border: 1px solid #c3e6cb;
+        }
+        
+        .message.error {
+          background: #f8d7da;
+          color: #721c24;
+          border: 1px solid #f5c6cb;
+        }
+        
+        .contact-info {
+          margin-top: 2rem;
+          padding-top: 2rem;
+          border-top: 1px solid #e1e5e9;
+        }
+        
+        .contact-info h3 {
+          color: #21396f;
+          margin-bottom: 1rem;
+        }
+        
+        .whatsapp-link {
+          color: #25d366;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        
+        .whatsapp-link:hover {
+          text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+          .contact-form {
+            margin: 1rem;
+            padding: 1.5rem;
+          }
+        }
+      `}</style>
+    </section>
+  );
 }
