@@ -1,77 +1,10 @@
-// app/servicios/consulta-medica/page.tsx
 import { Metadata } from 'next';
 import Image from 'next/image';
-import ContactForm from '../../components/ContactForm';
-import styles from '../../Home.module.css';
+import ContactForm from '@/components/ContactForm';
+import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 
-// Función para generar metadatos dinámicos optimizados para SEO médico
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Consulta de Medicina Interna en Cali – Especialistas VeraSalud';
-  const description = 'Consulta de medicina interna con especialistas de la Universidad del Valle en VeraSalud. Diagnóstico integral y manejo de enfermedades crónicas sin filas ni demoras en Cali.';
-  const pageUrl = '/servicios/consulta-medica';
-  
-  return {
-    title: title,
-    description: description,
-    keywords: [
-      'medicina interna Cali',
-      'internista Cali',
-      'consulta médica especializada',
-      'diabetes hipertensión',
-      'enfermedades crónicas',
-      'médicos Universidad del Valle',
-      'consulta sin demoras Cali'
-    ],
-    authors: [{ name: 'VeraSalud' }],
-    openGraph: {
-      title: title,
-      description: description,
-      url: `https://verasalud.com${pageUrl}`,
-      siteName: 'VeraSalud',
-      locale: 'es_CO',
-      type: 'article',
-      images: [
-        {
-          url: 'https://verasalud.com/equipo-medico.webp',
-          width: 1200,
-          height: 800,
-          alt: 'Médicos internistas de VeraSalud en Cali'
-        },
-        {
-          url: 'https://verasalud.com/og-medicina-interna.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'Consulta de Medicina Interna VeraSalud'
-        }
-      ]
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: title,
-      description: description,
-      images: ['https://verasalud.com/og-medicina-interna.jpg'],
-      creator: '@verasalud'
-    },
-    alternates: {
-      canonical: `https://verasalud.com${pageUrl}`,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-  };
-}
-
-export default function ConsultaMedicaPage() {
-  // Schema estructurado optimizado para medicina interna
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
@@ -109,15 +42,64 @@ export default function ConsultaMedicaPage() {
     ]
   };
 
+  return {
+    title: 'Consulta de Medicina Interna en Cali – Especialistas VeraSalud',
+    description: 'Consulta de medicina interna con especialistas de la Universidad del Valle en VeraSalud. Diagnóstico integral y manejo de enfermedades crónicas sin filas ni demoras en Cali.',
+    keywords: [
+      'medicina interna Cali',
+      'internista Cali',
+      'consulta médica especializada',
+      'diabetes hipertensión',
+      'enfermedades crónicas',
+      'médicos Universidad del Valle',
+      'consulta sin demoras Cali'
+    ],
+    openGraph: {
+      title: 'Consulta de Medicina Interna en Cali – VeraSalud',
+      description: 'Consulta médica especializada con internistas de VeraSalud en Cali.',
+      url: 'https://verasalud.com/servicios/consulta-medica',
+      images: [
+        { 
+          url: 'https://verasalud.com/equipo-medico.webp', 
+          width: 1200, 
+          height: 800, 
+          alt: 'Médicos internistas de VeraSalud en Cali' 
+        }
+      ],
+      locale: 'es_CO',
+      type: 'article'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Consulta de Medicina Interna en Cali – VeraSalud',
+      description: 'Agenda tu consulta con internistas de la Universidad del Valle en Cali.',
+      images: ['https://verasalud.com/equipo-medico.webp']
+    },
+    alternates: {
+      canonical: 'https://verasalud.com/servicios/consulta-medica'
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    other: {
+      'application/ld+json': JSON.stringify(jsonLd)
+    }
+  };
+}
+
+export default function ConsultaMedicaPage() {
   return (
-    <main className={`${styles.container} dark-fix`}>
-      <script 
-        type="application/ld+json" 
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
-      />
-      
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
+    <main className="container dark-fix">
+      <section className="hero">
+        <div className="heroContent">
           <h1>Consulta de Medicina Interna en Cali</h1>
           <p>
             Valoración integral de tu salud por internistas especializados en enfermedades crónicas,
@@ -127,12 +109,11 @@ export default function ConsultaMedicaPage() {
           <figure style={{ marginTop: '2rem', marginBottom: '2rem' }}>
             <Image
               src="/equipo-medico.webp"
-              alt="Médicos internistas de VeraSalud especializados en medicina interna"
+              alt="Equipo médico de VeraSalud realizando consulta de medicina interna en Cali"
               width={1200}
               height={800}
               sizes="(max-width: 768px) 100vw, 800px"
               priority
-              fetchPriority="high"
               style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
             />
             <figcaption style={{ 
@@ -141,7 +122,7 @@ export default function ConsultaMedicaPage() {
               color: '#555', 
               marginTop: '0.5rem' 
             }}>
-              Equipo de internistas especializados de VeraSalud - Consulta de Medicina Interna en Cali
+              Consulta de Medicina Interna con especialistas en VeraSalud – Cali
             </figcaption>
           </figure>
           
@@ -156,8 +137,8 @@ export default function ConsultaMedicaPage() {
         </div>
       </section>
       
-      <section className={styles.contact}>
-        <div className={styles.container}>
+      <section className="contact">
+        <div className="container">
           <ContactForm />
           <p style={{ marginTop: '2rem' }}>
             <Link href="/">Volver al inicio</Link>
