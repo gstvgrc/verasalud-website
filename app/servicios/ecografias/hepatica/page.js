@@ -3,25 +3,22 @@ import ContactForm from '../../../components/ContactForm'
 import styles from '../../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografía Hepática en Cali | VeraSalud',
-  description: 'Diagnóstico preciso del hígado y vías biliares con ecografía hepática especializada en Cali.',
-  keywords: ['ecografia hepatica cali', 'ultrasonido de higado', 'diagnostico higado cali'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias/hepatica' },
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'Ecografía Hepática en Cali | VeraSalud',
-    description: 'Diagnóstico preciso del hígado y vías biliares con ecografía hepática especializada en Cali.',
-    url: 'https://verasalud.com/servicios/ecografias/hepatica',
-    images: [
-      { url: '/ecografia-hepatica-verasalud-cali.webp', width: 1200, height: 630, alt: 'Equipo realizando ecografía hepática en VeraSalud' }
-    ],
-    locale: 'es_CO',
-    type: 'article'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografía Hepática en Cali | VeraSalud',
-    description: 'Diagnóstico preciso del hígado y vías biliares con ecografía hepática especializada en Cali.'
+    description:
+      'Ecografía hepática para evaluación de hígado y vías biliares con alta resolución. VeraSalud Cali.',
+    openGraph: {
+      title: 'Ecografía Hepática en Cali | VeraSalud',
+      description:
+        'Ecografía hepática con resultados confiables en VeraSalud Cali.',
+      url: '/servicios/ecografias/hepatica',
+      images: [
+        { url: '/ecografia-hepatica-verasalud-cali.webp', width: 1200, height: 630 },
+      ],
+    },
+    alternates: { canonical: '/servicios/ecografias/hepatica' },
+    keywords: ['ecografía hepática Cali', 'hígado ecografía', 'vías biliares'],
   }
 }
 

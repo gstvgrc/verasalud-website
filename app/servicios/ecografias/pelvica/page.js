@@ -3,25 +3,22 @@ import ContactForm from '../../../components/ContactForm'
 import styles from '../../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografía Pélvica en Cali | VeraSalud',
-  description: 'Evaluación ecográfica del útero, ovarios y vejiga para diagnosticar afecciones ginecológicas y urológicas.',
-  keywords: ['ecografia pelvica cali', 'ultrasonido ginecologico', 'ecografia transvaginal cali'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias/pelvica' },
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'Ecografía Pélvica en Cali | VeraSalud',
-    description: 'Evaluación ecográfica del útero, ovarios y vejiga para diagnosticar afecciones ginecológicas y urológicas.',
-    url: 'https://verasalud.com/servicios/ecografias/pelvica',
-    images: [
-      { url: '/ecografia-pelvica-ginecologica-verasalud-cali.webp', width: 1200, height: 630, alt: 'Ecografía pélvica ginecológica en VeraSalud' }
-    ],
-    locale: 'es_CO',
-    type: 'article'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografía Pélvica en Cali | VeraSalud',
-    description: 'Evaluación ecográfica del útero, ovarios y vejiga para diagnosticar afecciones ginecológicas y urológicas.'
+    description:
+      'Ecografía pélvica femenina con alta calidad de imagen. Resultados confiables en VeraSalud Cali.',
+    openGraph: {
+      title: 'Ecografía Pélvica en Cali | VeraSalud',
+      description:
+        'Ecografía pélvica con equipos de alta resolución en VeraSalud Cali.',
+      url: '/servicios/ecografias/pelvica',
+      images: [
+        { url: '/ecografia-pelvica-ginecologica-verasalud-cali.webp', width: 1200, height: 630 },
+      ],
+    },
+    alternates: { canonical: '/servicios/ecografias/pelvica' },
+    keywords: ['ecografía pélvica Cali', 'ultrasonido pélvico', 'ginecológica'],
   }
 }
 

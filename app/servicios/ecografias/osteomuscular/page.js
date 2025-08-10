@@ -3,25 +3,22 @@ import ContactForm from '../../../components/ContactForm'
 import styles from '../../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografía Osteomuscular en Cali | VeraSalud',
-  description: 'Evaluación de músculos, tendones y articulaciones mediante ultrasonido dinámico.',
-  keywords: ['ecografia osteomuscular cali', 'ultrasonido musculos', 'ecografia articular cali'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias/osteomuscular' },
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'Ecografía Osteomuscular en Cali | VeraSalud',
-    description: 'Evaluación de músculos, tendones y articulaciones mediante ultrasonido dinámico.',
-    url: 'https://verasalud.com/servicios/ecografias/osteomuscular',
-    images: [
-      { url: '/ecografia-osteomuscular-articular-verasalud-cali.webp', width: 1200, height: 630, alt: 'Ecografía osteomuscular en VeraSalud' }
-    ],
-    locale: 'es_CO',
-    type: 'article'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografía Osteomuscular en Cali | VeraSalud',
-    description: 'Evaluación de músculos, tendones y articulaciones mediante ultrasonido dinámico.'
+    description:
+      'Ecografía osteomuscular para evaluación de tendones, ligamentos y articulaciones. VeraSalud Cali.',
+    openGraph: {
+      title: 'Ecografía Osteomuscular en Cali | VeraSalud',
+      description:
+        'Ecografía osteomuscular con equipos de alta resolución en VeraSalud Cali.',
+      url: '/servicios/ecografias/osteomuscular',
+      images: [
+        { url: '/ecografia-osteomuscular-articular-verasalud-cali.webp', width: 1200, height: 630 },
+      ],
+    },
+    alternates: { canonical: '/servicios/ecografias/osteomuscular' },
+    keywords: ['ecografía osteomuscular Cali', 'tendones', 'ligamentos', 'articulaciones'],
   }
 }
 

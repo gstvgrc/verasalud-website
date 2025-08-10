@@ -3,25 +3,22 @@ import ContactForm from '../../../components/ContactForm'
 import styles from '../../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografía Doppler en Cali | VeraSalud',
-  description: 'Estudio Doppler para evaluar el flujo sanguíneo en arterias y venas, detectando obstrucciones y trombosis.',
-  keywords: ['ecografia doppler cali', 'ultrasonido vascular', 'doppler venoso arterial'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias/doppler' },
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'Ecografía Doppler en Cali | VeraSalud',
-    description: 'Estudio Doppler para evaluar el flujo sanguíneo en arterias y venas, detectando obstrucciones y trombosis.',
-    url: 'https://verasalud.com/servicios/ecografias/doppler',
-    images: [
-      { url: '/ecografia-doppler-arterial-verasalud-cali.webp', width: 1200, height: 630, alt: 'Ecografía Doppler de miembros en VeraSalud' }
-    ],
-    locale: 'es_CO',
-    type: 'article'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografía Doppler en Cali | VeraSalud',
-    description: 'Estudio Doppler para evaluar el flujo sanguíneo en arterias y venas, detectando obstrucciones y trombosis.'
+    description:
+      'Ecografía Doppler arterial y venosa para evaluación vascular. Atención oportuna en VeraSalud Cali.',
+    openGraph: {
+      title: 'Ecografía Doppler en Cali | VeraSalud',
+      description:
+        'Ecografía Doppler con equipos de alta resolución en VeraSalud Cali.',
+      url: '/servicios/ecografias/doppler',
+      images: [
+        { url: '/ecografia-doppler-arterial-verasalud-cali.webp', width: 1200, height: 630 },
+      ],
+    },
+    alternates: { canonical: '/servicios/ecografias/doppler' },
+    keywords: ['ecografía doppler Cali', 'ultrasonido vascular', 'doppler venoso arterial'],
   }
 }
 

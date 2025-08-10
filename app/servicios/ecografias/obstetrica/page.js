@@ -3,25 +3,22 @@ import ContactForm from '../../../components/ContactForm'
 import styles from '../../../Home.module.css'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Ecografía Obstétrica en Cali | VeraSalud',
-  description: 'Monitorización del embarazo y desarrollo fetal mediante ultrasonido seguro y confiable.',
-  keywords: ['ecografia obstetrica cali', 'ultrasonido embarazo', 'ecografia prenatal cali'],
-  alternates: { canonical: 'https://verasalud.com/servicios/ecografias/obstetrica' },
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'Ecografía Obstétrica en Cali | VeraSalud',
-    description: 'Monitorización del embarazo y desarrollo fetal mediante ultrasonido seguro y confiable.',
-    url: 'https://verasalud.com/servicios/ecografias/obstetrica',
-    images: [
-      { url: '/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp', width: 1200, height: 630, alt: 'Ecografía obstétrica en VeraSalud' }
-    ],
-    locale: 'es_CO',
-    type: 'article'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ecografía Obstétrica en Cali | VeraSalud',
-    description: 'Monitorización del embarazo y desarrollo fetal mediante ultrasonido seguro y confiable.'
+    description:
+      'Ecografía obstétrica para control prenatal con alta resolución. VeraSalud Cali.',
+    openGraph: {
+      title: 'Ecografía Obstétrica en Cali | VeraSalud',
+      description:
+        'Ecografía obstétrica con resultados confiables en VeraSalud Cali.',
+      url: '/servicios/ecografias/obstetrica',
+      images: [
+        { url: '/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp', width: 1200, height: 630 },
+      ],
+    },
+    alternates: { canonical: '/servicios/ecografias/obstetrica' },
+    keywords: ['ecografía obstétrica Cali', 'control prenatal', 'ultrasonido embarazo'],
   }
 }
 
