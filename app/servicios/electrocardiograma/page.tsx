@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import ContactForm from '@/components/ContactForm'
-import styles from '@/styles/Home.module.css'
+import ContactForm from '../../components/ContactForm'
+import styles from '../../Home.module.css'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { buildMetadata, getServiceSEO, buildBreadcrumbJSONLD, SITE } from '@/lib/seo'
