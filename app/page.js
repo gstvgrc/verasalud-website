@@ -1,6 +1,6 @@
 // app/page.js
 // Página principal de VeraSalud - Actualizada
-import styles from './Home.module.css'
+import styles from '@/styles/Home.module.css'
 import ContactForm from './components/ContactForm'
 import MobileMenu from './components/MobileMenu'
 import Image from 'next/image'
