@@ -17,12 +17,17 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+      - name: Clear npm proxy config
+        run: |
+          npm config delete proxy || true
+          npm config delete http-proxy || true
+          npm config delete https-proxy || true
       - name: Install
         run: npm ci
       - name: Lint (no bloqueante)
         run: npm run lint || true
       - name: Typecheck
-        run: npm run typecheck
+        run: npm run type-check
       - name: Build
         run: npm run build
       - name: Verificación de arquitectura
