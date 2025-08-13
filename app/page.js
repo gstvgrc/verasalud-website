@@ -113,8 +113,7 @@ const jsonLdLocalBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "VeraSalud",
-  // TODO: Reemplazar por versión .webp optimizada del logo
-  "image": "https://verasalud.com/logo-verasalud.png",
+  "image": "https://verasalud.com/logo-verasalud.webp",
   "description": "Medicina Interna y Ecografías de Alta Resolución sin filas ni demoras. Médicos especialistas de la Universidad del Valle en Cali, Colombia.",
   "url": "https://verasalud.com",
   "telephone": "+57-602-394-2289",
@@ -160,9 +159,8 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <div className={styles.logo}>
-            {/* TODO: Optimizar el logo a formato .webp */}
             <Image
-              src="/logo-verasalud.png"
+              src="/logo-verasalud.webp"
               alt="VeraSalud Logo"
               width={150}
               height={150}

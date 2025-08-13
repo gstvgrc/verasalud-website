@@ -102,8 +102,7 @@ export default function RootLayout({
         <meta name="geo.position" content="3.4516;-76.5320" />
         <meta name="ICBM" content="3.4516, -76.5320" />
 
-        {/* TODO: Usar un favicon optimizado en formato .webp */}
-        <link rel="icon" href="/logo-verasalud.png" />
+        <link rel="icon" href="/logo-verasalud.webp" type="image/webp" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#21396f" />
 
@@ -119,7 +118,7 @@ export default function RootLayout({
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "name": "VeraSalud",
-  "image": "https://verasalud.com/logo-verasalud.png",
+  "image": "https://verasalud.com/logo-verasalud.webp",
   "url": "https://verasalud.com",
   "description": "Atención médica especializada en Medicina Interna, Electrocardiograma y Ecografías de alta resolución en Cali.",
   "address": {
