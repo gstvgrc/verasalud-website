@@ -1,0 +1,82 @@
+# LFS AUDIT
+Repo: /workspace/verasalud-website
+Branch: work
+
+## Archivos candidatos (según patrones) — todos en el repo
+Total candidatos: 27
+
+## Archivos actualmente bajo LFS
+Total en LFS: 0
+
+## Candidatos FUERA de LFS
+Total fuera de LFS: 27
+public/742792aa-a0f1-4105-b1f4-ec3e8d71d677.jpeg
+public/da2ac3fd-1284-4c8f-889d-5d58cb3295f1.jpeg
+public/doctor-gustavo-garcia-verasalud.jpg
+public/ecografia-abdominal-verasalud-cali.webp
+public/ecografia-doppler-arterial-verasalud-cali.webp
+public/ecografia-doppler-venoso-verasalud-cali.webp
+public/ecografia-hepatica-verasalud-cali.webp
+public/ecografia-mamaria-verasalud-cali.webp
+public/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp
+public/ecografia-osteomuscular-articular-verasalud-cali.webp
+public/ecografia-pelvica-ginecologica-verasalud-cali.webp
+public/ecografia-prostata-verasalud-cali.webp
+public/ecografia-renal-vias-urinarias-verasalud-cali.webp
+public/ecografia-tejidos-blandos-verasalud-cali.webp
+public/ecografia-testicular-verasalud-cali.webp
+public/ecografia-tiroides-verasalud-cali.webp
+public/electrocardiograma-verasalud-cali.webp
+public/equipo-medico.jpg
+public/equipo-medico.webp
+public/fd9c34f0-323a-4491-94d4-f3ea8ccc9e3b.jpeg
+public/file.svg
+public/globe.svg
+public/logo-verasalud.png
+public/next.svg
+public/og-image.jpg
+public/vercel.svg
+public/window.svg
+
+## Top 20 por tamaño (fuera de LFS)
+     1468954  public/logo-verasalud.png
+      960841  public/742792aa-a0f1-4105-b1f4-ec3e8d71d677.jpeg
+      935455  public/doctor-gustavo-garcia-verasalud.jpg
+      874613  public/fd9c34f0-323a-4491-94d4-f3ea8ccc9e3b.jpeg
+      240408  public/ecografia-tejidos-blandos-verasalud-cali.webp
+      235120  public/ecografia-osteomuscular-articular-verasalud-cali.webp
+      181274  public/ecografia-doppler-arterial-verasalud-cali.webp
+      170159  public/equipo-medico.jpg
+      158966  public/og-image.jpg
+      142198  public/ecografia-tiroides-verasalud-cali.webp
+      131237  public/da2ac3fd-1284-4c8f-889d-5d58cb3295f1.jpeg
+      129948  public/equipo-medico.webp
+      121418  public/ecografia-mamaria-verasalud-cali.webp
+       91768  public/ecografia-doppler-venoso-verasalud-cali.webp
+       90840  public/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp
+       88820  public/ecografia-hepatica-verasalud-cali.webp
+       86112  public/ecografia-prostata-verasalud-cali.webp
+       86008  public/ecografia-renal-vias-urinarias-verasalud-cali.webp
+       78162  public/ecografia-testicular-verasalud-cali.webp
+       74682  public/ecografia-abdominal-verasalud-cali.webp
+
+## .gitattributes (patrones LFS activos)
+(no existe .gitattributes — debes ejecutar 'git lfs track "public/**/*.png"', etc.)
+
+## git lfs status
+On branch work
+
+Objects to be committed:
+
+
+Objects not staged for commit:
+
+
+
+## Sugerencia rápida (si hay archivos fuera de LFS)
+Ejecuta (ajusta patrones si hace falta):
+  git lfs track "public/**/*.png" "public/**/*.jpg" "public/**/*.jpeg" "public/**/*.webp"
+  git lfs track "public/**/*.gif" "public/**/*.svg" "public/**/*.pdf" "public/**/*.woff" "public/**/*.woff2" "public/**/*.ttf"
+  # luego re-añade los archivos que quedaron fuera:
+  git add .gitattributes $(cat /tmp/not_lfs.txt)
+  git commit -m "chore(lfs): migrate remaining assets to LFS"

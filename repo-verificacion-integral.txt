@@ -1,0 +1,306 @@
+# VERIFICACIÓN INTEGRAL
+Repo: /workspace/verasalud-website
+Branch: work
+
+## 1) Remoto y autenticación
+
+### git remote -v
+origin	https://github.com/gstvgrc/verasalud-website.git (fetch)
+origin	https://github.com/gstvgrc/verasalud-website.git (push)
+
+### ls-remote origin (refs)
+5273b9ac6d521492d2402c231b2918340b882582	refs/heads/40a5nm-codex/review-project-structure-for-consistency
+c450c4c0b86e8fc6b567f1cb36b836845463191e	refs/heads/9u6ejt-codex/update-next.config.js-and-add-.browserslistrc
+b737b65f1962fa1e21e14a91b0cc8a5f6d3a34ad	refs/heads/codex/actualizar-informacion-de-contacto-en-el-repositorio
+76856566d781ee9284e34a129f350a162f26a85b	refs/heads/codex/add-.env.local-to-.gitignore
+25d01e25f69f11864ba64cfdd37179620497864b	refs/heads/codex/add-additional-page-for-internal-medicine-consultation
+44f586e09129796bdd083a61538b563156f6d14e	refs/heads/codex/add-all-ultrasound-services-to-landing-page
+d96d99e9c4783454ca6c951e9bfe4b5c51f45a0b	refs/heads/codex/add-architecture-verification-script
+fdf63517d26c3a7088dee20f27ba48a74b077c10	refs/heads/codex/add-ci-workflow-for-verasalud-website
+e2ffff20d87f5ff7b1e9528c0a6a3bdee79c38ba	refs/heads/codex/add-css-rules-for-mobile-menu-items-and-button
+124e7bcaa5de989bf17d484de0bcc9d58057b35b	refs/heads/codex/add-favicon-link-in-layout.js-head
+60ca3d8b1a3e60d67435fae435748d7a69ba2ef3	refs/heads/codex/add-fetchpriority-attribute-to-image-component
+170f1defd7d53b369ccba45412d597a948241b2d	refs/heads/codex/add-global-layout-with-metadata
+3a6ecf635d5a1092d56e5df9c82f28c532974900	refs/heads/codex/add-google-analytics-component
+c32e6b63a20bb30f59a74c021bf8bdd7cf5fc4dc	refs/heads/codex/add-google-analytics-ga4-to-site
+4ee10258e11c3edd10dba0589eaa93e140eb28d1	refs/heads/codex/add-google-analytics-integration
+1dfcac87a84d0ee9d6ab9a4b3d8059c2ac4e0c01	refs/heads/codex/add-hero-image-and-text-styles
+8211c96b223ea96cf5221aa0f8cc316933ad7d50	refs/heads/codex/add-json-ld-structured-data-for-verasalud
+0c6037f66613f44a2c3be63c842022c84688f45c	refs/heads/codex/add-new-ultrasound-services-to-page
+b58bf002fc7604e886a531a63cd20f990bd4320c	refs/heads/codex/add-permanent-redirects-in-next.config.js
+2bebde4e81eb05244db070704d32255c5f87f445	refs/heads/codex/add-preconnect-links-for-performance
+f6a3c5a3843834e1cda53248f27400a6319f5ac7	refs/heads/codex/add-remote-origin-to-git
+ceed3135a15f2596b5eb3d4aced4a070a11b8e47	refs/heads/codex/add-security-headers-to-next.config.js
+e67d8957fda8cb34edb2795bdc58783fdc1061be	refs/heads/codex/add-seo-metadata-handling-for-services
+d3be23e90513d1b0627e3d9bbc901faaaeef104f	refs/heads/codex/add-servicios-pages-with-seo-metadata
+ecb5dca03bf5f68db647412964e3f4b4dd753495	refs/heads/codex/add-typescript-configuration-and-dependencies
+fc091d710f18f41345ed12e3c08eef454379355a	refs/heads/codex/add-visible-links-to-ultrasound-services
+0b66eb83ade62e937808f6a07feefb3d7267a36f	refs/heads/codex/ajustar-tamano-del-logo-y-corregir-duplicados
+b847653efbdb7fcfef2af3e354caa96205f353fc	refs/heads/codex/apply-patch-to-fix-ecografias-page
+e7d7222f63bbc95d4674155ac01ba1ee21745225	refs/heads/codex/automate-unused-dependency-cleanup
+b3a9f71203f09867ac645f4d15ac992db32e6935	refs/heads/codex/corregir-archivo-sitemap.xml
+2d4a196a0227a895fe6208f0c30072da293122e3	refs/heads/codex/create-app/citas/page.js-file
+3203d1c6e4fbca7e8b742135c80e5711a247a23e	refs/heads/codex/create-blog-page-at-app/blog/page.js
+f6b1722e78fd26ab00e9b11e50e8e567d6938354	refs/heads/codex/create-citas-page-with-seo-and-booking-info
+5aa8282229f275f6558fc0b2b7c926c58433de65	refs/heads/codex/create-citas-page-with-seo-and-services
+450ebc05fa35ba5f597491eeafc5570357345946	refs/heads/codex/create-citaspage-with-seo-and-form
+3e6967ba988ce35f99251e7e542727a29b6f4fec	refs/heads/codex/create-contacto-page-file
+93ee73f17857bfb258aef692a2b76ee4e4143403	refs/heads/codex/create-contacto-page-file-with-content
+16cf1b332027958b8f85d33fa28f5b12e1d7c6fb	refs/heads/codex/create-contacto-page-in-app-directory
+7c0e31ca5e93ff5e5e91c0cb2a459d51800ee626	refs/heads/codex/create-contacto-page-with-metadata-and-form
+326ed8afbb762082a1f247a14a612aff9c3394bc	refs/heads/codex/create-contacto-page-with-seo-and-contact-info
+422fb94fb28cdc9cf42f0e59f0de1b955fbb9db1	refs/heads/codex/create-dynamic-sitemap.xml-in-next.js-13+
+ceb8bdacc03c7a0c3b0fe01e23dd523f56bb2800	refs/heads/codex/create-ecografias-index-page-with-seo-content
+f0b703a1851b5fa9099698a7dfc2bcbb6a188c06	refs/heads/codex/create-medical-consultation-page
+84a3953dacbe71fbb9e9269efc200d12d2ca4657	refs/heads/codex/create-or-overwrite-app/icon.tsx-file
+816a4f6353e9a4f197d2f9c414d115962e963c71	refs/heads/codex/create-seo-optimized-medical-content
+716518fda4dd6e42676240f693e2702e9d0e1237	refs/heads/codex/create-services-index-page
+82a76e038df35dca992671ed942bbee9c5c5c5df	refs/heads/codex/create-sobre-nosotros-page
+c89d8165725a452bc106a5aadc1c2d8beadca88a	refs/heads/codex/create-sobre-nosotros-page-file
+d1cbbad5c0a6533f2bb5a5d4779b78d802558108	refs/heads/codex/create-telemedicina-page.js-with-content
+85507d22a469b9e569b80ac897469ff9df8ff84c	refs/heads/codex/create-videoconsultation-page
+088c81ebeec74205edf64f174e28d4126b0cd0b7	refs/heads/codex/ensure-responsive-images-in-ecografias-pages
+6a42a4c241a8ad694f1556e8985456e833317d16	refs/heads/codex/fix-broken-contact-route-file
+b0400bbab85d13056b72ac2a35901c8a7176b98b	refs/heads/codex/fix-broken-image-block-in-page.js
+fbb1ef1757c4d31dcfa9145561d42a2f99aba6cc	refs/heads/codex/fix-build-1755088196
+89a4a066f05c0a16eff685e2accee2fe5d87313c	refs/heads/codex/fix-dark-mode-visibility-issues
+d6746101e1ab1f840db713186521257577c228e3	refs/heads/codex/fix-encoding-issues-on-overview-page
+84cdf97f02c2c92cb75f815b4bee3144c9d52140	refs/heads/codex/fix-missing-modules-errors
+2a031a3813ee5c8e914c5765e638c9293084daed	refs/heads/codex/fix-missing-npm-scripts-in-package.json
+a6a08a02d41527668885d60427f7185f97b14f06	refs/heads/codex/fix-npm-scripts-ci-consistency
+1ca07031ddd0bb58d74c75f9e53e447df648e34d	refs/heads/codex/fix-package-json-1755087136
+2ebb54c2441290be775e3ed029af7f738f74f01f	refs/heads/codex/fix-responsive-header-image-block-in-page.js
+e115b95f3fa76a1afa754f1718d1dc73cfa73086	refs/heads/codex/fix-sitemap-generator-in-route.ts
+d739d1362223fd6d0deae461af1b7be0d5c171e7	refs/heads/codex/fix-typecheck-1755087525
+dabb2af129345657e36e5873c89922a2adec2873	refs/heads/codex/fix-typecheck-1755087748
+ed621e5b4ab635d06021ad8af79ecf00c99d072d	refs/heads/codex/fix-workflow-for-typecheck-and-npm-proxy
+aca60ec7b28d5d819ce55b3aa77752900a2564d5	refs/heads/codex/improve-accessibility-features
+812ccef0d56f81dbf9e205e7ccbf7275a3f2bc4f	refs/heads/codex/improve-technical-seo-across-pages
+5e78804cba85eef0ae235cebf247fcfdd7547e10	refs/heads/codex/optimize-core-web-vitals-for-verasalud
+45d96a779fbc4e42bd5c4ca2583c2880898fc0fd	refs/heads/codex/perform-full-visual-and-responsive-audit
+25a04064f75ec646087853e72756305a57e7f359	refs/heads/codex/perform-technical-audit-of-verasalud-website
+6dee6894b8d77dd13f56c643a0d763a481647de0	refs/heads/codex/push-1755098631
+5f6f608629e6b8cbcbc1eeda05c195dad3520ebe	refs/heads/codex/push-test-1755085802
+d20bd2f7359f03ac0934cee1e474ef505a9c426f	refs/heads/codex/refactor-electrocardiograma-page-to-typescript
+e8651f131a3f84436f067bde1c5bd75e8bd33aed	refs/heads/codex/refactor-electrocardiogramapage-function
+0c1d03c5d5639edc8704277cf36cdb7a40584e47	refs/heads/codex/remove-abdominal_page_updated.js-file
+63791b64e41958a57c6b3027c3d31055cb8e405a	refs/heads/codex/remove-incorrect-image-from-page.js
+7aed009150eba68643c8157ac7685cff7f2ddbd6	refs/heads/codex/remove-robots.txt-and-add-robots.ts
+5eb87438b3a13f913eb182ac4bb282d18d616e26	refs/heads/codex/remove-unused-components-and-files
+6d56ee2648f02c04e1bf361f96a682327a4d3743	refs/heads/codex/replace-async-headers-function
+ceb424c797467b3ffe9f4ab4a4b8eea80b34341a	refs/heads/codex/replace-broken-hero-image
+95472ef311bf7c7517d9af6c8e5200e99140702a	refs/heads/codex/replace-header-image-block-in-page.js
+f4f82b1b67d5f09fffd2e29e7e2073d6250fea2c	refs/heads/codex/replace-image-component-in-ecografia-pages
+ae97fe78cef9cd768d56e028ff289b59f483fec5	refs/heads/codex/replace-page.js-with-page.tsx
+bef47b06efe26950ef6cb7981ac43407980116ab	refs/heads/codex/replace-rewrites-function-in-next.config.js
+576400e41805b4e2fdeee9a7a4b0f473fa513b31	refs/heads/codex/replace-robots.txt-with-updated-version
+a2c13d07a35ff6672c048979896189d7aa2bc36e	refs/heads/codex/replace-textual-content-in-specified-files
+d98907325876e535d58528198e47deae07bfc7ec	refs/heads/codex/review-project-structure-for-consistency
+de8c253412d136d485fa88da37a7ba458f7bf529	refs/heads/codex/review-repository-for-code-issues-and-broken-links
+a1595127737923a83769447b10d9c3fe74bb4eff	refs/heads/codex/review-repository-integrity-and-seo-tasks
+d68c84b2cfdbb695398dfaa15cbef9b6180fb297	refs/heads/codex/revisar-y-corregir-enlaces-internos
+eab041a11e32fef463d1f972cfd2d11397575c7a	refs/heads/codex/set-up-central-css-module
+2fe14796538dc7e0eee51bc8d27af3c7260777c1	refs/heads/codex/setup-centralized-css-module
+2ab4debf96ba894fd7034eaf5fcf68d526712cbb	refs/heads/codex/sync-with-main-and-resolve-conflicts
+5622d59849407f721f46cb35b8e7b7567cdcc84a	refs/heads/codex/trace-contact-form-submission-flow
+558b34736a9dd6f57ea1edbb59b4865ce2518a82	refs/heads/codex/unify-and-clean-duplicate-css-files
+ab334c4066292f377b0765362ee3af852dae8752	refs/heads/codex/update-.env.local-with-smtp-credentials
+48d33f12b124bdec55ae69210d69ebaeb56d20c9	refs/heads/codex/update-app/layout.js-with-new-code
+eed0299ff2d632dd65c15d499ab43b5661cba4de	refs/heads/codex/update-content-security-policy-in-next.config.js
+814976d81d5fcfb8293aad941287ab7c7a278af7	refs/heads/codex/update-dynamic-sitemap-and-file-structure
+b303e0e75655cc70f713c1f2f5dad050c60ba85c	refs/heads/codex/update-dynamic-sitemap-implementation
+1cc66e9e57cd902c8e216695f7bfdb10305faa3f	refs/heads/codex/update-ecografiaspage-to-use-next/image
+905bb89a2fc30d51264be26bef9ad417dd761e2e	refs/heads/codex/update-electrocardiograma-page-with-image-and-text
+de46a7045437347a819fb2575d1e43bd3c98e53f	refs/heads/codex/update-google-analytics-integration
+e7e2cc5838bc785a1775e886ba2a096533b63756	refs/heads/codex/update-handlesubmit-to-include-service
+01635dbb3d631a20698a99f4fbb353eae4f552f8	refs/heads/codex/update-image-and-seo-content-in-page.js
+93170217cb7b6c88695ceca4eab8b24965e4c700	refs/heads/codex/update-image-blocks-in-ecografias-files
+b7a4d402856ee59797907789d9ab369b47b8afee	refs/heads/codex/update-image-format-to-webp
+779672bc0eea4aa86a5a1dad629604d3d161d049	refs/heads/codex/update-logo-property-in-json-ld-schema
+5287f084fb2b79a70b3351e36c5e9ca18f87baf6	refs/heads/codex/update-logo-size-for-responsive-design
+5134e0f7d66ff2b02dddf292b3c83d68b92c930f	refs/heads/codex/update-logo-url-in-json-ld
+e004f7567b4b00e9843a8e742bb37544562c062b	refs/heads/codex/update-meta-descriptions-for-seo
+3a709e2ae78d999be9aa030d8b298fecb7f1685e	refs/heads/codex/update-next.config.js-and-add-.browserslistrc
+150e5239223a414ba19c951ef6ce63d32c58e723	refs/heads/codex/update-package.json-dependencies
+8747996141990ab8e98fd94594c0570c8e03201b	refs/heads/codex/update-public/robots.txt
+30aa7a243058733b0a228dd8bcbdff05a546b9bc	refs/heads/codex/update-robots.txt-content
+e2ef60d265aef9913fdc15bfd105957902e69394	refs/heads/codex/update-workflow-for-node-20-with-cache
+4fc86a0abf5941b105549328340e3a947f1008a5	refs/heads/dj4wwc-codex/add-remote-origin-to-git
+ef093065f30750ad0e51bdd0906e22c0f0e4866b	refs/heads/jsnpxx-codex/ajustar-tamano-del-logo-y-corregir-duplicados
+23f66a330ce2977d77590b2a2179aaccab767ec9	refs/heads/kdtzf0-codex/add-remote-origin-to-git
+80ba8de7dba2d3bb2f443827a82a6bb1025dd547	refs/heads/main
+b58468d5685d4127c279c6270ed055a26e372d36	refs/heads/n9d68r-codex/create-sobre-nosotros-page
+4b6e3af87631471df6725a81768da49b0f024a94	refs/heads/rdhauo-codex/create-app/citas/page.js-file
+fc4af78e77cf12f1b35abfe6c7efc002854d8fbb	refs/heads/upp38p-codex/create-sobre-nosotros-page-file
+6aacf79b474b5ee017dfd44252af20ab03e4d5b6	refs/heads/work
+
+## 2) Git LFS
+
+### lfs version
+git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)
+
+### .gitattributes
+No existe .gitattributes
+
+### lfs ls-files (actual)
+
+### Cobertura LFS (candidatos vs. LFS)
+Candidatos: 27 | En LFS: 0 | Fuera de LFS: 27
+
+Top 20 por tamaño (fuera de LFS):
+     1468954  public/logo-verasalud.png
+      960841  public/742792aa-a0f1-4105-b1f4-ec3e8d71d677.jpeg
+      935455  public/doctor-gustavo-garcia-verasalud.jpg
+      874613  public/fd9c34f0-323a-4491-94d4-f3ea8ccc9e3b.jpeg
+      240408  public/ecografia-tejidos-blandos-verasalud-cali.webp
+      235120  public/ecografia-osteomuscular-articular-verasalud-cali.webp
+      181274  public/ecografia-doppler-arterial-verasalud-cali.webp
+      170159  public/equipo-medico.jpg
+      158966  public/og-image.jpg
+      142198  public/ecografia-tiroides-verasalud-cali.webp
+      131237  public/da2ac3fd-1284-4c8f-889d-5d58cb3295f1.jpeg
+      129948  public/equipo-medico.webp
+      121418  public/ecografia-mamaria-verasalud-cali.webp
+       91768  public/ecografia-doppler-venoso-verasalud-cali.webp
+       90840  public/ecografia-obstetrica-tercer-nivel-verasalud-cali.webp
+       88820  public/ecografia-hepatica-verasalud-cali.webp
+       86112  public/ecografia-prostata-verasalud-cali.webp
+       86008  public/ecografia-renal-vias-urinarias-verasalud-cali.webp
+       78162  public/ecografia-testicular-verasalud-cali.webp
+       74682  public/ecografia-abdominal-verasalud-cali.webp
+
+## 3) package.json — scripts
+dev: OK
+build: OK
+start: OK
+lint: OK
+type-check: OK
+typecheck: OK
+test: OK
+
+## 4) tsconfig.json — alias y cobertura
+baseUrl: .
+paths["@/*"]: ["./src/*","./*"]
+include: ["**/*.ts","**/*.tsx","next-env.d.ts",".next/types/**/*.ts"]
+exclude: ["node_modules"]
+
+## 5) next.config.js — flags
+experimental: NO
+i18n:        NO
+
+## 6) Workflow CI — verificación
+ci.yml
+deploy.yml
+
+### buscar setup-node@v4 / node 20 / cache npm / steps
+
+## 7) App icons
+icon: OK(tsx) | apple-icon: OK(tsx)
+
+## 8) CSS Modules
+Imports malos (sin ruta): NO
+Imports buenos (@/styles): SI
+
+## 9) PR — rama remota
+Rama remota existe: SI
+URL PR: https://github.com/gstvgrc/verasalud-website/compare/main...work
+
+## 10) Checks locales (test/type-check/build)
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-salud-cali@0.1.0 test
+> echo 'OK: no tests yet' && exit 0
+
+OK: no tests yet
+npm test: EXIT=0
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-salud-cali@0.1.0 type-check
+> tsc --noEmit
+
+type-check: EXIT=0
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vera-salud-cali@0.1.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 15.4.2
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 8.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/36) ...
+   Generating static pages (9/36) 
+   Generating static pages (18/36) 
+   Generating static pages (27/36) 
+ ✓ Generating static pages (36/36)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                           Size  First Load JS
+┌ ○ /                                                552 B         113 kB
+├ ○ /_not-found                                      991 B         101 kB
+├ ƒ /api/contact                                     150 B        99.8 kB
+├ ○ /apple-icon                                      150 B        99.8 kB
+├ ○ /blog                                            150 B        99.8 kB
+├ ○ /citas                                           150 B        99.8 kB
+├ ○ /contacto                                        150 B        99.8 kB
+├ ○ /icon                                            150 B        99.8 kB
+├ ○ /medicina-interna                                234 B         113 kB
+├ ○ /robots.txt                                      150 B        99.8 kB
+├ ○ /servicios                                       234 B         113 kB
+├ ○ /servicios/consulta-medica                       237 B         108 kB
+├ ○ /servicios/ecografias                            234 B         113 kB
+├ ○ /servicios/ecografias/abdominal                  234 B         113 kB
+├ ○ /servicios/ecografias/doppler                    234 B         113 kB
+├ ○ /servicios/ecografias/doppler/arterial           234 B         113 kB
+├ ○ /servicios/ecografias/doppler/venoso             234 B         113 kB
+├ ○ /servicios/ecografias/hepatica                   234 B         113 kB
+├ ○ /servicios/ecografias/mama                       234 B         113 kB
+├ ○ /servicios/ecografias/obstetrica                 234 B         113 kB
+├ ○ /servicios/ecografias/obstetrica/tercer-nivel    234 B         113 kB
+├ ○ /servicios/ecografias/osteomuscular              234 B         113 kB
+├ ○ /servicios/ecografias/osteomuscular/articular    234 B         113 kB
+├ ○ /servicios/ecografias/pelvica                    234 B         113 kB
+├ ○ /servicios/ecografias/prostata                   234 B         113 kB
+├ ○ /servicios/ecografias/renal-vias-urinarias       234 B         113 kB
+├ ○ /servicios/ecografias/tejidos-blandos            234 B         113 kB
+├ ○ /servicios/ecografias/testicular                 234 B         113 kB
+├ ○ /servicios/ecografias/tiroides                   234 B         113 kB
+├ ○ /servicios/electrocardiograma                    237 B         108 kB
+├ ○ /servicios/telemedicina                          150 B        99.8 kB
+├ ○ /sitemap.xml                                     150 B        99.8 kB
+├ ○ /sobre-nosotros                                  150 B        99.8 kB
+└ ○ /videoconsulta                                   150 B        99.8 kB
++ First Load JS shared by all                      99.6 kB
+  ├ chunks/4bd1b696-cf72ae8a39fa05aa.js            54.1 kB
+  ├ chunks/964-540481dc452dbf61.js                 43.5 kB
+  └ other shared chunks (total)                    1.93 kB
+
+
+ƒ Middleware                                       33.8 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+build: EXIT=0
+
+## 11) Resumen
+Remoto OK            : SI
+Auth OK (ls-remote)  : SI
+LFS patrones         : NO
+LFS cobertura total? : NO
+Scripts npm básicos  : FALTAN
+tsconfig alias '@/ ' : NO
+next.config limpio   : OK
+Workflow CI presente : SI
+Icons app presentes  : SI
+CSS imports correctos: SI
+
