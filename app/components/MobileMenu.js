@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import styles from '../Home.module.css'
+import styles from '@/styles/Home.module.css'
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
