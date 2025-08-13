@@ -1,10 +1,6 @@
 import Image from 'next/image'
 import ContactForm from '../../../components/ContactForm'
-import styles from '../../../Home.module.css'
-
-
-// import'../../../components/ContactForm' ContactForm from '..//../components/Con'../../../components/ContactForm'
-// import styles from '../../../Home.module.css'
+import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 
 export const metadata = {

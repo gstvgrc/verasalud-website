@@ -26,19 +26,9 @@ const nextConfig = {
   
   // Trailing slash desactivado para coincidir con URL canónicas
   trailingSlash: false,
-
-  // Habilita compilación moderna y evita transpilar para navegadores legacy
-  swcMinify: true,
-  // Desactiva transpiling para navegadores obsoletos y usa la lista de navegadores definida en .browserslistrc
-  experimental: {
-    legacyBrowsers: false,
-    browsersListForSwc: true
-  },
-
-  // Configuración de internacionalización
-  i18n: {
-    locales: ['es-CO'],
-    defaultLocale: 'es-CO',
+  // Compilación moderna por defecto en Next 15+
+  compiler: {
+    removeConsole: false,
   },
   
   // Configuración de headers de seguridad y SEO
