@@ -1,7 +1,4 @@
-import { MetadataRoute } from 'next';
-
-// Crea un robots.txt dinámico compatible con Next.js 14.
-export default function robots(): MetadataRoute.Robots {
+export default function robots() {
   const baseUrl = 'https://verasalud.com';
   return {
     rules: [
