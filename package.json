@@ -10,7 +10,8 @@
     "verify:repo": "node scripts/verify-architecture.mjs",
     "type-check": "tsc --noEmit",
     "ci:verify": "npm run lint || true && npm run type-check && next build && npm run verify:repo",
-    "test": "echo 'OK: no tests yet' && exit 0"
+    "test": "echo 'OK: no tests yet' && exit 0",
+    "typecheck": "npm run type-check"
   },
   "dependencies": {
     "next": "^15.4.2",
