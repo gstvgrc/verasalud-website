@@ -33,6 +33,13 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: [
+      { url: '/icon', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [{ url: '/apple-icon', sizes: '180x180' }]
+  },
   openGraph: {
     title: 'VeraSalud Cali - Medicina Interna y Ecografías Sin Demoras',
     description:
