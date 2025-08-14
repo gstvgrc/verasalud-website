@@ -1,49 +1,31 @@
-:root {
-  color-scheme: only light;
-  background-color: #ffffff;
-  color: #1a1a1a;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --background: #ffffff;
-  --foreground: #171717;
-
-  /* 🎨 Colores institucionales de VeraSalud */
-  --primary-pink: #EE3594;
-  --primary-blue: #21396f;
-  --primary-cyan: #3FC1d1;
-  --white: #ffffff;
-  --gray-light: #f8f9fa;
-  --gray-medium: #6c757d;
-  --gray-dark: #343a40;
+:root{
+  --brand-primary:#EE3594;
+  --brand-navy:#21396F;
+  --brand-teal:#3FC1D1;
 }
 
+html{scroll-behavior:smooth}
+body{color:var(--brand-navy);background:#fff}
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+/* Accesibilidad: respeta reduce motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Tap targets ≥48px (Android) / ≥44pt (iOS) */
+.btn {min-height:48px;min-width:48px}
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+/* Focus visible claro */
+:focus-visible{outline:3px solid var(--brand-teal);outline-offset:2px}
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Fondo discreto con la paleta (radiales suaves) */
+.bg-accent {
+  background:
+    radial-gradient(1200px 600px at 110% -10%, color(display-p3 0.94 0.21 0.58 / .10), transparent 60%),
+    radial-gradient(900px 500px at -10% 0%, color(display-p3 0.25 0.56 0.82 / .08), transparent 55%),
+    radial-gradient(700px 400px at 50% 110%, color(display-p3 0.25 0.76 0.82 / .10), transparent 60%);
 }
-
-.dark-fix {
-  background-color: #ffffff !important;
-  color: #1a1a1a !important;
-}
-
