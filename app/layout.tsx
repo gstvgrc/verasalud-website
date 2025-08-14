@@ -10,6 +10,14 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
+  icons: {
+    icon: [
+      { url: '/favicon.webp', type: 'image/webp', sizes: '32x32' },
+      { url: '/icon', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [{ url: '/apple-icon', sizes: '180x180' }],
+  },
   title: {
     default: 'VeraSalud - Medicina Interna y Ecografías en Cali',
     template: '%s | VeraSalud',
@@ -107,8 +115,6 @@ export default function RootLayout({
         <meta name="geo.position" content="3.4516;-76.5320" />
         <meta name="ICBM" content="3.4516, -76.5320" />
 
-        {/* TODO: Usar un favicon optimizado en formato .webp */}
-        <link rel="icon" href="/logo-verasalud.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#21396f" />
 
