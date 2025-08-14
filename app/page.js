@@ -229,7 +229,7 @@ export default function Home() {
             
             <div className={styles.serviceCard}>
               <h3>
-                <Link href="/medicina-interna" prefetch={false}>
+                <Link href="/servicios/consulta-medica" prefetch={false}>
                   Medicina Interna Especializada
                 </Link>
               </h3>
