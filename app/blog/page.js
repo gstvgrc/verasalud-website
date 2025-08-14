@@ -8,7 +8,12 @@ export const metadata = {
     url: "https://verasalud.com/blog",
     siteName: "VeraSalud",
     images: [
-      { url: "/og-image.jpg", width: 1200, height: 630, alt: "Blog médico VeraSalud" }
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Logotipo de VeraSalud sobre fondo azul",
+      }
     ],
     locale: "es_CO",
     type: "article",
@@ -17,6 +22,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Blog Médico | VeraSalud Cali",
     description: "Consejos y novedades médicas explicadas de manera accesible.",
+    images: ["/twitter-image"],
   },
 }
 
