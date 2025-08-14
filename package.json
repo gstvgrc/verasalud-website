@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "echo \"No test specified\" && exit 1",
     "verify:repo": "node scripts/verify-architecture.mjs",
     "type-check": "tsc --noEmit",
     "ci:verify": "npm run lint || true && npm run type-check && next build && npm run verify:repo",
