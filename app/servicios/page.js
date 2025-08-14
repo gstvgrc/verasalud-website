@@ -12,14 +12,27 @@ export const metadata = {
     title: 'Servicios Médicos en Cali – VeraSalud',
     description: 'Conoce nuestros servicios de medicina interna, ecografía, electrocardiograma y telemedicina en Cali.',
     url: 'https://verasalud.com/servicios',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Servicios médicos VeraSalud' }],
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Logotipo de VeraSalud sobre fondo azul',
+      },
+    ],
     locale: 'es_CO',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Servicios Médicos en Cali – VeraSalud',
-    description: 'Consulta médica, ecografías, electrocardiograma y telemedicina sin demoras.'
+    description: 'Consulta médica, ecografías, electrocardiograma y telemedicina sin demoras.',
+    images: [
+      {
+        url: '/twitter-image',
+        alt: 'Logotipo de VeraSalud sobre fondo azul',
+      },
+    ],
   }
 };
 

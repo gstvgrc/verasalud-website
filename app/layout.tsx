@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     siteName: 'VeraSalud',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'VeraSalud - Centro Médico en Cali',
+        alt: 'Logotipo de VeraSalud sobre fondo azul',
       },
     ],
     locale: 'es_CO',
@@ -55,7 +55,12 @@ export const metadata: Metadata = {
     title: 'VeraSalud Cali - Medicina Interna y Ecografías',
     description:
       'Centro médico especializado con médicos de la Universidad del Valle',
-    images: ['https://verasalud.com/twitter-image.jpg'],
+    images: [
+      {
+        url: '/twitter-image',
+        alt: 'Logotipo de VeraSalud sobre fondo azul',
+      },
+    ],
   },
   robots: {
     index: true,
