@@ -7,7 +7,12 @@ export const metadata = {
     description: "Consulta en línea con nuestros internistas sin filas ni desplazamientos. Atención segura y cómoda desde donde estés.",
     url: "https://verasalud.com/videoconsulta",
     images: [
-      { url: "/og-image.jpg", width: 1200, height: 630, alt: "Videoconsulta en VeraSalud" }
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Logotipo de VeraSalud sobre fondo azul",
+      },
     ],
     locale: "es_CO",
     type: "article",
@@ -16,6 +21,12 @@ export const metadata = {
     card: "summary_large_image",
     title: "Videoconsulta Médica en Cali - VeraSalud",
     description: "Atención médica virtual confiable y segura con nuestros especialistas.",
+    images: [
+      {
+        url: "/twitter-image",
+        alt: "Logotipo de VeraSalud sobre fondo azul",
+      },
+    ],
   },
 };
 
