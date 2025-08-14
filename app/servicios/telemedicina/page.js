@@ -7,7 +7,12 @@ export const metadata = {
     description: "Consulta médica desde casa con internistas de VeraSalud. Sin filas ni demoras.",
     url: "https://verasalud.com/servicios/telemedicina",
     images: [
-      { url: "/og-image.jpg", width: 1200, height: 630, alt: "Telemedicina en VeraSalud Cali" }
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Logotipo de VeraSalud sobre fondo azul",
+      }
     ],
     locale: "es_CO",
     type: "article",
@@ -16,6 +21,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Telemedicina en Cali - VeraSalud",
     description: "Atención médica virtual confiable con nuestros internistas.",
+    images: ["/twitter-image"],
   },
 };
 

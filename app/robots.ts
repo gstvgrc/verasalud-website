@@ -1,5 +1,7 @@
-export default function robots() {
-  const baseUrl = 'https://verasalud.com';
+import type { MetadataRoute } from 'next'
+import { SITE } from '@/lib/seo'
+
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
@@ -8,6 +10,6 @@ export default function robots() {
         disallow: '/api/',
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-  };
+    sitemap: `${SITE.baseUrl}/sitemap.xml`,
+  }
 }

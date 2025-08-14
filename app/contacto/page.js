@@ -10,10 +10,10 @@ export const metadata = {
     siteName: "VeraSalud",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "VeraSalud - Contacto",
+        alt: "Logotipo de VeraSalud sobre fondo azul",
       },
     ],
     locale: "es_CO",
@@ -23,6 +23,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contacto | VeraSalud Cali",
     description: "Contáctanos para agendar tu consulta médica, ecografía o electrocardiograma en VeraSalud Cali. Atención sin demoras y con calidez humana.",
+    images: ["/twitter-image"],
   },
 };
 
