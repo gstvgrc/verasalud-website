@@ -1,16 +1,21 @@
 import { ImageResponse } from 'next/og'
-
 export const size = { width: 180, height: 180 }
 export const contentType = 'image/png'
-
-export default function Icon() {
+export default function AppleIcon() {
   return new ImageResponse(
     (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="VeraSalud apple icon">
-        <rect width="100" height="100" rx="20" />
-        <path d="M35 55 L50 25 L65 55 L58 55 L50 40 L42 55 Z" />
-      </svg>
-    ),
-    { ...size }
+      <div
+        style={{
+          width: 180, height: 180, borderRadius: 40,
+          background: 'linear-gradient(135deg,#EE3594,#3FC1D1)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center'
+        }}
+        aria-label="VeraSalud"
+      >
+        <svg width="96" height="96" viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path d="M6 13l3 3 9-9" stroke="#fff" strokeWidth="2.8" fill="none" strokeLinecap="round"/>
+        </svg>
+      </div>
+    )
   )
 }
