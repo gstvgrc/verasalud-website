@@ -10,6 +10,14 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
+  icons: {
+    icon: [
+      { url: '/favicon.webp', type: 'image/webp', sizes: '32x32' },
+      { url: '/icon', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [{ url: '/apple-icon', sizes: '180x180' }],
+  },
   title: {
     default: 'VeraSalud - Medicina Interna y Ecografías en Cali',
     template: '%s | VeraSalud',
