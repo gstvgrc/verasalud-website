@@ -2,14 +2,23 @@ import './globals.css'
 import { Montserrat } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import GA from './components/GA'
-import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { PageTransition } from '@/components/fx/MotionPrimitives'
+import BackgroundAccent from '@/components/fx/BackgroundAccent'
+import Header from '@/components/layout/Header'
 import { SITE } from '@/lib/seo'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
+  icons: {
+    icon: [
+      { url: '/icon', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [{ url: '/apple-icon', sizes: '180x180' }],
+  },
   title: {
     default: 'VeraSalud - Medicina Interna y Ecografías en Cali',
     template: '%s | VeraSalud',
@@ -70,13 +79,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://verasalud.com',
-  },
-  icons: {
-    icon: [
-      { url: '/icon', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon.ico', sizes: 'any' },
-    ],
-    apple: [{ url: '/apple-icon', sizes: '180x180' }],
   },
   // verification: {
   //   google: 'tu-codigo-de-verificacion', // Agregar cuando tengas Google Search Console
@@ -247,11 +249,14 @@ export default function RootLayout({
         />
       </head>
       <body className={montserrat.className}>
-        <Navbar />
-        {children}
+        <Header />
+        <BackgroundAccent />
+        <div className="pt-14">
+        <PageTransition>{children}</PageTransition>
         <Footer />
         {/* Carga asíncrona de Google Analytics a través del componente GA */}
         <GA />
+        </div>
       </body>
     </html>
   )
