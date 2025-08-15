@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   icons: {
     icon: [
-      { url: '/favicon.webp', type: 'image/webp', sizes: '32x32' },
       { url: '/icon', type: 'image/png', sizes: '32x32' },
       { url: '/favicon.ico', sizes: 'any' },
     ],
