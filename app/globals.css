@@ -2,22 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --brand-primary:#EE3594;
-  --brand-navy:#21396F;
-  --brand-teal:#3FC1D1;
+:root{ --brand-primary:#EE3594; --brand-navy:#21396F; --brand-teal:#3FC1D1; }
+html{ scroll-behavior:smooth }
+body{ color:var(--brand-navy); background:#fff }
+
+/* Fondo discreto con paleta (radiales suaves) */
+.bg-accent{
+  background:
+    radial-gradient(1200px 600px at 110% -10%, rgba(238,53,148,.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 0%, rgba(33,57,111,.08), transparent 55%),
+    radial-gradient(700px 400px at 50% 110%, rgba(63,193,209,.10), transparent 60%);
 }
 
-html{scroll-behavior:smooth}
-body{color:var(--brand-navy);background:#fff}
-
-/* Accesibilidad: respeta reduce motion */
+/* Respeto a usuarios con reduce motion */
 @media (prefers-reduced-motion: reduce){
-  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important}
 }
 
-/* Tap targets ≥48px (Android) / ≥44pt (iOS) */
-.btn {min-height:48px;min-width:48px}
-
-/* Focus visible claro */
-:focus-visible{outline:3px solid var(--brand-teal);outline-offset:2px}
+/* Objetivos táctiles mínimos y focus visible */
+.btn {min-height:48px; min-width:48px}
+:focus-visible{outline:3px solid var(--brand-teal); outline-offset:2px}
