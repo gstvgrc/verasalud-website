@@ -15,14 +15,13 @@ export default function Hero(){
           Metabolismo y enfermedades crónicas en adultos. Ecografía Doppler, Obstétrica (tercer nivel) y más.
         </motion.p>
         <motion.div variants={fadeInUp} initial="hidden" whileInView="show" viewport={{ once:true }} className="mt-6 flex gap-3">
-          <Button as="a" href="https://wa.me/57XXXXXXXXXX" className="bg-white text-[color:#21396F]">Agendar cita</Button>
-          <Button as="a" href="/servicios/consulta-medica" variant="outline" className="bg-white/10 text-white border-white/40">Ver servicios</Button>
+          <Button as="a" href="/servicios/consulta-medica" className="bg-white text-[color:#21396F]">Ver consulta</Button>
+          <Button as="a" href="/servicios/ecografias" variant="outline" className="bg-white/10 text-white border-white/40">Ver ecografías</Button>
         </motion.div>
-
         <div className="mt-6 rounded-2xl overflow-hidden border border-white/20">
           <Image
             src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1600&auto=format&fit=crop"
-            alt="Atención médica de calidad en VeraSalud"
+            alt="Atención médica cálida y profesional"
             width="1600" height="900" priority
           />
         </div>

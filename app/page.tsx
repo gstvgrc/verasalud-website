@@ -33,9 +33,9 @@ export default function Page(){
       <section className="mx-auto max-w-screen-sm px-4 py-8 space-y-8">
         <h2 className="text-2xl font-extrabold text-[color:#21396F]">Servicios</h2>
         <div className="grid grid-cols-1 gap-4">
-          <ServiceCard title="Consulta de Medicina Interna" summary="Evaluación integral de adultos, enfoque en metabolismo y enfermedades crónicas." href="/servicios/consulta-medica" />
-          <ServiceCard title="Ecografía Doppler" summary="Arterial y venoso. Evaluación hemodinámica." href="/servicios/ecografias/doppler" />
-          <ServiceCard title="Obstétrica (tercer nivel)" summary="Evaluación avanzada con enfoque en bienestar fetal." href="/servicios/ecografias/obstetrica/tercer-nivel" />
+          <ServiceCard title="Medicina Interna" summary="Evaluación integral del adulto con enfoque en metabolismo y crónicos." href="/servicios/consulta-medica" />
+          <ServiceCard title="Electrocardiograma" summary="ECG de 12 derivaciones e informe clínico." href="/servicios/electrocardiograma" />
+          <ServiceCard title="Ecografías" summary="Doppler, Obstétrica (tercer nivel), Tiroides y más." href="/servicios/ecografias" />
         </div>
       </section>
       <Testimonials/>
