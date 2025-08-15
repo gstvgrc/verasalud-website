@@ -2,8 +2,10 @@ import './globals.css'
 import { Montserrat } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import GA from './components/GA'
-import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { PageTransition } from '@/components/fx/MotionPrimitives'
+import BackgroundAccent from '@/components/fx/BackgroundAccent'
+import Header from '@/components/layout/Header'
 import { SITE } from '@/lib/seo'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -247,11 +249,14 @@ export default function RootLayout({
         />
       </head>
       <body className={montserrat.className}>
-        <Navbar />
-        {children}
+        <Header />
+        <BackgroundAccent />
+        <div className="pt-14">
+        <PageTransition>{children}</PageTransition>
         <Footer />
         {/* Carga asíncrona de Google Analytics a través del componente GA */}
         <GA />
+        </div>
       </body>
     </html>
   )
