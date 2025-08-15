@@ -79,13 +79,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://verasalud.com',
   },
-  icons: {
-    icon: [
-      { url: '/icon', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon.ico', sizes: 'any' },
-    ],
-    apple: [{ url: '/apple-icon', sizes: '180x180' }],
-  },
   // verification: {
   //   google: 'tu-codigo-de-verificacion', // Agregar cuando tengas Google Search Console
   // },
